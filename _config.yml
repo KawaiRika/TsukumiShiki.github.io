@@ -1,4 +1,4 @@
 deploy:
   type: git
-  repository: https://tsukumishiki.github.io/
+  repository: TsukumiShiki@gmail.com:KawaiRika/tsukumishiki.github.io.git
   branch: main
