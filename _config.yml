@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+deploy:
+  type: git
+  repository: TsukumiShiki@gmail.com:liyunchen/liyunchen.github.io.git
+  branch: main
