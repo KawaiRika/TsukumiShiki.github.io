@@ -249,7 +249,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-08 16:42:01" itemprop="dateModified" datetime="2022-04-08T16:42:01+08:00">2022-04-08</time>
+                <time title="Modified: 2022-04-08 16:42:23" itemprop="dateModified" datetime="2022-04-08T16:42:23+08:00">2022-04-08</time>
               </span>
 
           
@@ -349,6 +349,40 @@ $$
 <p>$$<br>\\<br>r \in \mathbb{R} \and [r+\frac{19}{100}]+[r+\frac{20}{100}]+[r+\frac{21}{100}]+\cdots +[r+\frac{91}{100}]&#x3D;546， [100r]&#x3D;?\\<br>\mathrm{suppose} [r]&#x3D;n,r&#x3D;n+{r},[n+{r}+\frac{k}{100}]&#x3D;n+[{r}+\frac{k}{100}]\\<br>0&lt; {r}+\frac{k}{100}&lt;2 \therefore[{r}+\frac{k}{100}]&#x3D;0 \quad \mathrm{or} \quad 1<br>\\<br>$$</p>
 <p>假设$\mathrm{ LHS} \quad $有 $k$个$(n+1)$，$ (73-k)$个$n$,</p>
 <p>$$<br>\\<br>k(n+1)+(73-k)n&#x3D;546 \Rightarrow n&#x3D;7+\frac{35-k}{7} \\<br>n \in \mathbb{Z} \Rightarrow k&#x3D;35,n&#x3D;7 \\<br>$$<br>$LHS$前$39$项是$7$，后$35$项是$8$<br>$$<br>\\<br>\begin{cases}<br>7 \leq r+\frac{56}{100}&lt;8 \<br>8 \leq r+\frac{57}{100}&lt;9 \<br>\end{cases} \Rightarrow 743 \leq 100r &lt; 744 \Rightarrow [100r]&#x3D;743<br>\<br>$$</p>
+<p>例6</p>
+<ol>
+<li><p>$[\frac{1^2}{2018}],[\frac{2^2}{2018}],[\frac{3^2}{2018}],\cdots,\\[\frac{2018^2}{2018}]$,有多少不同取值？ </p>
+<p>$\\$</p>
+</li>
+<li><p>$[\frac{2018+1}{1}],[\frac{2018+2}{2}],[\frac{2018+3}{3}],\cdots,\\[\frac{2018+m}{m}]$,一共$70$个不同取值，求$m$取值范围.</p>
+</li>
+</ol>
+<p>根据高斯函数的单调性，通过寻找转折点来确定.</p>
+<p>$$<br>\\&lt;1&gt;.     \frac{(n+1)^2}{2018}-\frac{(n)^2}{2018} \geq 1 \Rightarrow n \geq 1009 \\<br>$$<br> $\therefore$由于高斯函数单调性，$ n$ 从 $1009$ 到 $2018$共$1010$个不同取值</p>
+<p>$$<br>\\<br>[\frac{1009^2}{2018}]&#x3D;504, [\frac{1008^2}{2018}]&#x3D;503, \cdots  [\frac{1^2}{2018}]&#x3D;0\<br> \therefore 504+1010&#x3D;1514\\<br>$$</p>
+<p> &lt;2&gt;.<br>$$<br>\\<br>\frac{2018}{k}-\frac{2018}{k-1} \geq 1 \Rightarrow k \leq 44 \<br>$$<br>$ k$从$1$到$44$都是不同取值。还剩$70-44&#x3D;26$</p>
+<p>$$<br>\\<br>[\frac{2018}{45}]~[\frac{2018}{26}]&#x3D;44-26+1&#x3D;19 \Leftrightarrow \19 \leq \frac{2018}{m}&lt;20  \Rightarrow 101 \leq m \leq 106 \\<br> \therefore m \in {101,102,103,104,105,106}\\<br>$$</p>
+<p>例7</p>
+<p>$$<br>\\<br>[\frac{8}{9}]+[\frac{8^2}{9}]+[\frac{8^3}{9}]+\cdots +[\frac{8^{2018}}{9}] \mod 63\\<br>$$</p>
+<p>$$<br>\\<br>8^k \equiv (-1)^k \equiv<br>\begin{cases}<br>-1(\mod9),k \quad odd\\<br>1 (\mod 9), k \quad even<br>\end{cases} \\<br>\therefore k \equiv1(mod 2): [\frac{8^k}{9}]&#x3D;\frac{8^k+1}{9}-1, 2\mid k: [\frac{8^k}{9}]&#x3D;\frac{8^k-1}{9} \\<br>\forall m \in \mathbb{N*}, [\frac{8^{2m-1}}{9}]+[\frac{8^{2m}}{9}]&#x3D;<br>\frac{8^{2m-1}+1}{9}-1+\frac{8^{2m}-1}{9}&#x3D;8^{2m-1}-1&#x3D;8\cdot 8^{2m-2}-1 \\<br>\equiv  8 \cdot 64^{m-1}-1 \equiv8-1 \equiv7(\mod 63) \\<br>\therefore  \equiv1009 \cdot7 \equiv7063 \equiv 7 (\mod 63)</p>
+<p>\\<br>$$</p>
+<p>例8</p>
+<p>$$<br>\\<br>a,b \in \mathbb{N^*},(a,b)&#x3D;1,a+b&#x3D;2004,A&#x3D;[\frac{2005}{a}]+[\frac{2005 \times2}{a}]+\cdots+[\frac{2005\times a}{a}],\\<br>B&#x3D;[\frac{2005}{b}]+[\frac{2005 \times2}{b}]+\cdots+[\frac{2005\times b}{b}]<br>\\<br>$$</p>
+<p>求$A+B$.  </p>
+<p>法1：配对</p>
+<p>引理：<br>$$<br>\\<br>x+y\in \mathbb{Z},x  \notin \mathbb{Z},[x+y]&#x3D;[x]+[y]+1\\<br> (a,2005)&#x3D;(a,a+b)&#x3D;(a,b)&#x3D;1\\<br>\therefore \frac{2005k}{a} \notin \mathbb{Z},k&#x3D;1,2, \cdots ,a-1, \\<br>$$</p>
+<p>倒叙相加</p>
+<p>$$<br>\\<br>2A&#x3D; \sum_{i&#x3D;1}^{a-1}([\frac{2005i}{a}+\frac{2005(a-i)}{a}])+4010\\<br>&#x3D; \sum_{i&#x3D;1}^{a-1}(\frac{2005i}{a}+\frac{2005(a-i)}{a})+4010\\<br>&#x3D;2004(a-1)+4010\\</p>
+<p>\<br>$$</p>
+<p>同理<br>$$<br>\\<br>2B&#x3D;2004(b-1)+4010\\<br>\therefore 2A+2B-2004(a+b-2)+8020&#x3D;2004 \times 2003 +8020 \\<br>\therefore A+B&#x3D;2011016\\<br>$$</p>
+<p>法2: 完系</p>
+<p>$$<br>\\(a,2005)&#x3D;1 \Rightarrow 2005,2005 \times 2,  \cdots 2005 \times a<br>$$</p>
+<p>构成$mod a$的完全剩余系,所以得到<br>$$<br>\\<br>\therefore {\frac{2005}a}+{\frac{2005 \times 2}a} + \cdots + {\frac{2005 \times a}a}&#x3D;\boxed{\frac{1+2+ \cdots+(a-1)}a}&#x3D;\frac{a-1}2\\<br>\boxed{}:a&#x3D;bq+r \Rightarrow \frac{a}{b}&#x3D;q+\frac{r}{b}, \frac{r}{b}&#x3D;{\frac{a}{b}}\\<br>\therefore A&#x3D;\frac{2005(1+2+\cdots+a)}{a}-\frac{a-1}{2}&#x3D;1002a+1003\\<br>$$<br>同理，</p>
+<p>$$<br>\\<br>B&#x3D;1002b+1003 \\<br>\therefore A+B&#x3D;1002(a+b)+2006\\<br>$$<br>例9：</p>
+<p>$$<br>f(x)&#x3D;[\frac{x}1]+[\frac{x}{2}]+[\frac{x}{2}]+\cdots++[\frac{x}{x}]<br>\\<br>$$<br>求满足最小的x使得$f(x)-f(x-1)&#x3D;12$</p>
+<p>$$<br>\\<br>\forall k \in {1,2,\cdots x},x&#x3D;kq+r, 0 \leq r &lt;k.  \\<br>\frac{x}k&#x3D;q+\frac{r}k , q&#x3D; [\frac{x}k]\\<br>\frac{x-1}k&#x3D;q+\frac{r-1}k, [\frac{x-1}k]&#x3D;[q+\frac{r-1}{k}]&#x3D;q+[\frac{r-1}k]&#x3D;\\<br>\begin{cases}<br>q, r&gt;0 \\<br>q-1, r&#x3D;0<br>\end{cases}\\<br>\therefore [\frac{x}k]&#x3D; \begin{cases}<br>[\frac{x-1}k], k \nmid x\\<br>[\frac{x-1}k]+1,k \mid x<br>\end{cases}<br>\\<br>$$</p>
+<p>$\therefore d(x)&#x3D;f(x)-f(x-1)$为$x$正因数的个数</p>
+<p>$$<br>\\<br>\therefore 12&#x3D;1\times 12&#x3D; 2 \times 6 &#x3D; 3 \times 4 &#x3D;\boxed{2 \times 2 \times 3}\\ \therefore 2^2 \times 3 \times 5&#x3D;60\\<br>$$</p>
 
       
     </div>
