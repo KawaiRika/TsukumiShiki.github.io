@@ -28,7 +28,7 @@
 <meta property="og:description" content="高斯函数                   MathJax.Hub.Config({             tex2jax: {             skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],             inlineMath: [[&#39;$&#39;,&#39;$&#39;]]             }         }">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-18T13:18:08.000Z">
-<meta property="article:modified_time" content="2022-04-08T08:46:03.277Z">
+<meta property="article:modified_time" content="2022-04-08T08:52:02.539Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-08 16:46:03" itemprop="dateModified" datetime="2022-04-08T16:46:03+08:00">2022-04-08</time>
+                <time title="Modified: 2022-04-08 16:52:02" itemprop="dateModified" datetime="2022-04-08T16:52:02+08:00">2022-04-08</time>
               </span>
 
           
@@ -237,8 +237,8 @@ $$
 <p>8)除法性质：<br>$$<br>\\<br>x,y\in \mathbb{R^*} [\frac{y}{x}]\leq \frac{[y]}{[x]}\\<br>\Leftarrow[x] [\frac{y}{x}] \leq [y] \because x,y&gt;0 [x][\frac{y}{x}] \leq [x\frac{y}{x}]&#x3D;[y];[x]&gt;0\\<br>\Longrightarrow [\frac{y}{x}]\leq \frac{[y]}{[x]}\\<br>$$</p>
 <p>9）对正整数n,<br>$$<br>\\<br>[\frac{x}{n}]&#x3D;[\frac{[x] }{n}]\\<br>$$</p>
 <p>法1：夹逼<br>$$<br>\\</p>
-<p>[x] \leq x \Rightarrow \frac{[x]}{n} \leq \frac{x}{n} \Rightarrow  [\frac{[x]}{n}] \leq [\frac{x}{n}]\\<br>$$</p>
-<p>另一方面<br>$$<br>\\<br>n[\frac{x}{n}]\leq n\frac{x}{n}&#x3D;x \Rightarrow n[\frac{x}{n}]\leq [x] \Rightarrow\\ [\frac{x}{n} ] \leq \frac{[x]}{n} \Rightarrow \leq [\frac{x}{n} ]\leq  \frac{[x]}{n} \Rightarrow [\frac{x}{n} ]\leq  [\frac{[x]}{n}]\\<br>$$</p>
+<p>[x] \leq x \Rightarrow \frac{[x]}{n} \leq \frac{x}{n}<br>\Rightarrow  [\frac{[x]}{n}] \leq [\frac{x}{n}]<br>\\<br>$$</p>
+<p>另一方面,<br>$$<br>\\<br>n[\frac{x}{n}]\leq n\frac{x}{n}&#x3D;x \Rightarrow n[\frac{x}{n}]\leq [x] \Rightarrow\\ [\frac{x}{n} ] \leq \frac{[x]}{n} \Rightarrow \leq [\frac{x}{n} ]\leq  \frac{[x]}{n} \Rightarrow [\frac{x}{n} ]\leq  [\frac{[x]}{n}]<br>\\<br>$$</p>
 <p>法2：设<br>$$<br>\\<br>[\frac{x}{n}]&#x3D;m \Rightarrow m\leq \frac{x}{n}&lt;m+1 \Rightarrow mn\leq x&lt;n(m+1)&#x3D;mn+n \\<br>\because mn \in \mathbb{Z} \therefore mn \leq [x]&lt;n(m+1) \Rightarrow m \leq \frac{[x]}{n}&lt;m+1 \Rightarrow [\frac{[x]}{n}]&#x3D;m&#x3D;[\frac{x}{n}]\\<br>$$</p>
 <ol start="10">
 <li></li>
@@ -255,14 +255,14 @@ $$
 <p>$$<br>\boxed{0 \leq {x} &lt;1 \Longleftrightarrow_{x&#x3D;[x]+{x}} x-1 &lt; [x] \leq x &lt; [x]+1}\\<br>$$</p>
 <p>这样得以确定思路。</p>
 <p>例1：<br>$$<br>\\<br>\begin{cases}<br>x+{y}&#x3D;2011 (1\\<br>[y]+{z}&#x3D;18.8 (2\\<br>z+{x}&#x3D;6     (3\\<br>\end{cases}<br>\\<br>$$<br>find$x+y+z$</p>
-<p>证:<br>$$<br>\\<br>(2) \Rightarrow [y]&#x3D;18,{z}&#x3D;0.8 \\<br>(3)  \Rightarrow [z]+{z}+{x}&#x3D;6 \Rightarrow [z]+{x}&#x3D;5.2 \Rightarrow {x}&#x3D;0.2\\<br>(1)   \Rightarrow [x]+{y}+{x}&#x3D;2011 \Rightarrow [x]+{y}&#x3D;2010.8 \Rightarrow [x]&#x3D;<br>2010, {y}&#x3D;0.8\\<br>\therefore x&#x3D;2010.2,y&#x3D;10.8,z&#x3D;5.8 \\<br>\therefore x+y+z&#x3D;2034.8</p>
+<p>证:(2)<br>$$<br>\\<br> \Rightarrow [y]&#x3D;18,{z}&#x3D;0.8 \\<br>(3)  \Rightarrow [z]+{z}+{x}&#x3D;6 \Rightarrow [z]+{x}&#x3D;5.2 \Rightarrow {x}&#x3D;0.2\\<br>(1)   \Rightarrow [x]+{y}+{x}&#x3D;2011 \Rightarrow [x]+{y}&#x3D;2010.8 \Rightarrow [x]&#x3D;<br>2010, {y}&#x3D;0.8\\<br>\therefore x&#x3D;2010.2,y&#x3D;10.8,z&#x3D;5.8 \\<br>\therefore x+y+z&#x3D;2034.8</p>
 <p>\\<br>$$</p>
 <p>例2<br>$$<br>\\<br>a,b,c \in \mathbb{N^*},find \quad \min{[\frac{a+b}{c}]+[\frac{c+b}{a}]+[\frac{a+c}{b}]}\\<br>$$</p>
 <p>证:<br>$$<br>\\<br>u &gt; \frac{a+b}{c}+\frac{c+b}{a}+\frac{a+c}{b}-3&#x3D;(\frac{a}{c}+\frac{c}{a})+(\frac{b}{a}+\frac{a}{b})+(\frac{b}{c}+\frac{c}{b})-3 \\<br>\geq2+2+2-3&#x3D;3\\ \therefore u \geq 4<br>\\<br>$$<br>构造 $a&#x3D;6,b&#x3D;8,c&#x3D;9, u&#x3D;4$.</p>
 <p>综上，最小值为4。</p>
 <p>通过$f$得到的$0 \leq {x}&#x3D;f([x])&lt;1 \Rightarrow [x]$范围.例</p>
-<p>$$<br>\\<br>\quad 4x+5[x]&#x3D;100 \\</p>
-<p>9[x]+4{x}&#x3D;100 \Rightarrow 0 \leq {x}&#x3D;\frac{100-9[x]}{4}&lt;1 \Rightarrow 96 &lt; 9[x]&lt;100 \\<br>[x]&#x3D;11 \Rightarrow {x}&#x3D;\frac{1}{4}<br>\therefore x&#x3D;11\frac{1}{4}</p>
+<p>$$<br>\\<br> 4x+5[x]&#x3D;100 \\</p>
+<p> 9[x]+4{x}&#x3D;100 \Rightarrow 0 \leq {x}&#x3D;\frac{100-9[x]}{4}&lt;1 \Rightarrow 96 &lt; 9[x]&lt;100 \\<br>[x]&#x3D;11 \Rightarrow {x}&#x3D;\frac{1}{4}<br>\therefore x&#x3D;11\frac{1}{4}</p>
 <p>\\<br>$$</p>
 <p>例3<br>$$<br>\\<br>[x]{x}+x&#x3D;2{x}+10<br>\\<br>$$</p>
 <p>解<br>$$<br>\\<br>[x]{x}+[x]+{x}&#x3D;2{x}+10 \\<br>[x]{x}+[x]+-{x}-1&#x3D;9 \\<br>([x]-1)({x}+1)&#x3D;9\\<br>\mathrm{Obviously,}[x]-1 \neq 0<br>\therefore  {x}+1&#x3D;\frac{9}{[x]-1} \\<br>\therefore 1 \leq \frac{9}{[x]-1} &lt; 2 \Rightarrow \frac{11}{2} &lt;[x]&lt;10 \therefore [x]&#x3D;6,7,8,9&#x3D;,10\\<br>[x]&#x3D;6: {x}&#x3D;\frac{4}{5}\Rightarrow x&#x3D;6\frac{4}{5}\\<br>[x]&#x3D;7: {x}&#x3D;\frac{1}{2}\Rightarrow x&#x3D;7\frac{1}{2}\\<br>[x]&#x3D;8: {x}&#x3D;\frac{2}{7}\Rightarrow x&#x3D;8\frac{2}{7}\\<br>[x]&#x3D;9: {x}&#x3D;\frac{1}{8}\Rightarrow x&#x3D;9\frac{1}{8}\\<br>[x]&#x3D;10:{x}&#x3D;0 \Rightarrow x&#x3D; 10<br>\\<br>$$</p>
@@ -281,7 +281,6 @@ $$
 <p>例6</p>
 <ol>
 <li><p>$[\frac{1^2}{2018}],[\frac{2^2}{2018}],[\frac{3^2}{2018}],\cdots,\\[\frac{2018^2}{2018}]$,有多少不同取值？ </p>
-<p>$\\$</p>
 </li>
 <li><p>$[\frac{2018+1}{1}],[\frac{2018+2}{2}],[\frac{2018+3}{3}],\cdots,\\[\frac{2018+m}{m}]$,一共$70$个不同取值，求$m$取值范围.</p>
 </li>
