@@ -28,7 +28,7 @@
 <meta property="og:description" content="高斯函数                   MathJax.Hub.Config({             tex2jax: {             skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],             inlineMath: [[&#39;$&#39;,&#39;$&#39;]]             }         }">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-18T13:18:08.000Z">
-<meta property="article:modified_time" content="2022-04-08T08:45:10.688Z">
+<meta property="article:modified_time" content="2022-04-08T08:46:03.277Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-08 16:45:10" itemprop="dateModified" datetime="2022-04-08T16:45:10+08:00">2022-04-08</time>
+                <time title="Modified: 2022-04-08 16:46:03" itemprop="dateModified" datetime="2022-04-08T16:46:03+08:00">2022-04-08</time>
               </span>
 
           
@@ -248,9 +248,9 @@ $$
 <p>$V_p(a)$表示正整数$a$恰有素因子$p$的个数，则<br>$$<br>\\<br>V_P(n!)&#x3D;[\frac{n}{p}]+[\frac{n}{p^2}]+[\frac{n}{p^3}]+\cdots&#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}]\\<br>$$<br>证：</p>
 <p>$n!&#x3D;2\times3  \times \cdots \times (n-1) \times n $,</p>
 <p>设$2，3，\cdots n$中素因子分解后$p_i$的指数为$k$的有$n_k$个,则<br>$$<br>\\<br>V_p(n!)&#x3D;n_1+2n_2+3n_3+\cdots\\<br>\begin{cases}<br>n_1+n_2+n_3+ \cdots \rightarrow [\frac{n}{p}]\\<br>+n_2+n_3+ \cdots \rightarrow [\frac{n}{p^2}] \\<br>+n_3+ \cdots \rightarrow [\frac{n}{p^3}]\\<br>\cdots \cdots<br>\end{cases}\\<br>$$<br>推论: $n!&#x3D;\prod_{p\leq n}p^{\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}]}$显然.</p>
-<p>12）厄尔米特恒等式<br>$$<br>\\<br>\forall x&gt;0,[x]+[x+\frac{1}{n}]+[x+\frac{2}{n}]+\cdots+[x+\frac{n-1}{n}]&#x3D;[nx]\\<br>x+\frac{k}{n},k&#x3D;0,1,\cdots,n-1\\<br>0\leq \frac{k}{n}&lt;1， [x+\frac{k}{n}]&#x3D;[[x]+{x}+\frac{k}{n}]&#x3D;[x]+[{x}+\frac{k}{n}]&#x3D;[x] or[x]+1\\<br>$$</p>
-<p>证：</p>
-<p>$$<br>\\<br>take 0 \leq i_0 \leq n-1, [{x}+\frac{i_0}{n}]&#x3D;1 and [{x}+\frac{i_0-1}{n}]&#x3D;0\\<br>0 \leq i \leq i_0-1, [x+\frac{i}{n}]&#x3D;[x], \\<br>i_0 \leq i \leq n-1, [x+\frac{i}{n}]&#x3D;[x]+1\\<br>\therefore \mathbb{LHS}&#x3D; \sum_{i&#x3D;0}^{n+1}[x+\frac{i}{n}]&#x3D;i_0[x]+(n-i_0)([x]+1)&#x3D;n[x]+n-i_0\\<br>\because {x}+\frac{i_0}{n} \geq1 \Rightarrow {x}\geq 1- \frac{i_0}{n};\\<br>{x}+\frac{i_0-1}{n}&lt;1 \Rightarrow {x}&lt;1-\frac{i_0-1}{n}\\<br>\therefore<br>1-\frac{i_0}{n} \leq {x}&lt;1-\frac{i_0-1}{n} \Rightarrow n-i_0 \leq n{x}&lt;n-i_0+1<br>\Longleftrightarrow [n{x}]     &#x3D;n-i_0 \\<br>\mathbb{RHS}&#x3D;[nx]&#x3D;[n([x]+{x})]&#x3D;[(n[x]+n{x})]&#x3D;[n[x]+n{x}]&#x3D;n[x]+n{x}\\<br>$$</p>
+<p>12）厄尔米特恒等式<br>$$<br>\\<br>\forall x&gt;0,[x]+[x+\frac{1}{n}]+[x+\frac{2}{n}]+\cdots+[x+\frac{n-1}{n}]&#x3D;[nx]\\<br>x+\frac{k}{n},k&#x3D;0,1,\cdots,n-1\\<br>0\leq \frac{k}{n}&lt;1， [x+\frac{k}{n}]&#x3D;[[x]+{x}+\frac{k}{n}]&#x3D;[x]+[{x}+\frac{k}{n}]&#x3D;[x] or[x]+1<br>\\<br>$$</p>
+<p>证：take</p>
+<p>$$<br>\\<br> 0 \leq i_0 \leq n-1, [{x}+\frac{i_0}{n}]&#x3D;1; [{x}+\frac{i_0-1}{n}]&#x3D;0\\<br>0 \leq i \leq i_0-1, [x+\frac{i}{n}]&#x3D;[x], \\<br>i_0 \leq i \leq n-1, [x+\frac{i}{n}]&#x3D;[x]+1\\<br>\therefore \mathbb{LHS}&#x3D; \sum_{i&#x3D;0}^{n+1}[x+\frac{i}{n}]&#x3D;i_0[x]+(n-i_0)([x]+1)&#x3D;n[x]+n-i_0\\<br>\because {x}+\frac{i_0}{n} \geq1 \Rightarrow {x}\geq 1- \frac{i_0}{n};\\<br>{x}+\frac{i_0-1}{n}&lt;1 \Rightarrow {x}&lt;1-\frac{i_0-1}{n}\\<br>\therefore<br>1-\frac{i_0}{n} \leq {x}&lt;1-\frac{i_0-1}{n} \Rightarrow n-i_0 \leq n{x}&lt;n-i_0+1<br>\Longleftrightarrow [n{x}]     &#x3D;n-i_0 \\<br>\mathbb{RHS}&#x3D;[nx]&#x3D;[n([x]+{x})]&#x3D;[(n[x]+n{x})]&#x3D;[n[x]+n{x}]&#x3D;n[x]+n{x}\\<br>$$</p>
 <p>高斯函数中最重要的一点便是</p>
 <p>$$<br>\boxed{0 \leq {x} &lt;1 \Longleftrightarrow_{x&#x3D;[x]+{x}} x-1 &lt; [x] \leq x &lt; [x]+1}\\<br>$$</p>
 <p>这样得以确定思路。</p>
