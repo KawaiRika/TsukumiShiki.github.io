@@ -249,7 +249,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-08 16:33:32" itemprop="dateModified" datetime="2022-04-08T16:33:32+08:00">2022-04-08</time>
+                <time title="Modified: 2022-04-08 16:37:53" itemprop="dateModified" datetime="2022-04-08T16:37:53+08:00">2022-04-08</time>
               </span>
 
           
@@ -276,17 +276,15 @@
 </head>
  定义：
 $$
-\\\
-x \in \mathbb{R} , \{x\}=x-[x]\\\
+x \in \mathbb{R} , \{x\}=x-[x]
 $$
 
-<p>表示为x的非负最小数，函数$y&#x3D;[x]$成为Gauss函数，又叫取整函数，</p>
-<p>任何一个实数都能写成整数与非负小数之和.</p>
-<p>$$<br>\\<br>y&#x3D;[x]\begin{cases}<br>\cdots \\<br>2,2\leq x &lt;3 \\<br>3, 3\leq x &lt;4  \\<br>4,4\leq x &lt;5 \\<br>\cdots \cdots \\<br>\end{cases}\\<br>$$</p>
+<p>表示为x的非负最小数，函数$y&#x3D;[x]$成为Gauss函数，又叫取整函数，任何一个实数都能写成整数与非负小数之和.</p>
+<p>$$<br>y&#x3D;[x]\begin{cases}<br>\cdots \\<br>2,2\leq x &lt;3 \\<br>3, 3\leq x &lt;4  \\<br>4,4\leq x &lt;5 \\<br>\cdots \cdots \\<br>\end{cases}\\<br>$$</p>
 <p>定义域: $\mathbb{R}$,值域: $\mathbb{Z}$, $x$取整数的典都是跳跃间断点，</p>
 <p>非严格单调不减函数：$\forall x_1&lt;x_2 \Rightarrow [x_1]&lt;[x_2]$</p>
-<p>例:<br>$$<br>\\<br>[5.6]&#x3D;5,[-5.6]&#x3D;-6,[-e]&#x3D;-3<br>\\<br>$$</p>
-<p>$$<br>2.\\<br>y&#x3D;{x}&#x3D;x-[x]\\<br>y&#x3D;{x}\begin{cases}<br>\cdots\cdots\\<br>x, 0\leq x &lt;1\\<br>x-2,2\leq x &lt;3 \\<br>x-3, 3\leq x &lt;4  \\<br>x-4,4\leq x &lt;5 \\<br>\cdots \cdots<br>\end{cases}\\<br>$$</p>
+<p>例:<br>$$<br>[5.6]&#x3D;5,[-5.6]&#x3D;-6,[-e]&#x3D;-3<br>$$</p>
+<p>$$<br>\\<br>y&#x3D;{x}&#x3D;x-[x]\\<br>y&#x3D;{x}\begin{cases}<br>\cdots\cdots\\<br>x, 0\leq x &lt;1\\<br>x-2,2\leq x &lt;3 \\<br>x-3, 3\leq x &lt;4  \\<br>x-4,4\leq x &lt;5 \\<br>\cdots \cdots<br>\end{cases}\\<br>$$</p>
 <p>定义域：$\mathbb{R}$.值域$[0,1)$.$x$整数时为间断点，$T&#x3D;1$</p>
 <p>3.高斯函数性质</p>
 <p>1)涉及高斯函数的不等式估值</p>
@@ -296,11 +294,14 @@ $$
 <p>$$<br>\\<br>0 \leq r &lt;b \Rightarrow\frac{a}{b}&#x3D;q+\frac{r}{b},0 \leq \frac{r}{b} &lt;1\Rightarrow[\frac{a}{b}]&#x3D;q,{\frac{a}{b}}&#x3D;\frac{r}{b}\\<br>$$</p>
 <p>3)非严格单调性<br>$$<br>\\x&lt;y \Rightarrow[x]&lt;[y]\\<br>$$</p>
 <p>4)释放整数与丢弃整数<br>$$<br>\\<br>\forall x \in \mathbb{R}. m \in Z,[x+m]&#x3D;[x]+m;{x+m}&#x3D;{x}.\\<br>$$</p>
-<p>5)加法性质</p>
-<p>$$<br>\\<br>1.[x]+[y]&#x3D;[x+y]\\<br>Prof：\forall x \in \mathbb{R},x&#x3D;[x]+{x},[x+y]&#x3D;[x+{x}+[y]+{y}]\\<br>&#x3D;[x]+[y]+[{x}+{y}]\geq[x]+[y]\\<br>ps:0\leq{x}+{y}&lt;1，[{x}+{y}]&#x3D;0,[x+y]&#x3D;[x]+[y]\\<br>1\leq{x}+{y}&lt;2，[{x}+{y}]&#x3D;1 ,[x+y]&#x3D;[x]+[y]+1\\<br>$$</p>
+<p>5)加法性质<br>$$<br>\\<br>1.[x]+[y]&#x3D;[x+y]\\<br>Prof：\forall x \in \mathbb{R},x&#x3D;[x]+{x},[x+y]&#x3D;[x+{x}+[y]+{y}]\\<br>&#x3D;[x]+[y]+[{x}+{y}]\geq[x]+[y]\\<br>ps:0\leq{x}+{y}&lt;1，[{x}+{y}]&#x3D;0,[x+y]&#x3D;[x]+[y]\\<br>1\leq{x}+{y}&lt;2,[{x}+{y}]&#x3D;1, [x+y]&#x3D;[x]+[y]+1\\<br>$$</p>
 <p>法2<br>$$<br>\\<br>[x]\leq x,[y] \leq y, [x]+[y]\leq x+y \Rightarrow x+y&#x3D;[[x]+[y]] \leq [x+y]  \\<br>$$</p>
-<p>$$<br>\\<br>{x}+{y} \geq {x+y} \\<br>\Leftrightarrow x-[x]+y-[y] \geq x+y-[x+y]\Leftrightarrow [x]+[y] \leq [x+y]_{} \\<br>$$</p>
+<p>$$<br>\\<br>{x}+{y} \geq {x+y} \\<br>\Leftrightarrow x-[x]+y-[y] \geq x+y-[x+y]\Leftrightarrow [x]+[y] \leq [x+y] \\<br>$$</p>
 <p>【推广】<br>$$<br>\\<br>\sum_{i&#x3D;1}^{n}[x_i]\leq [\sum_{i&#x3D;1}^{n}x_i] \Longrightarrow n[x] \leq [nx],n \in \mathbb{N}\\<br>\sum_{i&#x3D;1}^{n}{x_i}\geq {\sum_{i&#x3D;1}^{n}x_i} \Longrightarrow n{x} \geq {nx},n \in \mathbb{N}\\<br>$$</p>
+<p>6)乘法性质<br>$$<br>\\x,y\in \mathbb{R^{*}} ,[x][y]\leq [xy]\\<br>$$</p>
+<p>法1<br>$$<br>\\<br>[xy]&#x3D;[(x+{x})(y+{y})]&#x3D;[[x][y]+[x]{y}+[y]{x}+{x}{y}]\\<br>&#x3D;[x][y]+[N^* ]\geq[x][y]\\<br>$$</p>
+<p>法2<br>$$<br>\\<br>0\leq[x] \leq x,0\leq[y] \leq y, \Rightarrow [x][y] \leq xy,\Rightarrow[x][y] \leq [xy]\\<br>$$</p>
+<p>【推广】<br>$$<br>\\<br>x_i \in \mathbb{R^*},\prod_{i&#x3D;1}^{n} [x_i] \leq [\prod_{i&#x3D;1}^{n}x_i] \\<br>$$</p>
 
       
     </div>
