@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="位置原理 进位制，我们平时所熟悉的进制就是十进制，即逢10进1，所用数字为0，1，2，3，4，5，6，7，8，9。如果某位数字达到10，则向高位进1.计算机科学中常用二进制，也是一种很重要的进制，缝2进1的，所用数字为0和1.类似地有n进制，逢n进1.  位置原理，十进制的位置原理：   $$\\a_na_n-1\cdots a_1a_0&#x3D;a_n \times 10^n+a_{n-1}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="位置原理">
+<meta property="og:url" content="http://example.com/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="位置原理 进位制，我们平时所熟悉的进制就是十进制，即逢10进1，所用数字为0，1，2，3，4，5，6，7，8，9。如果某位数字达到10，则向高位进1.计算机科学中常用二进制，也是一种很重要的进制，缝2进1的，所用数字为0和1.类似地有n进制，逢n进1.  位置原理，十进制的位置原理：   $$\\a_na_n-1\cdots a_1a_0&#x3D;a_n \times 10^n+a_{n-1}">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-08T09:02:40.000Z">
+<meta property="article:modified_time" content="2022-04-09T07:48:58.442Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | Hexo</title>
+  <title>位置原理 | Hexo</title>
   
 
 
@@ -139,70 +143,102 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          位置原理
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-04-08 17:02:40" itemprop="dateCreated datePublished" datetime="2022-04-08T17:02:40+08:00">2022-04-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-09 15:48:58" itemprop="dateModified" datetime="2022-04-09T15:48:58+08:00">2022-04-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-04-08T17:02:40+08:00"
-              content="2022-04-08">
-          04-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/" itemprop="url">
-            <span itemprop="name">位置原理</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-03-18T21:18:08+08:00"
-              content="2022-03-18">
-          03-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/03/18/%E9%AB%98%E6%96%AF%E5%87%BD%E6%95%B0/" itemprop="url">
-            <span itemprop="name">高斯函数</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h1 id="位置原理"><a href="#位置原理" class="headerlink" title="位置原理"></a>位置原理</h1><ol>
+<li><p>进位制，我们平时所熟悉的进制就是十进制，即逢10进1，所用数字为0，1，2，3，4，5，6，7，8，9。如果某位数字达到10，则向高位进1.计算机科学中常用二进制，也是一种很重要的进制，缝2进1的，所用数字为0和1.类似地有n进制，逢n进1.</p>
+</li>
+<li><p>位置原理，十进制的位置原理：</p>
+</li>
+</ol>
+<p>$$<br>\\<br>a_na_n-1\cdots a_1a_0&#x3D;a_n \times 10^n+a_{n-1} \times 10^{n-1}+\cdots+a_1 \times 10 +a_0,<br>\\<br>$$</p>
+<p>类似地可以得到r进制下的位置原理<br>$$<br>\\<br>(a_na_n-1\cdots a_1a_0)<em>r&#x3D;a_n \times r^n+a</em>{n-1} \times r^{n-1}+ \cdots+a_1 \times r+a_0<br>\\<br>$$<br>位置原理给出了一个将一个其他进制下的数化为十进制的方法，另外有了位置原理，就可以把一个多位数写成用它的组成数字表示的多项式的形式在结合其他数论知识解决。需要注意的是在利用位置原理把一个多位数写成多项式的形式时要根据实际需要将某些位数字作为一个整体列为多项式的一项而不是死板的一位一位展开。</p>
+<ol start="3">
+<li>十进制转化为其他进制</li>
+</ol>
+<p>$$<br>\\<br>(1200201)_3&#x3D;1 \times 3^6+2 \times 3^5 +2 \times3^2+1&#x3D;1234<br>\\<br>$$</p>
+<p>r进制转化为十进制时用到的方法：<br>$$<br>\\<br>A_1:a_n \times r^n+a_{n-1} \times r^{n-1}+ \cdots+a_1 \times r+a_0,a_i \in{0,1, \cdots r-1}\\</p>
+<p>A_2&#x3D;:a_n \times r^{n-1}+a_{n-1}\times r^{n-2}+\cdots a_2 r+\boxed{a_1},r_2&#x3D;a_0<br>\\<br>A_3&#x3D;:a_n \times r^{n-2}+a_{n-1}\times r^{n-3}+\cdots a_3 r+\boxed{a_2},r_3&#x3D;a_1<br>\\<br>A_4&#x3D;:a_n \times r^{n-3}+a_{n-1}\times r^{n-4}+\cdots a_4 r+\boxed{a_3},r_4&#x3D;a_2<br>\\<br>\cdots\cdots\cdots<br>\\<br>$$<br>利用长除法将r进制转化为十进制.</p>
+<ol start="4">
+<li>位置原理的推广——实数的位置原理。设r时一个不小于2的正整数，则任意一个正实数a在r进制下可唯一表示为如下形式：</li>
+</ol>
+<p>$$<br>a_nr^n+a_{n-1}r^{n-1}+ \cdots+a_1r+a_0+b_{0}r^{-1}+b_1r^{-2}+\cdots \\<br>a_i,b_j  \in Z, 0 \leq a_i,b_j \leq r-1. 0 \le1 i \leq n,j&#x3D;0,1,2,\cdots<br>$$</p>
+<p>并且不存在正整数m使得任何对于 $j\geq m$,均有$b_j&#x3D;r-1.$ (3.49999999$\cdots$&#x3D;5.0).</p>
+<p>把r进制转化为十进制可以直接展开，将十进制转化为r进制的时候需要对整数部分和小数部分分别处理，采用”除以r取余”和乘以r取整的方法。</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/03/18/%E9%AB%98%E6%96%AF%E5%87%BD%E6%95%B0/" rel="prev" title="高斯函数">
+      <i class="fa fa-chevron-left"></i> 高斯函数
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -255,6 +291,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">位置原理</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
