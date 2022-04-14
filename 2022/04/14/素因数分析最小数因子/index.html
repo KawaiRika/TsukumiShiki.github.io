@@ -28,7 +28,7 @@
 <meta property="og:description" content="素因数分析1:最小数因子                   MathJax.Hub.Config({             tex2jax: {             skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],             inlineMath: [[&#39;$&#39;,&#39;$&#39;]]             }">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-04-14T13:18:08.000Z">
-<meta property="article:modified_time" content="2022-04-14T07:37:27.620Z">
+<meta property="article:modified_time" content="2022-04-14T08:47:36.762Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-14 21:18:08 / Modified: 15:37:27" itemprop="dateCreated datePublished" datetime="2022-04-14T21:18:08+08:00">2022-04-14</time>
+              <time title="Created: 2022-04-14 21:18:08 / Modified: 16:47:36" itemprop="dateCreated datePublished" datetime="2022-04-14T21:18:08+08:00">2022-04-14</time>
             </span>
 
           
@@ -216,6 +216,15 @@
 <p>例4：已知p为素数，r为p被210除的余数，若r为一个合数，且可表示为两个完全平方数之和，求r.</p>
 <p>$$<br>\\<br>p&#x3D;210n+r(0&lt;r&lt;210)<br>$$<br>令q时是r的最小素因子，则<br>$$<br>r&#x3D;qm(q \leq m ,m \in \mathbb{N^*}) \\<br>210&gt;r&#x3D;qm \geq q^2 \Rightarrow q \leq 13<br>$$<br>另一方面r不能被2，3，5，7整除，否则p为荷属，矛盾<br>$$<br>\therefore q \geq 13, \therefore q&#x3D;11 \or 13<br>$$<br>令<br>$$<br>r&#x3D;a^2+b^2,a,b \in \mathbb{N^*} \\<br>$$<br>若q&#x3D;11，则<br>$$<br>11 \mid (a^2+b^2)，\forall t \in N, t^2 \equiv 0,1,4,9,5,3,(\mod 11) \\<br>\Rightarrow 11 \mid a,11 \mid b \Rightarrow r \geq 121+121&gt;210.<br>$$<br>矛盾。</p>
 <p>若q&#x3D;13:<br>$$<br>m \leq [\frac{210}{13}]&#x3D;1    6<br>$$<br>如果m&#x3D;16,15,14则，p分别为2，3，7倍数且大于2，3，7故为合数，矛盾.<br>$$<br>\therefore m&#x3D;13,<br>$$<br>此时<br>$$<br>r&#x3D;169&#x3D;5^2+12^2<br>$$<br>当r&#x3D;169,n&#x3D;1时，p&#x3D;379为素数。综上，r&#x3D;169.</p>
+<p>例5：设n为合数，对n的每个真因子d,在黑板上写上数d+1,求所有正整数n,使得黑板上的数恰是某正整数m的所有真因子。</p>
+<p>设n最小真因子为p,则p为素数，则p+1为m最小真因子，也为素数<br>$$<br>\therefore p&#x3D;2<br>$$<br>3为m的最小真因子<br>$$<br>\Rightarrow m<br>$$<br>为奇，m的所有真因子为奇，n的所有真因子为偶，则n没有奇素因，n为2的幂，<br>$$<br>\\<br>n&#x3D;2^k(k \geq 2, k \in \mathbb{Z}) \Rightarrow<br>$$<br>n的最大真因子为<br>$$<br>2^{k-1} \Rightarrow \\<br>$$<br>m最大真因子为<br>$$<br>2^{k-1}+1 \Rightarrow m&#x3D;3(2^{k-1}+1)<br>$$<br>若<br>$$<br>k \geq 4<br>$$<br>则2，4，8为n真因子，3，5，9为m真因子，则14为n真因子，与n为二次幂矛盾。<br>$$<br>\\<br>\therefore k&#x3D;2,3 \\<br>$$</p>
+<p>$$<br>k&#x3D;2:n&#x3D;4,<br>$$</p>
+<p>真因子为2，m&#x3D;9，真因子为3.</p>
+<p>k&#x3D;3:<br>$$<br>n&#x3D;8, \cdots 2,4,m&#x3D;3 \times 5&#x3D;15 \cdots 3,5<br>$$<br>综上n&#x3D;4,8.</p>
+<p>例6：求所有正整数n,使得满足以下条件</p>
+<p>①n至少4个正因数</p>
+<p>②对n任意因数<br>$$<br>a,b<br>$$<br>满足<br>$$<br>1&lt;a&lt;b&lt;n,<br>$$<br>都有<br>$$<br>(b-a) \mid n<br>$$<br>必要性分析.</p>
+<p>若n为奇数，则a,b为奇数<br>$$<br>\Rightarrow 2 \mid (b-a) \Rightarrow 2 \mid n<br>$$<br>矛盾.<br>$$<br> \therefore n<br>$$<br>为偶.取<br>$$<br>a&#x3D;1,b&#x3D;\frac{n}2, (\frac{n}{2}-2) \mid n,(\frac{n}{2}-2) \mid (n-4) \Rightarrow\\<br>(\frac{n}{2}-2) \mid 4 \Rightarrow  \frac{n}{2}&#x3D;1,2,4 \Rightarrow n&#x3D;6,8,12 \\<br>\therefore n&#x3D;6,8,12<br>$$</p>
 
     </div>
 
@@ -231,8 +240,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/" rel="prev" title="位置原理">
-      <i class="fa fa-chevron-left"></i> 位置原理
+    <a href="/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E4%B9%8B%E6%95%B4%E6%95%B0%E7%9A%84p%E8%BF%9B%E8%B5%8B%E5%80%BC/" rel="prev" title="素因数分析最小数因子">
+      <i class="fa fa-chevron-left"></i> 素因数分析最小数因子
     </a></div>
       <div class="post-nav-item"></div>
     </div>
@@ -307,7 +316,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
