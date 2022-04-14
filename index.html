@@ -145,6 +145,92 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E6%9C%80%E5%B0%8F%E6%95%B0%E5%9B%A0%E5%AD%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E6%9C%80%E5%B0%8F%E6%95%B0%E5%9B%A0%E5%AD%90/" class="post-title-link" itemprop="url">素因数分析最小数因子</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-04-14 21:18:08 / Modified: 15:37:27" itemprop="dateCreated datePublished" datetime="2022-04-14T21:18:08+08:00">2022-04-14</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="素因数分析1-最小数因子"><a href="#素因数分析1-最小数因子" class="headerlink" title="素因数分析1:最小数因子"></a>素因数分析1:最小数因子</h2><head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+
+<p> 例1：证明<br>$$<br>n \in Z, n&gt;1 \Rightarrow n \nmid2^n-1 \\<br>$$<br>假设<br>$$<br>n \mid 2^n-1 ,<br>$$<br>由<br>$$<br>n&gt;1,<br>$$<br>设p为n的最小素因数,<br>$$<br>p \mid n\mid 2^n-1 \cdots(1) \\<br>\Rightarrow p<br>$$<br>为素数，<br>$$<br>\Rightarrow (2,p)&#x3D;1<br>$$<br>由Fermat小定理，<br>$$<br>p \mid 2^{p-1}-1 \cdots (2)<br>$$<br>由(1),(2)<br>$$<br>p \mid (2^n-1,2^{p-1}-1)&#x3D;2^{(n,p-1)}-1 \\<br>\because<br>$$<br>n的素因子<br>$$<br>\geq p,<br>$$<br>p-1素因子&lt;p.n与p-1没有公共素因子，则<br>$$<br>\\<br>\therefore(n,p-1)&#x3D;1, \therefore p \mid 2^1-1&#x3D;1 \Rightarrow<br>$$<br>矛盾。</p>
+<p>（2 求所有正奇数n使得<br>$$<br>n \mid 3^n+1<br>$$<br>显然n&#x3D;1为一个解，n&gt;1时取n的最小素因子p,则p为奇素数。</p>
+<p>一方面，<br>$$<br>p \mid 3^n+1 \Rightarrow p \mid (3^n+1)(3^n-1)&#x3D;3^{2n}-1 \cdots(1)<br>$$<br>另一方面(p,3)&#x3D;1<br>$$<br>\Longrightarrow_{(Fermat)} p \mid 3^{p-1}-1\cdots (2)<br>$$</p>
+<p>$$<br>(1)(2):p \mid ( 3^{2n}-1, 3^{p-1}-1)&#x3D;3^{(2n,p-1)}-1 \cdots(3) \\<br>\because<br>$$</p>
+<p>n的素因子大于等于p,p-1素因子&lt;p,p-1为偶，<br>$$<br>\therefore (2n,p-1)&#x3D;2,(3) \Rightarrow p \mid 8 \Rightarrow p&#x3D;2<br>$$<br>与p为奇数矛盾，综上有唯一解n&#x3D;1.</p>
+<p>例2：求所有正整数n和所有整数a,使得<br>$$<br>n \mid (a+1)^n-a^n<br>$$<br>显然n&#x3D;1对所有a都满足条件。</p>
+<p>n&gt;1时，取n最小素因子p则<br>$$<br>p \mid (a+1)^n-a^n \cdots(1)<br>$$<br>显然p不整除a+1,a中任一个，（否则整除其中一个必整除另一个，而二者相差1，矛盾）<br>$$<br>\therefore (p,a+1)&#x3D;1,(p,a)&#x3D;1<br>$$<br>由fermat小定理：<br>$$<br>\begin{cases}<br>a^{p-1} \equiv1(\mod p) \\<br>(a+1)^{p-1} \equiv1(\mod p) \\<br>\end{cases} \Rightarrow p \mid (a+1)^{p-1}-a^{p-1} \cdots (2) \\<br>$$<br>由(1),(2)<br>$$<br>\Rightarrow p \mid ((a+1)^{n}-a^{n},(a+1)^{p-1}-a^{p-1})&#x3D;(a+1)^{(n,p-1)}-a^{(n,p-1)} \\<br>$$<br>而(n,p-1)&#x3D;1.<br>$$<br>\therefore p \mid 1<br>$$<br>矛盾.<br>$$<br>\therefore (1,a)<br>$$<br>为所有解。</p>
+<p>例3：有一叠n&gt;1张卡片，在每张卡片上写有一个正整数，这叠卡片有如下性质：其中任意两张卡片上的数的算数平均值也等于这叠卡片中某一张或某几张卡片上的几何平均值.确定所有的n,使得可以推出这叠卡片上的数均相等？</p>
+<p>若n个数满足题设的性质，下设他们同时除以最大公因数也满足题设性质。</p>
+<p>设a1,a2,an满足题设性质,<br>$$<br> \\<br> d&#x3D;(a_1,a_2,\cdots a_n),a_1&#x3D;db_1,a_2&#x3D;db_2,\cdots a_n&#x3D;db_n,(b_1,b_2,\cdots b_n&#x3D;1)<br>$$<br>不妨设<br>$$<br>\frac{a_1+a_2}2 &#x3D; \sqrt[k]{a_{i_1}a_{i_2}\cdots a_{i_k}} \Leftrightarrow \frac{d(b_1+b_2)}{2}&#x3D; d\sqrt[k]{b_{i_1}b_{i_2}\cdots b_{i_k}} \\<br>\Leftrightarrow \frac{(b_1+b_2)}{2}&#x3D; \sqrt[k]{b_{i_1}b_{i_2}\cdots b_{i_k}}<br>$$<br>不妨设<br>$$<br>b_1 \geq b_2 \geq \cdots \geq b_n<br>$$<br>只需证<br>$$<br>b_1&#x3D;b_2&#x3D; \cdots &#x3D; b_n<br>$$<br>假设<br>$$<br>b_1 \geq 2,<br>$$<br>则必有素因子p,<br>$$<br>(b_1,b_2,\cdots,b_n)&#x3D;1<br>$$<br>知存在最小下标<br>$$<br>m \in {2,3,\cdots ,n} s.t.p \nmid b_m<br>$$<br>由<br>$$<br>b_1,b_2, \cdots b_n<br>$$<br>满足题设性质：<br>$$<br>\exist b_{i_1},\cdots,b_{i_k}<br>$$<br>使<br>$$<br>\frac{b_1+b_m}2&#x3D;\sqrt[k]{b_{i_1}\cdots b_{i_k}} \Rightarrow LHS,RHS \in \mathbb{N^*}<br>$$</p>
+<p>$$<br>\\<br>b_1 &gt;b <em>m \Rightarrow \frac{b_1+b_m}2&gt;b_m \Rightarrow \sqrt[k]{b</em>{i_1}\cdots b_{i_k}}&gt;b_m \Rightarrow b_{i_1}\cdots b_{i_k}<br>$$</p>
+<p>必有大于<br>$$<br>b_m<br>$$<br>的数，它的下标一定小于<br>$$<br>b_m<br>$$<br>此数必为p的倍数，<br>$$<br>\therefore p \mid \sqrt[k]{b_{i_1}\cdots b_{i_k}} \Rightarrow p\mid \frac{b_1+b_m}2<br>$$<br>但<br>$$<br>p \mid b_1,p\mid b_m \Rightarrow p \nmid \frac{b_1+b_m}2<br>$$<br>矛盾。<br>$$<br>\\<br>\therefore b_1&#x3D;1 \Rightarrow b_1&#x3D;b_2&#x3D;\cdots b_n&#x3D;1<br>$$<br>故只要<br>$$<br>n \geq 2, n \in \mathbb{Z}<br>$$<br>且这n个数满足题设性质则一定能推出n个数都相等。</p>
+<p>例4：已知p为素数，r为p被210除的余数，若r为一个合数，且可表示为两个完全平方数之和，求r.</p>
+<p>$$<br>\\<br>p&#x3D;210n+r(0&lt;r&lt;210)<br>$$<br>令q时是r的最小素因子，则<br>$$<br>r&#x3D;qm(q \leq m ,m \in \mathbb{N^*}) \\<br>210&gt;r&#x3D;qm \geq q^2 \Rightarrow q \leq 13<br>$$<br>另一方面r不能被2，3，5，7整除，否则p为荷属，矛盾<br>$$<br>\therefore q \geq 13, \therefore q&#x3D;11 \or 13<br>$$<br>令<br>$$<br>r&#x3D;a^2+b^2,a,b \in \mathbb{N^*} \\<br>$$<br>若q&#x3D;11，则<br>$$<br>11 \mid (a^2+b^2)，\forall t \in N, t^2 \equiv 0,1,4,9,5,3,(\mod 11) \\<br>\Rightarrow 11 \mid a,11 \mid b \Rightarrow r \geq 121+121&gt;210.<br>$$<br>矛盾。</p>
+<p>若q&#x3D;13:<br>$$<br>m \leq [\frac{210}{13}]&#x3D;1    6<br>$$<br>如果m&#x3D;16,15,14则，p分别为2，3，7倍数且大于2，3，7故为合数，矛盾.<br>$$<br>\therefore m&#x3D;13,<br>$$<br>此时<br>$$<br>r&#x3D;169&#x3D;5^2+12^2<br>$$<br>当r&#x3D;169,n&#x3D;1时，p&#x3D;379为素数。综上，r&#x3D;169.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -176,7 +262,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-09 15:48:58" itemprop="dateModified" datetime="2022-04-09T15:48:58+08:00">2022-04-09</time>
+                <time title="Modified: 2022-04-12 17:42:49" itemprop="dateModified" datetime="2022-04-12T17:42:49+08:00">2022-04-12</time>
               </span>
 
           
@@ -198,6 +284,7 @@
 </ol>
 <p>$$<br>\\<br>a_na_n-1\cdots a_1a_0&#x3D;a_n \times 10^n+a_{n-1} \times 10^{n-1}+\cdots+a_1 \times 10 +a_0,<br>\\<br>$$</p>
 <p>类似地可以得到r进制下的位置原理<br>$$<br>\\<br>(a_na_n-1\cdots a_1a_0)<em>r&#x3D;a_n \times r^n+a</em>{n-1} \times r^{n-1}+ \cdots+a_1 \times r+a_0<br>\\<br>$$<br>位置原理给出了一个将一个其他进制下的数化为十进制的方法，另外有了位置原理，就可以把一个多位数写成用它的组成数字表示的多项式的形式在结合其他数论知识解决。需要注意的是在利用位置原理把一个多位数写成多项式的形式时要根据实际需要将某些位数字作为一个整体列为多项式的一项而不是死板的一位一位展开。</p>
+<p>将一个多位数对数位进行某种操作，得到一个新数，新数和原数产生某种关系时，这样的问题都是由位置原理去解决的。</p>
 <ol start="3">
 <li>十进制转化为其他进制</li>
 </ol>
@@ -210,6 +297,49 @@
 <p>$$<br>a_nr^n+a_{n-1}r^{n-1}+ \cdots+a_1r+a_0+b_{0}r^{-1}+b_1r^{-2}+\cdots \\<br>a_i,b_j  \in Z, 0 \leq a_i,b_j \leq r-1. 0 \le1 i \leq n,j&#x3D;0,1,2,\cdots<br>$$</p>
 <p>并且不存在正整数m使得任何对于 $j\geq m$,均有$b_j&#x3D;r-1.$ (3.49999999$\cdots$&#x3D;5.0).</p>
 <p>把r进制转化为十进制可以直接展开，将十进制转化为r进制的时候需要对整数部分和小数部分分别处理，采用”除以r取余”和乘以r取整的方法。</p>
+<p> 例1：设n时一位首位非零的五位数，m是由n删去它正中间的以为数码后得到的四位数，若$m \mid n\\$,这样的n有多少个？</p>
+<p>设$n&#x3D;\overline{},m&#x3D;\overline{xyuv}$ </p>
+<p>1 证 $n&gt;9m$,即<br>$$<br>\\<br>10000x+1000y+100z+10u+v&gt;9000x+900y+90u+9v \\<br>\Leftrightarrow 1000x+100y+100z&gt;80u+8v (1)\\<br>x \geq1, LHS \geq 1000, RHS \leq 88 \times 9 &#x3D;792<br>\\<br>$$</p>
+<p>(1)显然成立</p>
+<p>2 正$n&lt;11m$，即<br>$$<br>10000x+1000y+100z+10u+v&lt;11000x+1100y+110u+11v \\<br>\Leftrightarrow 100z&lt;1000x+100y+100u+10v<br>$$<br>显然成立<br>$$<br>\therefore 9m &lt;n&lt;11m \Rightarrow 9&lt;\frac{n}m&lt;11 \\<br>\because m \mid n,\therefore \frac{n}{m} \in \mathbb{Z}, \therefore \frac{n}m&#x3D;10 \\<br>\therefore 10000x+1000y+100z+10u+v&#x3D;10000x+1000y+100u+10v(3)\\<br>(3) \Leftrightarrow 90u+9v&#x3D;100z \Rightarrow v&#x3D;0, 9u&#x3D;10z \Rightarrow u&#x3D;0,z&#x3D;0\\<br>\therefore n&#x3D;\overline{xy000},xy \in {10,11,\cdots 99}\\</p>
+<p>\\<br>$$<br>$\therefore 90$个</p>
+<p>例2：有多少形如$\overline{37abc}$的五位数，满足$\overline{37abc},\overline{37bca},\overline{37cab}$都能被37整除？</p>
+<p>$$<br>\\<br>37 \mid \overline{37abc}&#x3D;37 \times 1000+ \overline{abc} \Leftrightarrow 37 \mid \overline{abc} \\<br>$$<br>设<br>$$<br>\\<br>x&#x3D;\overline{abc},y&#x3D;\overline{bca},z&#x3D;\overline{cab}\\<br>10x-y&#x3D;999a,10t-z&#x3D;999b,10z-x&#x3D;999c, 999&#x3D;37 \times 27 \\<br>37 \mid x \Rightarrow 37 \mid y \Rightarrow 37 \mid z<br>$$<br>由x,y,z地位对等性，只要有一个为37倍数，则其他都为37倍数，问题转化为<br>$$<br>0,1, \cdots, 999 \\<br>$$<br>中有多少个37倍数<br>$$<br>\Leftrightarrow[\frac{999}{37}]+1&#x3D;28 \\<br>$$<br> 例3：不存在整数，将它的首位移到末尾后为原数的两倍.</p>
+<p>设存在这样的整数$N$，设a为N的首位数字，N为n位数.则<br>$$<br>\\<br>10N-a \times 10 ^n+a&#x3D;2N  \Rightarrow 8N&#x3D; \underbrace{99\cdots9}<em>{n} a\\<br>(8,\underbrace{99\cdots9}</em>{n} )&#x3D;1 \therefore 8  \mid a<br>$$<br>因为a为首位数字，则$a&#x3D;8$,进而<br>$$<br> N&#x3D;\underbrace{99\cdots9}_{n}<br>$$<br> 矛盾.</p>
+<p>（2)，若一个正整数首位移到末尾，得到新数是原来的k倍，问k在何时能成立？</p>
+<p>$$<br>\\<br>10N-a \times 10 ^n+a&#x3D;kN  \Rightarrow (10-k)N&#x3D; \underbrace{99\cdots9}<em>{n} a\\<br>$$<br>k&#x3D;1:<br>$$<br>N&#x3D; \underbrace{aa\cdots a}</em>{n}<br>$$<br>满足.</p>
+<p>当$k&#x3D;9,8,6,5,2$时,<br>$$<br>(10-k,\underbrace{99\cdots9}<em>{n} a)&#x3D;1<br>$$<br>则 $a&#x3D;10-k,N&#x3D;\underbrace{99\cdots9}</em>{n}$,矛盾.</p>
+<p>$$<br>k&#x3D;7:N&#x3D;\underbrace{33\cdots3}<em>{n}a \\<br>$$<br>N首位$ \geq 3a$矛盾.<br>$$<br>k&#x3D;4:2N&#x3D;\underbrace{33\cdots3}</em>{n}a \cdots<br>$$<br>矛盾<br>$$<br>\\<br>k&#x3D;3: 7N&#x3D;\underbrace{99\cdots9}_{n}a<br>\\<br>$$</p>
+<ol>
+<li><p>若$(7,\underbrace{99\cdots9}_{n})&#x3D;1$显然不成立</p>
+</li>
+<li><p>若$7 \mid $设$n&#x3D;6p$<br>$$<br>N&#x3D;\underbrace{142857\cdots142857a \Rightarrow }_{p}a \leq 2 \\<br>$$</p>
+</li>
+</ol>
+<p>$$<br>a&#x3D;1，N&#x3D;\underbrace{142857\cdots142857}<em>{p} \\<br>a&#x3D;2，N&#x3D;\underbrace{285714\cdots285714}</em>{p} \\<br>$$</p>
+<p>例4 求满足所有下列条件的四位数，能被111整除，且除得的商等于该四位数的各位数码之和。</p>
+<p>设为<br>$$<br>\overline{abcd}:\frac{\overline{abcd}}{111}&#x3D;\frac{999a+111b+a-11b+10c+d}{111}\\<br>&#x3D;9a+b+\boxed{\frac{a-11b+10c+d}{111}}_{\in Z} \in \mathbb{N^*}\\<br>-98\leq a-11b+10c+d\leq 9+90+9&#x3D;108 \\<br>$$<br>由整除性质，<br>$$<br>a-11b+10c+d&#x3D;0 \Rightarrow a+10c+d (1) \\<br>9a+b &#x3D;a+b+c+d \Rightarrow 8a&#x3D;c+d(2) \\<br>(1),(2)\Rightarrow 11b&#x3D;9(a+c) \leq 99 \Rightarrow 1 \leq a+c \leq 11,11 \mid(a+c) \Rightarrow a+c&#x3D;11(3) \\<br>(2)\Rightarrow 8a \leq 18 \Rightarrow a \leq 2<br>$$<br>若a&#x3D;1:<br>$$<br>(3)\Rightarrow c&#x3D;10, \\<br>$$<br>矛盾</p>
+<p>若a&#x3D;2:<br>$$<br>(3)\Rightarrow c&#x3D;9,\Rightarrow d&#x3D;6,b&#x3D;9 \\<br>\therefore \overline{abcd}&#x3D;2997<br>$$<br>例5：求出具有如下性质的1最大正整数：末尾不是0，删除某位数（非首位）后，是原数的因数。</p>
+<p>设<br>$$<br>\overline{axc}<br>$$<br>其中x表示删去的数字，设c占n位，<br>$$<br>\\<br>\overline{axc}&#x3D;10^{n+1}a+10^nx+c,\overline{ac}&#x3D;10^na+c \\<br>\gamma&#x3D;\frac{\overline{axc}}{\overline{ac}}&#x3D;\frac{10^{n+1}a+10^nx+c}{10^na+c}<br>\in \mathbb{N*}\\<br> \gamma-10&#x3D;\frac{10^nx-9c}{10^na+c} \leq \frac{10^nx}{10^na}&#x3D;\frac{x}{a}\leq\frac{9}{1}&#x3D;9 \\<br>$$<br>令<br>$$<br>l&#x3D;r-10 \in Z<br>$$<br>则上式化为<br>$$<br>(x-la)10^n&#x3D;(l+9)c\cdots(1) \\<br>$$<br>若<br>$$<br>l&lt;0:l&gt;-9,l \neq0<br>$$</p>
+<p>$$<br>\\<br>\therefore -9&lt;l&lt;0,0&lt;l \leq 9<br>$$</p>
+<p>下证a是一位数，若l&gt;0,<br>$$<br>(1)\Rightarrow x-la&gt;0 \Rightarrow a&lt; \frac{x}l \leq \frac{9}1&#x3D;9 \\<br>$$<br>若l&lt;0:<br>$$<br>x-la&#x3D;\frac{(l+9)c}{10^n}&lt;\frac{9c}{10^n}&lt;\frac{9 \times 10^n}{10^n}&#x3D;9 \\<br>\Rightarrow -la&lt;9-x \leq 9 \Rightarrow a &lt;\frac{9}{-l} \leq \frac{9}1 &#x3D;9<br>$$<br>证毕.下求最大n。由于c末尾非0，可以知道c不同时含有素因子2和5.</p>
+<p>（1） c中不含素因子2：<br>$$<br>l+9 \leq 18 \Rightarrow l+9<br>$$<br>最多提供<br>$$<br>2^4 \Rightarrow n \leq 4<br>$$</p>
+<p>$$<br>n-4:c&#x3D;625(x-7a)\cdots (2) \\<br>$$</p>
+<p>$$<br>7a&lt;x \leq 9 \Rightarrow a&#x3D;1 \Rightarrow c&#x3D;625(x-7) \\<br>x&#x3D;9,c&#x3D;1250<br>$$</p>
+<p>矛盾。<br>$$<br>\\<br>\therefore x-8,c&#x3D;625,\overline{axc}&#x3D;180625<br>$$<br>(2)c中不含有素因子5：<br>$$<br>l+9<br>$$<br>至多提供5，<br>$$<br>\Rightarrow n \leq 1<br>$$<br>综上所求最大n为180625.</p>
+<p>例6：三进制中29位数12112211122211112222化成九进制之后左数第二位数是几？<br>$$<br>1 \times 3^{19}+2 \times 3 ^{18}+ \cdots \\<br>&#x3D;3 \times 3^{18}+2 \times 3 ^{18}+3 \times 3^{16}+1 \times 3 ^{18} \\<br>&#x3D;5 \times 3^{18}+4 \times 3^{16}+\cdots \\<br>&#x3D;5 \times 9^{9}+4 \times 9^{8}+\cdots \\<br>$$<br>例7：十进制中999其他进制中是否可以表示成一个各位数字和是27的三位数？</p>
+<p>解：设r进制<br>$$<br>\overline{xyz}<br>$$<br>满足要求<br>$$<br>\begin{cases}<br>x+y+z&#x3D;27 \cdots (1)\\<br>r^2x+ry+z&#x3D;999 \cdots(2) \\<br>\end{cases} \\<br>$$</p>
+<p>$$<br>(2)-(1):(r^2-1)x+(r-1)y&#x3D;972 \Rightarrow (r-1)((r+1)x+y)&#x3D;972&#x3D;2^2 \times 3^5<br>$$</p>
+<p>$$<br>\\<br>(r-1) \mid 2^2 \times 3^5,(2) \Rightarrow r \leq 999 \Rightarrow r \leq 31,r \geq 11 \\<br>\therefore 10 \leq r-1 \leq 30 \therefore r-1&#x3D;12,18,27 \Rightarrow 13,19,28<br>$$</p>
+<p>将十进制999化成13，19，28进制，:<br>$$<br>(5(11)(11))<em>{13},(2(14)(11))</em>{19},(17(91))<em>{28} \\<br>$$<br>例8，数列：1，3，4，9，10，12，13记为<br>$$<br>{a_n} \\<br>$$<br>从小到大排列，或为3的方幂，或是若干个不同3的方幂的和，<br>$$<br>a</em>{100}&#x3D;?<br>$$</p>
+<p>$$<br>n,\quad a_n\\<br>1,\quad 1&#x3D;3^0   \\<br>2,\quad 3&#x3D;1\times 3^1+ 0 \times 3^0  \\<br>3,\quad 4&#x3D;1\times 3^1+ 1 \times 3^0   \\<br>4,\quad 9&#x3D;1\times 3^2+ 0 \times 3^1+0 \times 3^2   \\<br>5,\quad 10&#x3D;1\times 3^2+ 0 \times 3^1+1 \times 3^2   \\<br>6,\quad  12&#x3D;1\times 3^2+ 1 \times 3^1+0 \times 3^2  \\<br>\cdots \\</p>
+<p>$$</p>
+<p>则三进制分别为$1,10,11,100,101,110 \\$,</p>
+<p>二进制<br>$$<br>1，10，11，100，101，101，110  \Rightarrow<br>$$<br>十进制<br>$$<br>1,2,3,4,5,6 \\<br>$$<br>则<br>$$<br>(100)<em>{10} \rightarrow 1100100_2 \Rightarrow 1100100 \Rightarrow 1 \times 3^6 +1 \times 3^5 + 1 \times 3^2 &#x3D;a</em>{100}&#x3D;981<br>$$<br>例9：</p>
+<p>实数$A,B$十进制表示为<br>$$<br>0.a_1a_2\cdots a_k&gt;0,B&#x3D;0.b_1b_2\cdots b_k&gt;0<br>$$<br>设S为满足<br>$$<br>0.c_1c_2 \cdots c_k &lt;A,0.c_kc_{k-1}\cdots c_1&lt;B \\<br>$$<br>的个数，同样, $c_k$ ,$c_1$可以为0，即<br>$$<br>0.c_1c_2 \cdots c_r ,(c_r \neq 0) \quad 0.c_1c_2 \cdots c_r0\cdots0<br>$$<br>视为等同。证明<br>$$<br>|S-10^kAB| \leq 9k<br>$$<br>解：</p>
+<p>$$<br>\\ 0.c_1c_2 \cdots c_k<br>$$<br>满足题设<br>$$<br>\Leftrightarrow \exist t \in{1,2, \cdots k}<br>$$<br>使,<br>$$<br>0.c_1c_2 \cdots c_{t-1}&#x3D;0.a_1a_2 \cdots a_{t-1},c_t &lt;a_t ,(1) \\<br>0.c_kc_{k-1}\cdots c_{t+1}&lt;0.b_1b_2\cdots b_{k-t},(2) \\<br>$$<br>或<br>$$<br>0.c_1c_2 \cdots c_{t-1}&#x3D;0.a_1a_2 \cdots a_{t-1},c_t &lt;a_t ,(1) \\<br>0.c_kc_{k-1}\cdots c_{t-1}&#x3D;0.b_1b_2\cdots b_{k-t},(3) \\<br>0.c_kc_{k-1}\cdots c_1&lt;0.b_1b_{2}\cdots b_k,(4) \\<br>$$<br>对后一种情况，<br>$$<br>c_t<br>$$<br>最多有$a_t$种选择。<br>$$<br>(1)\Rightarrow c_1,c_2 \cdots c_{t-1}<br>$$<br>唯一确定，由<br>$$<br>(3):c_t+1 \cdots c_{k-1}<br>$$<br>唯一确定.所以对于这种情况，对s的贡献最多是$a_tt$.</p>
+<p>对前一种情况：<br>$$<br>0.c_1c_2\cdots c_{t-1},\quad c_t,\quad c_{t+1}c_{t+2}<br>\cdots c_{k-1}c_k \\c_t<br>$$<br>最多a_t种，<br>$$<br>c_{t+1}c_{t+2}<br>\cdots c_{k-1}c_k<br>$$<br>最多有<br>$$<br>b_1b_2\cdots b_{k-t}<br>$$<br>种取值。此类情况对s的贡献最多是<br>$$<br>a_t \times \overline{b_1b_2\cdots b_{k-t}} \\<br>\therefore S \leq \sum_{t&#x3D;1}^{k}(a_t \times \overline{b_1b_2\cdots b_{k-t}}+\boxed{a_t})<br>\leq \boxed{9k}+\sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}} \\</p>
+<p>S \geq \sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}}<br>$$<br>接下来要对<br>$$<br>\boxed{\sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}} }<br>$$<br>进行估值，<br>$$<br>\\<br>B&#x3D;0.b_1b_2\cdots b_{k-t}b_{k-t+1}\cdots b_{k}&#x3D;0.b_1b_2\cdots b_{k-t}+0.\underbrace{00\cdots0}<em>{k-t}b</em>{k-t+1}\cdots b_k \\<br>\Rightarrow  &#x3D;0.b_1b_2\cdots b_{k-t}&#x3D;B-0.\underbrace{00\cdots0}<em>{k-t}b</em>{k-t+1}\cdots b_k  \\<br>\Rightarrow  \overline{b_1b_2\cdots b_{k-t}} &#x3D;10^{k-t}B-0.b_{k-t+1}\cdots b_k<br>\\<br>\therefore \sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}} &#x3D;<br>\sum_{t&#x3D;1}^{k}a_t \times\ (10^{k-t}B-0.b_{k-t+1}\cdots b_k )\\<br>&#x3D;\sum_{t&#x3D;1}^{k}(\ 10^{k-t}a_tB-a_t\times0.b_{k-t+1}\cdots b_k )\\<br>&#x3D;\sum_{t&#x3D;1}^{k}\ 10^{k}a_tB\times 10^{-t}B-\sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k \\<br>&#x3D;10^{k}B\sum_{t&#x3D;1}^{k}\ (a_t\times 10^{-t})-\sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k\\<br>&#x3D;10^k AB-\sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k<br>$$<br>其中<br>$$<br>0 \leq \sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k&lt;9k \\<br>\therefore 10^kAB&lt;\sum_{t&#x3D;1}^{k} a_t \times \overline{b_1b_{2}\cdots b_k} \leq 10 ^kAB \\<br>\therefore<br>10^kAB-9k&lt;\sum_{t&#x3D;1}^{k} a_t \times \overline{b_1b_{2}\cdots b_k}  \leq S \leq 9k+10^kAB \Rightarrow |S-10^kAB| \leq 9k \\<br>$$</p>
 
       
     </div>
@@ -472,7 +602,7 @@ $$
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
