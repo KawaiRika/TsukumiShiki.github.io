@@ -263,10 +263,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-04-14 21:18:08 / Modified: 17:47:23" itemprop="dateCreated datePublished" datetime="2022-04-14T21:18:08+08:00">2022-04-14</time>
+              <time title="Created: 2022-04-14 21:18:08" itemprop="dateCreated datePublished" datetime="2022-04-14T21:18:08+08:00">2022-04-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-15 16:59:48" itemprop="dateModified" datetime="2022-04-15T16:59:48+08:00">2022-04-15</time>
+              </span>
 
           
 
@@ -291,7 +297,46 @@
 <p>定理1：<br>$$<br>a,b \in \mathbb{Z} \neq0\Rightarrow \boxed{v_p(ab)&#x3D;v_p(a)+v_p(b),v+p(a+b) \geq \min {v_p(a),v_p(b)}}\\<br>$$<br>证</p>
 <p>$$<br>a&#x3D;a&#x3D;p^{v_p(a)}m,b&#x3D;p^{v_p(b)}n,(m,p)&#x3D;(n,p)&#x3D;1 \\<br>ab&#x3D;p^{v_p(a)+v_p(b)}mn,(mn,p)&#x3D;1\\<br>\therefore v_p(ab)&#x3D;v_p(a)+v_p(b)</p>
 <p>\\<br>$$<br>不妨设<br>$$<br>v_p(a) \geq v_p(b),a+b&#x3D;p^{v_p(a)}m+p^{v_p(b)}n&#x3D;p^{v_p(a)}(p^{v_p(a)<br>-v_p(b)}m+n) \\<br>\Rightarrow p^{v_p(b) }\mid a+b \Rightarrow v_p(a+b) \geq v_p(b)&#x3D; \min{v_p(a),v_p(b)}<br>$$<br>推论：对任意非零整数a,设<br>$$<br>n \in N*  \Rightarrow v_p(a^n)&#x3D;nv_p(a)<br>$$<br>证:<br>$$<br>v_p(a^n)&#x3D;v_p(\underbrace{aa\cdots a}_{n})&#x3D;nv_p(a)<br>$$</p>
-<p>例1：正整数$$a,b,c$$满足<br>$$<br>a+b+c&#x3D;407,10^n \mid abc<br>$$</p>
+<p>例1：正整数$$a,b,c$$满足<br>$$<br>a+b+c&#x3D;407,10^n \mid abc<br>$$<br>求n最大值.</p>
+<p>解：显然<br>$$<br>n&#x3D;\min{v_2(abc),v_5(abc} \\<br>$$</p>
+<p>$$<br>v_5(abc)&#x3D;v_5(a)+v_5(b)+v_5(b),\\<br>$$</p>
+<p>$$<br>5 \nmid 407 \Rightarrow a,b,c<br>$$</p>
+<p>最多有两个5的倍数，不妨设<br>$$<br>5 \mid a, 5 \mid b \Rightarrow 5 \nmid 407 \Rightarrow v_5(a) \leq 3,v_5(b) \leq 3<br>$$</p>
+<p>否则若<br>$$<br>v_5(a) &gt;3 \Rightarrow a \geq 5^4&#x3D;625&gt;407<br>$$<br>矛盾,<br>$$<br> \therefore v_5(abc) \leq 3+3 &#x3D;6  \Rightarrow n \leq 6<br>$$</p>
+<p>构造：<br>$$<br>a \geq 125,<br>$$<br>设<br>$$<br>n&#x3D;125k,(k \in N^*) \\<br>125k \leq 407-125 \Rightarrow k \leq2 2 \\<br>$$</p>
+<p>$k&#x3D;2$时<br>$$<br>b&#x3D;5^3 \times 2,a&#x3D; 5^3,c&#x3D;2^5<br>$$<br>此时<br>$$<br>v_5(abc)&#x3D;6,v_2(abc)&#x3D;6 \\<br>\therefore 10^6 \mid\mid abc<br>$$</p>
+<p>定理2：若a,b为非零整数，则对所有素数p<br>$$<br>\boxed{a \mid b \Leftrightarrow v_p(a) \leq v_p(b)}<br>$$<br>证<br>$$<br>\Longrightarrow : \\<br>a \mid b \Rightarrow b&#x3D;ac, c \in Z \Rightarrow v_p(b)&#x3D;v_p(ac)<br>&#x3D;v_p(a)+v_p(c) \geq v_p(a)  \\<br>$$</p>
+<p>$$<br>\\<br>\Longleftarrow :\\<br>v_p(a) \leq v_p(b)<br>$$</p>
+<p>对所有素数p成立<br>$$<br>\Leftrightarrow \frac{b}{a}&#x3D;\frac{\prod_{p}p^{v_p(b)}}{\prod_{p}p^{v_p(a)}} &#x3D;\prod_{p}p^{v_p(b)-v_p(a)} \in Z \\<br>\Rightarrow a\mid b.<br>$$</p>
+<p>推论<br>$$<br>a,b \in X \neq 0, n \in N^*, a^n \mid b^n \Leftrightarrow a \mid b<br>$$</p>
+<p>证：<br>$$<br>a^n \mid b^n \Leftrightarrow v_p(a^n) \leq v_p(b^n)<br>$$<br>对所有素数p成立<br>$$<br>\\<br>nv_p(a) \leq nv_p(b) \\<br>\Leftrightarrow v_p(a) \leq v_p(a) \\<br>\Leftrightarrow a \mid b<br>$$</p>
+<p>定理3：<br>$$<br>a,n \in N*,<br>$$<br>a是一个n次方数<br>$$<br>\Leftrightarrow n \mid v_p(a)<br>$$</p>
+<p>对所有素数p成立.</p>
+<p>证：<br>$$<br>\Rightarrow: a&#x3D;b^n, b \in Z,v_p(a)&#x3D;v_p(b^n)&#x3D;nv_p(b) \equiv 0(\mod n) \\<br>\Rightarrow n \mid v_p(a)<br>$$</p>
+<p>$$<br>\Leftarrow：<br>$$<br>若<br>$$<br>n \mid v_p(a)<br>$$<br>对所有整数p成立，则令<br>$$<br>v_p(a)&#x3D;nb_p,b_p \in Z<br>$$<br>令b<br>$$<br>b&#x3D; \prod_{p}p^{b_p}<br>$$</p>
+<p>则<br>$$<br>b^n&#x3D;\prod_{p}p^{nb_p}&#x3D;\prod_{p}p^{v_p(a)}&#x3D;a<br>$$<br>推论:<br>$$<br>a,b \in  N^*,(a,b)&#x3D;1,ab<br>$$<br>为n次方数，则<br>$$<br>a,b<br>$$<br>都是n次方数.</p>
+<p>证：设<br>$$<br>ab&#x3D;c^n<br>$$<br>对所有素数p,有<br>$$<br>v_p(ab)&#x3D;v_p(a)+v_p(b)&#x3D;nv_p(c) \\<br>$$</p>
+<p>$$<br>\because (a,b)&#x3D;1, \therefore p<br>$$<br>不能同时整除<br>$$<br>a,b<br>$$</p>
+<p>$$<br>\therefore v_p(a),v_p(b)<br>$$<br>中有一个为0，另一个为<br>$$<br>v_p(c)<br>$$</p>
+<p>$$<br>\therefore n \mid v_p(a),n \mid v_p(b)<br>$$<br>对所有整数都成立</p>
+<p>$$<br>\therefore a,b<br>$$<br>都为n次方数</p>
+<p>定理4：对所有非零整数<br>$$<br>a,b,<br>$$<br>有<br>$$<br> v_p(a,b)&#x3D;\min{v_p(a),v_p(b)}, v_p[a,b]&#x3D;\max{v_p(a),v_p(b)},<br>$$</p>
+<p>例2：证明:对所有<br>$$<br>n \geq2,[1,2,\cdots n] \leq n^{\pi(n)}<br>$$</p>
+<p>引理：</p>
+<p>$$<br>n \geq 2, n\in Z,p<br>$$<br>为素，则<br>$$<br>V_p[1,2,\cdots n]&#x3D; [\log_pn]<br>$$<br>引理:证明：由定理4可得<br>$$<br>V_p[1,2,\cdots n] &#x3D;\max_{1 \leq i\leq n}V_p(i)<br>$$</p>
+<p>设<br>$$<br>[\log_p n]&#x3D;k, k \leq\log_p n &lt;k+1 \Rightarrow p^k \leq n &lt; p^{k+1}<br>$$</p>
+<p>显然1，2，… n都不是<br>$$<br>p ^{k+1}<br>$$<br>倍数.</p>
+<p>$$<br>\therefore \max_{1 \leq i\leq n}V_p(i) &#x3D;V_p(p^k)&#x3D;k<br>$$</p>
+<p>由前述<br>$$<br>p^k \leq b &lt;p ^{k+1},V_p[1,2,\cdots n]&#x3D;k \\<br>\therefore p^{V_p[1,2,\cdots n]}&#x3D;p^k \leq n \\<br>p_1{V_{p_1}[1,2,\cdots n]} \leq n  \\<br>p_2{V_{p_2}[1,2,\cdots n]} \leq n \\<br>\cdots \cdots \\<br>p_m{V_{p_m}[1,2,\cdots n]} \leq n \\<br>$$</p>
+<p>其中<br>$$<br>p_1,p_2, \cdots p_m<br>$$<br>为<br>$$<br>[1,2, \cdots n]<br>$$<br>所有素因子.对上述式求乘积得到</p>
+<p>$$<br>\prod_{p \mid [1,2,\cdots n]}p^{V_p([1,2,\cdots n])} \Rightarrow [1,2,\cdots n] \leq n^{\pi (n)}<br>$$</p>
+<p>例3：是否存在正整数的无限集，使其中任何非空子集元素之和不是整数的高次幂?</p>
+<p>$$<br>a_n&#x3D;2^n \cdot 3^{n+1}, n \in N^*,A &#x3D; {a_1,a_2, \cdots}<br>$$</p>
+<p>设<br>$$<br>i_1&lt;i_2 &lt; \cdots &lt;i_k<br>$$<br>是一个非空子集中的元素的下标，</p>
+<p>这些元素之和<br>$$<br>S&#x3D;a_{i_1}+a_{i_2}+\cdots a_{i_k} \\<br>&#x3D;2^{i_1}+3^{i_1+1}+2^{i_2}+3^{i_2+1}+\cdots +2^{i_k}+3^{i_k+1} \\<br>&#x3D;2^{i_1}(3^{i_1+1}+2^{i_2-i_1}+3^{i_2+1}+\cdots +2^{i_k-i_1}+3^{i_k+1}) \\<br>$$</p>
+<p>易知括号里的为奇数，则<br>$$<br>V_2(s)&#x3D;i_1<br>$$<br>同理<br>$$<br>V_3(s)&#x3D;i_1+1 \\<br>\therefore (V_2(s),V_3(s) )&#x3D;1 \Rightarrow<br>$$</p>
+<p>$$<br>v_2(s),v_2(s)<br>$$<br>不能被同一个大于1的整数n整除。</p>
+<p>$$<br>\therefore S<br>$$<br>不是任何大于1的整数n的次幂.</p>
 
       
     </div>
