@@ -145,6 +145,98 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/20/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%20LTE%E5%BC%95%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/20/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%20LTE%E5%BC%95%E7%90%86/" class="post-title-link" itemprop="url">“素因数分析 LTE引理”</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-04-20 06:26:18" itemprop="dateCreated datePublished" datetime="2022-04-20T06:26:18+08:00">2022-04-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-22 03:10:46" itemprop="dateModified" datetime="2022-04-22T03:10:46+08:00">2022-04-22</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+
+
+<p>素因数分析之升幂定理:</p>
+<p>引理：<br>$$<br>(1):a,b\in Z  ,p \in P, p \mid (a-b) \rightarrow p^2 \mid a^p-b^p \\<br>(2):a,b \in Z, p \in P , l \in N^*, p^l \mid (a-b) \rightarrow p^{l+1} \mid a^p-b^p<br>$$</p>
+<p>证：显然只需证（1）：<br>$$<br>\\<br>a^p&#x3D;(a-b+b)^p&#x3D;(a- b)^p+p(a-b)^{p-1}b+\frac{p(p-1)}2 (a-b)^{p-2}+\cdots +p(a-b)b^{p-1}+b^p\\<br>$$<br>显然除了最后一项，其他项都是p^2的倍数,<br>$$<br>\therefore p^2 \mid a^p-b^p<br>$$</p>
+<p>定理1：<br>$$<br>a,b\in Z, p \in P, p\mid (a-b)<br>$$<br>则对所有的正整数c,<br>$$<br>v_p(a^c-b^c) \geq v_p(a-b)+v_p(c)<br>$$</p>
+<p>$$<br>v_p(\frac{a^c-b^c}{a-b}) \geq v_p(c)<br>$$</p>
+<p>证：设+<br>$$<br>k&#x3D;v_p(c),l&#x3D;v_p(a-b) \Rightarrow p^l \mid a-b,<br>$$<br>由引理.<br>$$<br>p^{l+1} \mid a^p-b^p,p^{l+2} \mid a^{p^2}-b^{p^2},p^{l+k} \mid a^{p^k}-b^{p^k}<br>\\<br>\because p^k \mid c \therefore a^{p^k}-b^{p^k} \mid a^{c}-b^{c} \\<br>\therefore p^{l+k} \mid a^{c}-b^{c} \Leftrightarrow v_p(a^c-b^c) \geq v_p(a-b)+v_p(c)<br>$$</p>
+<p>例1：设<br>$$<br>n \in N^*,a\neq b \in Z, n \mid (a^n-b^n),<br>$$<br>求证<br>$$<br>n \mid \frac{a^n-b^n}{a-b}<br>$$<br>分析：只需证对n的任意素因子p,都有<br>$$<br>v_p(\frac{a^n-b^n}{a-b}) \geq v_p(n)<br>$$<br>证：若<br>$$<br>p \mid a-b<br>$$<br>由定理1，<br>$$<br>v_p(\frac{a^n-b^n}{a-b}) \geq v_p(n) \Rightarrow n \mid \frac{a^n-b^n}{a-b}<br>$$</p>
+<p>若<br>$$<br>(p,a-b)&#x3D;1<br>$$</p>
+<p>$$<br>v_p(\frac{a^n-b^n}{a-b}) &#x3D; v_p(a^n-b^n) \geq v_p(n) \Rightarrow n \mid \frac{a^n-b^n}{a-b}<br>$$</p>
+<p>证毕.</p>
+<p>定理2：设p为奇素数，整数a,b不是p的倍数，使得<br>$$<br>p \mid a-b<br>$$<br>则对所有的<br>$$<br>n \in N^*<br>$$<br>有<br>$$<br>v_p(a^n-b^n)&#x3D;v_p(a-b)+v_p(n)<br>$$</p>
+<p>证：如果正整数n满足题设，则称n为好数。下证：如果m,n是好数，则mn也是好数.</p>
+<p>$$<br>v_p(a^{mn}-b^{mn})&#x3D;v_p((a^{m})^n-(b^{m})^n)&#x3D;v_p(a^m-b^m)+v_p(n)&#x3D;v_p(a-b)+v_p(m)+v_p(n)&#x3D;v_p(a-b)+v_p(mn)<br>$$<br>显然1是好数，现在只需证任何一个素数q是好数。</p>
+<p>若<br>$$<br>q \neq p<br>$$<br>只需证<br>$$<br>\frac{a^q-b^q}{a-b}&#x3D;a^{q-1}+a^{q-2}b+\cdots+b^{q-1}<br>$$<br>不是p的倍数<br>$$<br>p \mid a-b \Leftrightarrow a \equiv b (\mod p)<br>$$<br>又<br>$$<br>p \nmid a \Rightarrow p \nmid qa , \therefore\frac{a^q-b^q}{a-b} \equiv qa^{q-1} \not\equiv 0(\mod p)<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E6%9C%80%E5%B0%8F%E6%95%B0%E5%9B%A0%E5%AD%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -271,7 +363,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-15 17:16:08" itemprop="dateModified" datetime="2022-04-15T17:16:08+08:00">2022-04-15</time>
+                <time title="Modified: 2022-04-15 18:15:42" itemprop="dateModified" datetime="2022-04-15T18:15:42+08:00">2022-04-15</time>
               </span>
 
           
@@ -343,7 +435,7 @@
 <p>$$<br>v_p(a_1a_2\cdots a_{101})&#x3D; \sum_{i&#x3D;1}^{101}v_p(a_i)<br>$$<br>为偶数.</p>
 <p>证：<br>$$<br>v_p((a_1,a_2,\cdots,a_{101})) &#x3D; \min_{1 \leq i \leq 101}v_p(a_i)<br>$$</p>
 <p>由<br>$$<br>(a_1, \cdots a_{101})&#x3D;1 \\<br>\therefore  \min_{1 \leq i \leq101}v_p(a_i)&#x3D;0<br>$$<br>不妨设<br>$$<br>v_p(a) \geq v_p(a_2) \cdots \geq v_p(a_{101}) ,<br>$$</p>
-<p>则<br>$$<br>\therefore v_p(a_{101})&#x3D;0 \\<br>\because a_1a_2 \cdots a_{50 } \mid a_{51}a_{52} \cdots a_{101}<br>\therefore v_p(a_1a_2 \cdots a_{50 }) \\<br>\geq v_p(a_{51}a_{52} \cdots a_{101}) \\<br>\Leftrightarrow<br>v_p(a_{51})+v_p(a_{52})+\cdots +v_p(a_{100}) \geq v_p(a_{1})+v_p(a_{2})+ \cdots v_p(a_{50})<br>$$</p>
+<p>则<br>$$<br>\therefore v_p(a_{101})&#x3D;0 \\<br>\because a_1a_2 \cdots a_{50 } \mid a_{51}a_{52} \cdots a_{101}  \\<br>\therefore v_p(a_1a_2 \cdots a_{50 })<br>\leq v_p(a_{51}a_{52} \cdots a_{101}) \\<br>\Leftrightarrow<br>v_p(a_{51})+v_p(a_{52})+\cdots +v_p(a_{100}) \geq v_p(a_{1})+v_p(a_{2})+ \cdots v_p(a_{50})<br>$$</p>
 <p>又<br>$$<br>v_p(a_{51})+v_p(a_{52})+\cdots +v_p(a_{100}) \leq v_p(a_{1})+v_p(a_{2})+ \cdots v_p(a_{50})<br>$$</p>
 <p>$$<br>\therefore v_p(a_{51})+v_p(a_{52})+\cdots +v_p(a_{100}) &#x3D; v_p(a_{1})+v_p(a_{2})+ \cdots v_p(a_{50}) \\</p>
 <p>v_p(a_{1})&#x3D;v_p(a_{2})&#x3D; \cdots &#x3D;v_p(a_{100})  \\<br>\therefore <br>\sum_{i&#x3D;1}^{101}v_p(a_i)&#x3D;\sum_{i&#x3D;1}^{100}v_p(a_i) \equiv0 (\mod 2)<br>$$</p>
@@ -672,6 +764,115 @@ $$
   
   
 
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/18/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%20%E5%BC%BA%E4%B8%89%E8%A7%92%E4%B8%8D%E7%AD%89%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/03/18/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%20%E5%BC%BA%E4%B8%89%E8%A7%92%E4%B8%8D%E7%AD%89%E5%BC%8F/" class="post-title-link" itemprop="url">高斯函数</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-03-18 21:18:08" itemprop="dateCreated datePublished" datetime="2022-03-18T21:18:08+08:00">2022-03-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-20 06:25:40" itemprop="dateModified" datetime="2022-04-20T06:25:40+08:00">2022-04-20</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="素因数分析-强三角不等式"><a href="#素因数分析-强三角不等式" class="headerlink" title="素因数分析 强三角不等式"></a>素因数分析 强三角不等式</h2><head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+ 
+
+<p>定理：若p为素数,<br>$$<br>a,b \in Z ,v_p(a) \neq v_p(a),v_p(a+b)&#x3D;\min {v_p(a),v_p(b)}<br>$$</p>
+<p>证：<br>$$<br>a&#x3D;p^{v_p(a)}m,b&#x3D;p^{v_p(b)}n,(m,p)&#x3D;(n,p)&#x3D;1<br>$$<br>不妨设<br>$$<br>v_p(a)&gt;v_p(b),<br>$$<br>则<br>$$<br>a+ b&#x3D;p^{v_p(a)}m+p^{v_p(b)}n&#x3D;p^{v_p(b)}(p^{v_p(a)-v_p(b)}m+n) \\<br>\because p \nmid n, p \mid p^{v_p(a)-v_p(b)}, \therefore  p\nmid p^{v_p(a)-v_p(b)}m+n \\<br>\therefore  v_p(a+b)&#x3D;v_p(b)&#x3D;\min {v_p(a),v_p(b)}<br>$$</p>
+<p>例1：设m&gt;1是整数，则m是完全平方数的充要条件是对所有正整数n,<br>$$<br>(m+1)^2-m,(m+2)^2-m,\cdots,(m+n)^2-m,<br>$$<br>中至少有一个是n的倍数。</p>
+<p>证：必要性： 若<br>$$<br>m&#x3D;d^2,d \in Z<br>$$<br>则连续整数<br>$$<br>m+1-d,m+2-d, \cdots,m+n-d<br>$$<br>中必有一个n的倍数，设<br>$$<br>n \mid m+i-d,i&#x3D;1,2,\cdots,n<br>$$<br>而</p>
+<p>$$<br>m+i-d \mid (m+i)^2-d^2&#x3D;(m+i)^2-m,i&#x3D;1,2, \cdots n \\<br>\therefore n \mid (m+i)^2-m,i&#x3D;1,2,\cdots,n<br>$$<br>充分性：任取m素因子p,设<br>$$<br>v_p(m)&#x3D;k<br>$$<br>取<br>$$<br>n&#x3D;p^{k+1}<br>$$<br>，则<br>$$<br>p^{k+1} \mid (m+i)^2-m<br>$$<br>若<br>$$<br>v_p(m) \neq v_p((m+i)^2),<br>$$</p>
+<p>则根据刚才的定理</p>
+<p>$$<br>k+1\leq v_p((m+i)^2-m)&#x3D; \min { v_p(m), v_p((m+i)^2)} \leq  v_p(m)&#x3D;k \\<br>$$<br>矛盾,则<br>$$<br>v_p((m+i)^2)&#x3D; v_p(m)&#x3D; 2v_p(m+i)<br>$$<br>为偶，则m的每一个素因子指数都为偶数，得证。此题中条件为所有的整数n，则在必要性分析时可以按需要对n进行赋值.</p>
+<p>舒尔定理：设f为整系数非常数多项式，则存在无穷多素数，整除序列<br>$$<br>f(1),f(2), \cdots<br>$$<br>中至少一个非零项.</p>
+<p>证： 设<br>$$<br>\\<br>f(x)&#x3D;a_0+a_1x+ \cdots +a_nx^n, a_n \neq 0, a_i \in \mathbb{Z},i&#x3D;0,1,\cdots n<br>\\<br>$$<br>若<br>$$<br>a_0&#x3D;0,<br>$$<br>则对任意的素数<br>$$<br>p \mid f(p)<br>$$<br>而p足够大时，<br>$$<br>f(p) \neq 0<br>$$<br>此种情况下成立.</p>
+<p>若<br>$$<br>a_0 \neq n<br>$$<br>则<br>$$<br>f(a_0x)&#x3D;a_0+a_1 a_0 x+ \cdots +a_na_0^n x^n&#x3D;a_0(1+a_1x+ \cdots +a_n a_{0}^{n-1}x^n) \\<br>$$<br>令<br>$$<br>g(x)&#x3D;1+a_1x+ \cdots +a_na_0^{n-1}x^n<br>$$<br>非常数. 且存在整数k0使得所有的<br>$$<br>x\geq k_0<br>$$<br>都有<br>$$<br>|g(x)| \geq 2<br>$$<br>取<br>$$<br>g(k!), k \geq k_0<br>$$<br>的任意素因子<br>$$<br>p_k,p_k \mid g(k!), k! \mid g(k!)-1, \because (g(k!)-1,g(k!))&#x3D;1, \therefore (p_k, k!)&#x3D;1 \\<br>\Rightarrow p_k&gt;k,p_k \mid f(a_0k!)<br>$$<br>这样就得到能够整除序列<br>$$<br>f(1),f(2) ,\cdots<br>$$<br>中非零项无界的素数序列<br>$$<br>p_k, k \geq k_0<br>$$</p>
+<p>例2：求所有的整系数多项式f,使得只要<br>$$<br>(m,n)&#x3D;1,(f(m),f(n))&#x3D;1<br>$$<br>显然<br>$$<br>f(x)&#x3D; \pm x^k,k \in N<br>$$<br>符合要求，下证不存在其他的解.</p>
+<p>设<br>$$<br>f<br>$$<br>为一个解，记<br>$$<br>f(x)&#x3D;x^kg(x), k \in N, g(0) \neq 0<br>$$<br>若<br>$$<br>g(x)<br>$$<br>为常数，显然<br>$$<br>g&#x3D; \pm 1<br>$$<br>若<br>$$<br>g<br>$$<br>不是常函数，则由舒尔定理，存在无穷多素数p使得<br>$$<br>g(n) \equiv 0 (\mod p)<br>$$<br>有解，取这样一个素数p和n，满足p与<br>$$<br>g(0)<br>$$<br>互素,<br>$$<br>\because p \nmid g(0),p \mid g(n)\Rightarrow p \nmid g(n)-g(0) \\<br>n \mid g(n)-g(0) \therefore (p,n)&#x3D;1, \Rightarrow (n,n+p)&#x3D;1 \\<br>\Rightarrow (f(n),f(n+p))&#x3D;1<br>$$<br>但</p>
+<p>$$<br>p \mid g(n), p \mid g(n+p) \Rightarrow  p \mid f(n), p \mid f(n+p),<br>p \mid (f( n),f(n+p)) \\<br>$$<br>矛盾.综上，这个问题所有解只能是<br>$$<br>f(x)&#x3D; \pm x^k<br>$$</p>
+<p>例3：设<br>$$<br>f:N \rightarrow N<br>$$<br>是非常数函数，满足<br>$$<br>a-b \mid f(a)- f(b)<br>$$</p>
+<p>对所有的<br>$$<br>a,b \in N<br>$$<br>成立。证明，存在无穷多素数p使得<br>$$<br>p \mid f(c)<br>$$<br>对某个c成立。</p>
+<p>证：假设只有有限个素数<br>$$<br>p_1,p_2, \cdots, p_k<br>$$<br>能整除序列<br>$$<br>f(1),f(2)\cdots<br>$$<br>中至少一项，任取<br>$$<br>x \in N^*,f(x)&#x3D;p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k},\alpha_i \in N<br>$$</p>
+<p>设<br>$$<br>a_s&#x3D;sp_1^{\alpha_1+1}p_2^{\alpha_2+1}\cdots p_k^{\alpha_k+1}(s \in N^*)<br>$$<br>由已知：<br>$$<br>a_S \mid f(x+a_s)-f(x) \Rightarrow v_{p_i}(f(x+a_s)-f(x))\geq v_{p_i}(a_s)&#x3D;\alpha_i+1<br>$$<br>又<br>$$<br>f(x) \mid a_s \mid f(x+a_s)-f(x) \Rightarrow f(x) \mid f(x+a_s) \\<br>\Rightarrow v_{p_i}(f(x)) \leq v_{p_i}(f(x+a_s))<br>$$<br>则由三角不等式<br>$$<br>v_{p_i}(f(x+a_s)-f(x))&#x3D;v_{p_i}(f(x))&#x3D; \alpha_i \\<br>\therefore v_{p_i}(f(x))&#x3D;v_{p_i}(f(x+a_s)) \Rightarrow f(x+a_s)<br>$$<br>对所有<br>$$<br>s \in N^*<br>$$<br>成立</p>
+<p>$$<br>x+a_s-1 \mid f(x+a_s)-f(1)&#x3D;f(x)-f(1),\forall s \geq 1,s \in  Z<br>$$<br>成立.<br>$$<br>\\<br>\Rightarrow f(x)&#x3D;f(1)<br>$$<br>由x的任意性，f是常数，矛盾.所以存在无穷多素数p，使得p可以整除f(c)对某个c成立</p>
+<p>例4：证明：可以将N分割成100个集合，使得若<br>$$<br>a,b,c \in N<br>$$<br>满足<br>$$<br>a+99b&#x3D;c<br>$$<br>则a,b,c中至少有两个数属于同一个集合.</p>
+<p>解：令第i个集合包含i满足<br>$$<br>v_2(n) \equiv 1 (\mod 100),1 \leq i \leq 100<br>$$</p>
+<p>只需证<br>$$<br>v_2(a),v_2(b),v_2(c)<br>$$<br>至少有两个相同即可.现在进行分类讨论</p>
+<p>(1)若<br>$$<br>v_2(a)&#x3D;v_2(b)<br>$$<br>,则a,b在同一集合.</p>
+<p>(2)若<br>$$<br>v_2(a) \neq v_2(b): v_2(b)&#x3D;v_2(99b)\Rightarrow v_2(a) \neq v_2(99b)<br>$$</p>
+<p>由强三角不等式<br>$$<br>v_2(c)&#x3D;v_2(a+99b)&#x3D; \min {v_2(a),v_2(99b)}&#x3D;v_2(a) \or v_2(b)<br>$$<br>则c,a或c,b在同一集合.</p>
+<p>例5：若n<br>$$<br>n,k \in N^*<br>$$<br>则无论如何选择符号<br>$$<br>\pm \frac{1}{k}\pm \frac{1}{k+1}\pm \cdots \pm\frac{1}{k+n}<br>$$<br>都不是整数.</p>
+<p>分析：该式不是整数意味着通分完成后<br>$$<br>\frac{n}{m}<br>$$<br>做到<br>$$<br>m \nmid n<br>$$</p>
+<p>$$<br>m \mid n<br>$$</p>
+<p>的充要条件便是对每一个素因子<br>$$<br>p_i<br>$$<br>都做到<br>$$<br>v_{p_i}(m) \leq v_{p_i}(n)<br>$$<br>则根据题设不是整数的条件，m中自然可以找到一个素因子的指数大于n.</p>
+<p>设<br>$$<br>r&#x3D; \max_{k \leq j \leq k+n}v_{2}(j) ,k \in {k,k+1, \cdots  ,k+n}<br>$$<br>使得<br>$$<br>v_2(j)&#x3D;r<br>$$<br>下证不存在其他<br>$$<br>j’ \in {k,k+1,\cdots,k+n},v_{2}(j’)&#x3D;r<br>$$<br>不妨设<br>$$<br>j’&gt;j,j&#x3D;2^ra,j’&#x3D;2^rb,<br>$$<br>a,b都为奇数</p>
+<p>且<br>$$<br>b \geq a+2<br>$$<br>则<br>$$<br>j&lt;2^r(a+1)&lt;j’<br>$$</p>
+<p>$$<br>\therefore 2^r(a+1) \in {k,k+1, \cdots ,k+n}<br>$$<br>而<br>$$<br>v_2(2^r(a+1) ) \geq r+1<br>$$<br>这和<br>$$<br>{k,k+1,\cdots,k+n}<br>$$<br>中2进赋值最大者矛盾.所以存在唯一j在集合中使得<br>$$<br>v_{2}(j)&#x3D;r<br>$$<br>取最大值，则原式<br>$$<br>&#x3D;\frac{x}{y}\pm\frac{1}{j}&#x3D;\frac{xj+\pm y}{yj}, x,y \in Z<br>$$</p>
+<p>$$<br>\because v_2(y)&lt;r,v_2(xj) \geq r \\<br>\therefore v_2(xj \pm y )&#x3D;\min {v_2(xj),v_2(y)}&#x3D;v_2(y)&lt;r<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
 
   
 
@@ -738,7 +939,7 @@ $$
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
