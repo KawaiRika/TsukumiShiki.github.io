@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-25 03:52:11 / Modified: 11:11:00" itemprop="dateCreated datePublished" datetime="2022-04-25T03:52:11+08:00">2022-04-25</time>
+              <time title="Created: 2022-04-25 03:52:11 / Modified: 11:42:56" itemprop="dateCreated datePublished" datetime="2022-04-25T03:52:11+08:00">2022-04-25</time>
             </span>
 
           
@@ -223,22 +223,24 @@
 <p>$$<br>\therefore 2^a \cdot b<br>$$<br>中<br>$$<br>a&#x3D;v_2((2\cdot2009)!!)&#x3D;v_2(4018!!)&#x3D;v_2(2^{2009})+v_2(2009!)&#x3D;2009+2001&#x3D;4010<br>$$<br>显然b&#x3D;1，则<br>$$<br>\frac{ab}{10}&#x3D;401<br>$$</p>
 <p>例4：证明连续n个正整数的乘积是n!的倍数</p>
 <p>分析<br>$$<br>n! \mid (x+1)(x_2)\cdots(x+n),\forall x \in N \Leftrightarrow v_p((x+1)(x+2)\cdots (x+n)) \geq v_p(n!)<br>$$<br>对给定素数p,<br>$$<br>n_k<br>$$<br>是<br>$$<br>x+1,x+2 \cdots x+n<br>$$<br>中<br>$$<br>p^k<br>$$<br>的倍数的个数，<br>$$<br>n_k&#x3D;[\frac{x+n}{p^k}]-[\frac{x}{p^k}] \geq [\frac{n}{p^k}] \\<br>v_p((x+1)(x+2)\cdots (x+n)) &#x3D;n_1-n_2+2(n_2-n_3)+3(n-3-n_4)+\cdots \\<br>&#x3D;n_1+n_2+\cdots \geq [\frac{p}{n}]+[\frac{p}{n^2}]+[\frac{p}{n^3}]+\cdots &#x3D;v_p(n!)<br>$$</p>
-<p>关于<br>$$<br>n!<br>$$<br>的p进赋值的界限估计</p>
-<p>$$<br>n&gt;1,n  \in Z, p \in P:\frac{n}{p}-1&lt;v_p(n!)&lt;\frac{n}{p-1}<br>$$</p>
-<p>设<br>$$<br>p^K \le n, p^{K+1}&gt;n<br>$$</p>
+<p>关于 $n!$的p进赋值的界限估计:</p>
+<p>$$<br>n&gt;1,n  \in Z, p \in P:\quad \boxed{\frac{n}{p}-1&lt;v_p(n!)&lt;\frac{n}{p-1}}<br>$$</p>
+<p>设<br>$$<br>p^K \le n,\quad p^{K+1}&gt;n<br>$$</p>
 <p>$$<br>v_p(n!) &#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}] \leq \sum_{k&#x3D;1}^{K}\frac{n}{p^k} &lt;\sum_{k&#x3D;1}^{\infty}\frac{n}{p^k}&#x3D;\frac{\frac{n}{p}}{1-\frac{1}{p}}&#x3D;\frac{n}{p-1}<br>$$</p>
 <p>下界：</p>
 <p>$$<br>v_p(n!)&#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}] \geq [\frac{n}{p}]&gt;\frac{n}{p}-1<br>$$</p>
-<p>求所有的正整数<br>$$<br>n,k<br>$$<br>满足<br>$$<br>1^n+2^n+\cdots n^n&#x3D;k!<br>$$</p>
-<p>显然<br>$$<br>n&#x3D;k&#x3D;1<br>$$<br>是一组解，下证不存在其他的解.</p>
-<p>假设<br>$$<br>n&gt;1,k^k&gt;k!&gt;n^n \Rightarrow k&gt;n \cdots(1<br>)<br>$$<br>若n为奇，<br>$$<br>(n+2) \mid 2^n+3^n+\cdots +n^n<br>$$<br>注：<br>$$<br>(n+2) \mid i^n+(n+2-i)^n<br>$$<br>将n+2-i，i首位配对，每一对的和都是(n+2)的倍数.</p>
-<p>$$<br>\Rightarrow (n+2) \mid k!-1 \Rightarrow k&lt; n+2<br>$$<br>由（1),<br>$$<br>k&#x3D;n+1<br>$$<br>则<br>$$<br>(n+1)!&gt; n^n \Rightarrow n&lt;3 \\<br>$$<br>与n大于1且为奇数矛盾.则n为偶数，<br>$$<br>n&#x3D;2m.n \geq4 \Rightarrow k&gt;4 \Rightarrow4 \mid k \\<br>\because (2k+1)^{2m} \equiv1,(2k)^{2m} \equiv 0(\mod 4) \\<br>\therefore 1^n+2^n+\cdots+n^n \equiv m(\mod 4) \\<br>\therefore 4 \mid m \Rightarrow 8 \mid n \Rightarrow n&#x3D;2^st.s \geq 3,t \equiv1(\mod 2)<br>$$</p>
+<p>1 求所有的正整数$n,k$ 满足<br>$$<br>1^n+2^n+\cdots n^n&#x3D;k!<br>$$</p>
+<p>显然 $n&#x3D;k&#x3D;1$ 是一组解，下证不存在其他的解.</p>
+<p>假设<br>$$<br>n&gt;1,k^k&gt;k!&gt;n^n \Rightarrow k&gt;n \cdots(1<br>)<br>$$<br>若n为奇， $(n+2) \mid 2^n+3^n+\cdots +n^n$</p>
+<p>注：<br>$$<br>(n+2) \mid i^n+(n+2-i)^n<br>$$<br>将n+2-i，i首位配对，每一对的和都是(n+2)的倍数.</p>
+<p>$$<br>\Rightarrow (n+2) \mid k!-1 \Rightarrow k&lt; n+2<br>$$<br>由（1), $k&#x3D;n+1$,则 $(n+1)!&gt; n^n \Rightarrow n&lt;3 \\$</p>
+<p>与n大于1且为奇数矛盾.则n为偶数，<br>$$<br>n&#x3D;2m.n \geq4 \Rightarrow k&gt;4 \Rightarrow4 \mid k \\<br>\because (2k+1)^{2m} \equiv1,(2k)^{2m} \equiv 0(\mod 4) \\<br>\therefore 1^n+2^n+\cdots+n^n \equiv m(\mod 4) \\<br>\therefore 4 \mid m \Rightarrow 8 \mid n \Rightarrow n&#x3D;2^st.s \geq 3,t \equiv1(\mod 2)<br>$$</p>
 <p>对每个奇数i大于等于1小于n成立，由欧拉定理<br>$$<br>i^n&#x3D; (i^{2^s})^t &#x3D;(i^{\phi(2^{s+1})} )^t \equiv1(\mod 2^{s+1})<br>$$</p>
-<p>对偶数<br>$$<br>i,i^{n} \equiv 0(\mod 2^{s+1})<br>$$</p>
+<p>对偶数i,<br>$$<br>i^{n} \equiv 0(\mod 2^{s+1})<br>$$</p>
 <p>$$ {t}<br>\therefore 1^n+2^n+\cdots +n^n \equiv\frac{n}{2 } \equiv 2^{s-1}t(\mod 2^{s-1})<br>\\ \therefore v_2(1^n+2^n+\cdots +n^n)&#x3D;s-1<br>$$</p>
 <p>另一方面由前述定理<br>$$<br>v_2(k!)&gt;\frac{k}{2}-1&gt;\frac{n}{2}-1&#x3D;2^{s-1}t-1 \geq 2^{s-1}-1 \\<br>v_2(1^n+2^n+\cdots +n^n)&#x3D;s-1&#x3D;v_2(k!) &gt; 2^{s-1}-1 \Rightarrow s&gt;2^{s-1}<br>$$</p>
-<p>和<br>$$<br>s \geq 3<br>$$<br>矛盾.</p>
-<p>证明：对每个n&gt;1,方程<br>$$<br>\frac{x^n}{n!}+\frac{x^{n-1}}{(n-1)!}+\cdots+\frac{x^2}{2!}+\frac{x}{1}&#x3D;0<br>$$<br>没有有理根.</p>
+<p>和 $s \geq 3$ 矛盾.</p>
+<p>2 证明：对每个n&gt;1,方程<br>$$<br>\frac{x^n}{n!}+\frac{x^{n-1}}{(n-1)!}+\cdots+\frac{x^2}{2!}+\frac{x}{1}&#x3D;0<br>$$<br>没有有理根.</p>
 <p>证：设方程存在有理根a,<br>$$<br>\frac{a^n}{n!}+\frac{a^{n-1}}{(n-1)!}+\cdots+\frac{a^2}{2!}+\frac{a}{1}&#x3D;0<br>$$</p>
 <p>“首1多项式”:<br>$$<br>a^n+\boxed{ \frac{n!}{(n-1)!}a^{n-1}+\cdots+\frac{n!}{k!}a^k+\cdots+\frac{n!}{2!}a^2+n!a+n!}&#x3D;0<br>$$</p>
 <p>根据有理根定理, $a \in \mathbb{Z} $ </p>
