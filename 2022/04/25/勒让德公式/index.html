@@ -28,7 +28,7 @@
 <meta property="og:description" content="MathJax.Hub.Config({             tex2jax: {             skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],             inlineMath: [[&#39;$&#39;,&#39;$&#39;]]             }         });">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-04-24T19:52:11.000Z">
-<meta property="article:modified_time" content="2022-04-25T01:41:32.148Z">
+<meta property="article:modified_time" content="2022-04-25T02:45:20.945Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-25 03:52:11 / Modified: 09:41:32" itemprop="dateCreated datePublished" datetime="2022-04-25T03:52:11+08:00">2022-04-25</time>
+              <time title="Created: 2022-04-25 03:52:11 / Modified: 10:45:20" itemprop="dateCreated datePublished" datetime="2022-04-25T03:52:11+08:00">2022-04-25</time>
             </span>
 
           
@@ -204,8 +204,7 @@
 
 <h1 id="勒让德公式"><a href="#勒让德公式" class="headerlink" title="勒让德公式"></a>勒让德公式</h1><p>勒让德公式<br>$$<br>v_p(n!)&#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}]<br>$$<br>证：</p>
 <p>$$<br>v_p(n!)&#x3D;v_p(1)+v_p(2)+v_p(3)+\cdots+v_p(n) \cdots*\\<br>$$</p>
-<p>在1，2， …,n中，有<br>$$<br>[\frac{n}{p}]<br>$$<br>个p的倍数，<br>$$<br>[\frac{n}{p^2}]<br>$$<br>个<br>$$<br>p^2<br>$$<br>的倍数，以此类推.其中，是p的倍数不是<br>$$<br>p^2<br>$$<br>倍数在<br>$$<br>(*)<br>$$<br>中贡献为1，</p>
-<p>是p<br>$$<br>p^2<br>$$<br>倍数不是<br>$$<br>p^3<br>$$<br>倍数在<br>$$<br>(*)<br>$$<br>中贡献为2，以此类推</p>
+<p>在1，2， …,n中，有 $[\frac{n}{p}]$个p的倍数，$[\frac{n}{p^2}]$个$p^2$的倍数，以此类推.其中，是p的倍数不是$p^2$倍数在 $(<em>)$中贡献为1， 是$p^2$倍数不是 $p^3$ 倍数在<br>$$<br>(</em>)<br>$$<br>中贡献为2，以此类推</p>
 <p>$$<br>\therefore v_p(n!)&#x3D;1\cdot([\frac{n}{p}]-[\frac{n}{p^2}])+2\cdot([\frac{n}{p^2}]-[\frac{n}{p^3}])+3\cdot([\frac{n}{p^3}]-[\frac{n}{p^4}])+\cdots \\<br>&#x3D; [\frac{n}{p}]+[\frac{n}{p^2}]+[\frac{n}{p^3}]+\cdots<br>$$</p>
 <p>例1：（1）2012!的值的尾部连续的0的个数.</p>
 <p>解：显然求<br>$$<br>\min(v_5(2012!),v_2(2012!))&#x3D;v_5(2012!)&#x3D;[\frac{2012}{5}]+[\frac{2012}{5^2}]+[\frac{3012}{5^3}]+[\frac{3012}{5^4}]&#x3D;402+80+16+3&#x3D;501<br>$$</p>
@@ -240,6 +239,13 @@
 <p>对偶数<br>$$<br>i,i^{n} \equiv 0(\mod 2^{s+1})<br>$$</p>
 <p>$$ {t}<br>\therefore 1^n+2^n+\cdots +n^n \equiv\frac{n}{2 } \equiv 2^{s-1}t(\mod 2^{s-1})<br>\\ \therefore v_2(1^n+2^n+\cdots +n^n)&#x3D;s-1<br>$$</p>
 <p>另一方面由前述定理<br>$$<br>v_2(k!)&gt;\frac{k}{2}-1&gt;\frac{n}{2}-1&#x3D;2^{s-1}t-1 \geq 2^{s-1}-1 \\<br>v_2(1^n+2^n+\cdots +n^n)&#x3D;s-1&#x3D;v_2(k!) &gt; 2^{s-1}-1 \Rightarrow s&gt;2^{s-1}<br>$$</p>
+<p>和<br>$$<br>s \geq 3<br>$$<br>矛盾.</p>
+<p>证明：对每个n&gt;1,方程<br>$$<br>\frac{x^n}{n!}+\frac{x^{n-1}}{(n-1)!}+\cdots+\frac{x^2}{2!}+\frac{x}{1}&#x3D;0<br>$$<br>没有有理根.</p>
+<p>证：设方程存在有理根a,<br>$$<br>\frac{a^n}{n!}+\frac{a^{n-1}}{(n-1)!}+\cdots+\frac{a^2}{2!}+\frac{a}{1}&#x3D;0<br>$$</p>
+<p>“首1多项式”:<br>$$<br>a^n+\boxed{ \frac{n!}{(n-1)!}a^{n-1}+\cdots+\frac{n!}{k!}a^k+\cdots+\frac{n!}{2!}a^2+n!a+n!}&#x3D;0<br>$$</p>
+<p>根据有理根定理, $a \in \mathbb{Z}$ 由$n&gt;1$, 取n的任意素因数p,显然框起来的部分是n的倍数即<br>$$<br>n \mid \frac{n!}{k!}(k&#x3D;0,1,\cdots n-1), \quad \therefore n \mid a^n \Rightarrow p \mid a^n \Rightarrow p \mid a \\</p>
+<p>v_p(k!)&lt;\frac{k}{p-1}&lt;k (k \geq 1) \Rightarrow p^k \nmid k! \\<br>$$<br>设<br>$$<br>v_p(n!)&#x3D;r, p^k \mid a^k , p^k \nmid k! \Rightarrow p^{r+1} \mid \frac{n!}{k!}a^k (k&#x3D;1,2,\cdots n)<br>$$</p>
+<p>$$<br>\Rightarrow p^{r+1} \mid n! \Rightarrow v_p(n!) \geq r+1,<br>$$<br>和<br>$$<br>v_p(n!)&#x3D;r<br>$$<br>矛盾.</p>
 
     </div>
 
