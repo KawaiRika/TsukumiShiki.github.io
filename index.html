@@ -145,6 +145,226 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/28/%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/28/%E5%AE%8C%E5%85%A8%E5%B9%B3%E6%96%B9%E6%95%B0/" class="post-title-link" itemprop="url">完全平方数</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-04-28 12:21:09" itemprop="dateCreated datePublished" datetime="2022-04-28T12:21:09+08:00">2022-04-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-29 08:55:26" itemprop="dateModified" datetime="2022-04-29T08:55:26+08:00">2022-04-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="完全平方数"><a href="#完全平方数" class="headerlink" title="完全平方数"></a>完全平方数</h1><head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+
+
+<p>完全平方数即指的是整数的平方，要掌握完全平方数的性质主要是：</p>
+<ol>
+<li><p>完全平方数与整数之间的离散性：</p>
+<p>相邻的两个完全平方数之间没有一个正整数是完全平方数，$m^2$和$(m+1)^2$之间不存在平方数</p>
+</li>
+</ol>
+<p>例1：找出使$4^{27}+4^{1000}+4^{x}$成为完全平方数的最大整数$x$<br>$$<br>2^{54}(1+2^{1946}+2^{2x-54})<br>$$<br>其中<br>$$<br>1+2^{1946}+2^{2x-54}&#x3D;1+2\cdot2^{1945}+(2^{x-27})^2<br>$$<br>当x-26&#x3D;1945,x&#x3D;1972时，原式是一个完全平方数,下证1972是符合题意的最大的整数x<br>$$<br>x&gt;1972:(2^{x-27})^2&lt;1+2\cdot2^{1945}+(2^{x-27})^2&lt;(2^{x-27}+1)^2<br>$$<br>注：<br>$$<br>(2^{x-27}+1)^2&#x3D;(2^{x-27})^2+2\cdot 2^{x-27}+1<br>$$<br>故此时<br>$$<br>1+2\cdot2^{1945}+(2^{x-27})^2<br>$$<br>不是完全平方数，故原式不是完全平方数.</p>
+<p>例2：设m是小于2022的四位数，已知存在正整数n,使得m-n为素数，且mn是一个完全平方数，求所有满足条件的四位数.</p>
+<p>$$<br>m-n&#x3D;p,mn&#x3D;n(n+p)&#x3D;x^2 \Rightarrow b^2+np&#x3D;x^2 \Rightarrow 4n^2+4bp+p^2-p^2&#x3D;4x^2 \\<br>(2n+p)^2-p^2&#x3D;4x^2 \Rightarrow (2n+p+2x)(2n+p-2x)&#x3D;p^2 \\<br>2n+p+2x &gt;2n+p-2x \Rightarrow \begin{cases}<br>2n+p+2xs&#x3D;p^2 \\<br>2n+p-2x&#x3D;1 \\<br>\end{cases} \Rightarrow4n&#x3D;(p-1)^2 \Rightarrow n&#x3D;(\frac{p-1}{2})^2 \\<br>\therefore m&#x3D;n+p&#x3D;(\frac{p+1}{2})^2<br>$$<br>由<br>$$<br>1000 \leq (\frac{p+1}{2})^2&lt;2022 \Rightarrow 63 \leq p \leq 87<br>$$</p>
+<p>则p只可能是67,71,73,79,83<br>$$<br>m&#x3D;1156,1296,1369,1600,1764<br>$$</p>
+<ol start="2">
+<li><p>同余性质</p>
+<p>（1）尾数特征：</p>
+<p>个位数字：完全平方数个位数字只能为0，1，4，5，6，9</p>
+<p>末两位数字：</p>
+<p>个位是0，则十位必为0</p>
+<p>个位是1，则十位必为偶</p>
+<p>个位是4，则十位必为偶</p>
+<p>个位是5，则十位必为2</p>
+<p>个位是6，则十位必为奇</p>
+<p>个位是9，则十位必为偶</p>
+<p>（2）</p>
+<p>奇数的平方模4余1，偶数的平方模4余0（显然）</p>
+<p>（3）</p>
+<p>模7：余0，1，2，4（通过枚举显然）</p>
+<p>（4）</p>
+<p>模8：奇数的平方模8余1，偶数的平方模8余0或4</p>
+<p>类似地可以得到模16的余数</p>
+<p>（5） 模3：余0，1</p>
+</li>
+</ol>
+<p>例3：正整数n的平方的十位数字是7，<br>$$<br>n-100 \times [\frac{n}{100}]<br>$$<br>​    </p>
+<p>的所有可能值之和是多少？</p>
+<p>设$n&#x3D;\overline{xab}$  其中$\overline{ab}$ 是n的末两位数字，x是末两位前的部分<br>$$<br>n-100 \times [\frac{n}{100}]&#x3D;\overline{xab}-100\times[x.ab]&#x3D;\overline{xab}-\overline{x00}&#x3D;\overline{\ab}<br>$$<br>原式即n的末位数字<br>$$<br>n^2 \equiv (10a+b)^2 \equiv 2ab\cdot 10+b^2(\mod 100)<br>$$<br>$n^2$的十位数字$ 7&#x3D;2ab$的个位$+b^2$的十位 $\Rightarerow b^2$的十位是奇数 $\Rightarrow b^2$的个位是$6$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/28/Krummer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/04/28/Krummer/" class="post-title-link" itemprop="url">Krummer</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-04-28 07:22:00" itemprop="dateCreated datePublished" datetime="2022-04-28T07:22:00+08:00">2022-04-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-29 08:55:19" itemprop="dateModified" datetime="2022-04-29T08:55:19+08:00">2022-04-29</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Krummer定理"><a href="#Krummer定理" class="headerlink" title="Krummer定理"></a>Krummer定理</h1><head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+
+<p>$$<br>n \in N^*. p \in P v_p(n!)&#x3D;\frac{n-S_p(n)}{p-1}<br>$$<br>其中$S_p(n)$是n的p进制下的数码和.</p>
+<p>证：在n进制下的数码和可以记为<br>$$<br>n&#x3D;a_kp^k+a_{k-1}p^{k-1}+\cdots+a_1p+a_0,a_i \in [0,p-1],i&#x3D;1,\cdots,k<br>$$<br>则对所有的<br>$$<br>0 \leq j \leq k, [\frac{n}{p^j}]&#x3D;  a_kp^{k-j}+a_{k-1}p^{k-j-1}+\cdots+a_j+ </p>
+<p>[\frac{a_{j-1}}{p}+\frac{a_{j-2}}{p^2}+\cdots +\frac{a_{0}}{p^j}]<br>$$</p>
+<p>其中，<br>$$<br>0 \leq \frac{a_{j-1}}{p}+\frac{a_{j-2}}{p^2}+\cdots +\frac{a_{0}}{p^j}&#x3D;<br>\frac{ a_{j-1}p^{j-2}+a_{j-2}p^{j-2}+\cdots+a_0}{p^j}&#x3D;\frac {p-1 \times \frac{p^j-1}{p-1}}{p^j}&#x3D;\frac{p^j-1}{p^j}&lt;1<br>\\<br>\Rightarrow [\frac{n}{p^j}]&#x3D; a_kp^{k-j}+a_{k-1}p^{k-j-1}+\cdots+a_j \\<br>\therefore v_p(n!)&#x3D; \sum_{j&#x3D;1}^{k}\frac{n}{p^j}&#x3D; \sum_{j&#x3D;1}^{k}(a_kp^{k-j}+a_{k-1}p^{k-j-1}+\cdots+a_j) \\<br>&#x3D;a_k(p^{k-1}+p^{k-2}+\cdots+1)+a_{k-1}(p^{k-2}+p^{k-3}+\cdots+1)+\cdots+a_1 \\<br>&#x3D;a_k \times\frac{p^k-1}{p-1}+a_{k-1} \times\frac{p^{k-1}-1}{p-1}+\cdots+a_1 \\<br>&#x3D;\frac{(a_kp^k+a_{k-1}p^{k-1}+\cdots+a_1p+a_0)-(a_k+a_{k-1}+\cdots+a_1+a_0)}{p-1} \\<br>&#x3D;\frac{n-S_p(n)}{p-1}<br>$$</p>
+<p>$Krummer$: 对所有素数$p$,整数$n$<br>$$<br>n \geq k \geq 1,v_p(C_n^{k})&#x3D;\frac{S_p(k)+S_p(n-k)-S_p(k)}{p-1}<br>$$<br>利用组合数定义及上述引理，<br>$$<br>v_p(C_n^{k})&#x3D;v_p(\frac{n!}{k!(n-k)!})&#x3D;v_p(n!)-v_p(k!)-v_p((n-k)!)&#x3D;\frac{n-S_p(n)}{p-1}-\frac{k-S_p(k)}{p-1}-\frac{n-k-S_p(n-k)}{p-1} \\<br>&#x3D; \frac{S_p(k)+S_p(n-k)-S_p(k)}{p-1}<br>$$</p>
+<p>注：<br>$$<br>v_p(C_n^{k})&#x3D;v_p(n!)-v_p(k!)-v_p((n-k)!)&#x3D;\sum_{j&#x3D;1}^{\infty}([\frac{n}{p^j}]-[\frac{k}{p^j}]-[\frac{n-k}{p^j}])<br>$$<br>把第j位拆开<br>$$<br>[\frac{n}{p^j}]-[\frac{k}{p^j}]-[\frac{n-k}{p^j}]&#x3D;\frac{n}{p^j}-{\frac{n}{p^j}}-(\frac{k}{p^j}-{\frac{k}{p^j}})-(\frac{n-k}{p^j}-{\frac{n-k}{p^j}}) \\<br>&#x3D;{\frac{k}{p^j}}+{\frac{n-k}{p^j}}-{\frac{n}{p^j}}&#x3D;<br>\begin{cases}<br>0,  第j位无进位\\<br>1,  第j位有进位<br>\end{cases}<br>$$</p>
+<ol start="3">
+<li>$Krummer$定理等价阐述<br>$$<br>m, n \in N^*,p \in P,v_p(C_{m+n}^n)&#x3D;\frac{S_p(n)+S_p(m)-S_p(m+n)}{p-1}<br>$$</li>
+</ol>
+<p>例1：<br>$$<br>A&#x3D; \frac{(4n)!}{n!(2n)!},2^{n+1 }\mid A. n \in N^*<br>$$</p>
+<p>法1：<br>$$<br>A&#x3D;\frac{(2n+1)(2n+2)\cdots(4n-1)(4n)}{n!}&#x3D;\frac{(2n+2)(2n+4)+\cdots +(4n-2)(4n)}{n!}\cdot (2n+1)(2n+3)\cdots+(4n-1) \\<br>2^{n+1}\frac{\boxed {n (n+1)(n+2)+\cdots(2n-1)}} {n!} \cdot (2n+1)(2n+3\cdots(4n-1)<br>$$</p>
+<p>其中<br>$$<br>\boxed{}<br>$$<br>为$n!$的倍数，那显然这一整项为整数<br>$$<br>&#x3D;2^{n+1}k (k \in Z) \\<br>\therefore 2^{n+1} \mid A<br>$$<br>思路二：p进赋值: $(v_2(A) \geq n+1)$</p>
+<p>$$<br>v_2(4n!)&#x3D;2n+n+[\frac{4n}{2^3}]+[\frac{4n}{2^4}]+\cdots&#x3D;3n+[\frac{n}{2}]+[\frac{n}{4}]+\cdots \\<br>v_2(2n!)&#x3D;n+[\frac{n}{2}]+[\frac{n}{4}]+\cdots,v_2(n!)&#x3D;[\frac{n}{2}]+[\frac{n}{4}]+\cdots \\<br>\therefore v_2(A)&#x3D;2n-([\frac{n}{2}]+[\frac{n}{4}]+\cdots) \\<br>\therefore v_2(A) \geq n+1 \Leftrightarrow 1+[\frac{n}{2}]+[\frac{n}{4}]+\cdots \leq n \cdots(1) \\<br>(1) LHS&lt;1+\frac{n}{2}+\frac{n}{4}+\frac{n}{8}+\cdots &#x3D;1+\frac{\frac{n}{2}}{1-\frac{1}{2}}&#x3D;1+n<br>$$<br>根据整数的离散性, $LHS \leq n$</p>
+<p>思路3：<br>$$<br>v_2(n!)&#x3D;\frac{n-S_2(n)}{2-1}&#x3D;n-S_2(n), \\<br>v_2(4n!)&#x3D;4n-S_2(4n),v_2(2n!)&#x3D;2n-S_2(2n) \\<br>\therefore v_2(A)&#x3D;4n-S_2(4n)-(2n-S_2(2n))-(n-S_2(n)) \\<br>&#x3D;n-S_2(4n)+S_2(2n)+S_2(n)&#x3D;n+S_2(n) \geq n+1<br>$$<br>思路4</p>
+<p>$$<br>A&#x3D;\frac{(4n)!}{n!(2n)!}&#x3D;\frac{(2n)!}{n!}C_{4n}^{2n} \\<br>v_2(\frac{(4n)!}{n!(2n)!})&#x3D;v_2(\frac{(2n)!}{n!}C_{4n}^{2n})&#x3D;v_2(2n)!-v_2(n!)+v_2C_{4n}^{2n}\\<br>&#x3D;2n-S_2(2n)-n+S_2(n)+\frac{S_2(2n)+S_2(2n)-S_2(4n)}{2-1} \geq n+1<br>$$</p>
+<p>例2：求所有整数$n&gt;1$,和素因子$p$，使<br>$$<br>v_p(n!) \mid n-1<br>$$</p>
+<p>设$n&#x3D;kp , k \in N^*$，则<br>$$<br>v_p(n!)&#x3D;[\frac{n}{p}]+[\frac{n}{p^2}]+\cdots&#x3D;k+[\frac{n}{p^2}]+\cdots \geq k \\<br>p&#x3D;\frac{n}{k}&gt;\frac{n-1}{k} \geq \frac{n-1}{v_p(n!)} \geq \frac{n-S_p(n)}{v_p(n!)} &#x3D;p-1<br>\\<br>p-1\leq \frac{n-1}{v_p(n!)} &lt;p \Rightarrow \frac{n-1}{v_p(n!)}&#x3D;p-1 \Rightarrow v_p(n!)&#x3D;\frac{n-1}{p-1}&#x3D;\frac{n-S_p(n)}{p-1} \Rightarrow S-p(n)&#x3D;1 \Rightarrow n&#x3D;(1\underbrace{00\cdots 0}_m)&#x3D;p^m<br>$$</p>
+<p>另一方面，设$n&#x3D;p^m,m \in N$，<br>$$<br>v_p(n!)&#x3D;\frac{p^m-1}{p-1} \mid n-1<br>$$<br>符合题设要求</p>
+<p>例3：若n为正整数，$1 \leq k \leq 2^n$<br>$$<br>v_2(C_{2^n}^{k})&#x3D;n-v_2(k)<br>$$</p>
+<p>由Krummer定理<br>$$<br>v_2(C_{2^n}^{k})&#x3D;S_2(k)+S_2(2^n-k)-S_2(2^n)<br>$$<br>设$k&#x3D;2^rs, r \geq 0,s$为奇数，$r \leq n$</p>
+<p>$$<br>S_2(2^n-k)&#x3D;S_2(2^n-2^rs)&#x3D;S_2(2^r(2^{n-r}-s))&#x3D;S_2(2^{n-r}-s)\\<br>$$<br>现在分析$S_2(2^{n-r}-s)$,对于p进制下的位数运算<br>$$<br>s(x+y)&#x3D;s(x)+s(y)-(p-1) \times t<br>$$<br>其中t为进位数.这是显然的，进位会导致数字和变小.由s是奇数，可知在二进制下末尾为1，已知道<br>$$<br>2^{n-r}&#x3D;1\underbrace{0\cdots0}_{n-r}<br>$$</p>
+<p>则显然进位了$n-r$次。则设<br>$$<br>x+y&#x3D;2^{n-r},y&#x3D;s<br>$$</p>
+<p>$$<br>s(x)&#x3D;s(x+y)-s(y)+(p-1)\times t \Rightarrow S_2(x)&#x3D;1-S_2(s)+(n-r)<br>$$<br>则得<br>$$<br>S_2(2^n-k)&#x3D; 1-S_2(s)+(n-r)&#x3D;1+n-r-S_2(k)<br>$$<br>带入到原式，<br>$$<br>v_2(C_{2^n}^{k})&#x3D;S_2(k)+S_2(2^n-k)-S_2(2^n)&#x3D;S_2(k)+1+n-r-S_2(k)-1&#x3D;n-r&#x3D;n-S_2(k)<br>$$</p>
+<p>例4：设<br>$$<br>p,p+2 \in P, p&gt;3, {a_n}:a_1&#x3D;2,a_n&#x3D;a_{n-1}+\lceil \frac{pa_{n-1}}{n}\rceil,n&#x3D;2,3, \cdots<br>$$<br>其中<br>$$<br>\lceil x \rceil<br>$$<br>表示的是不小于实数$x$的最小整数，即向上取整.</p>
+<p>证明：对$n&#x3D;3,4 \cdots , p-1$，均有 $n \mid pa_{n-1}+1成立$</p>
+<p>先证明 $n&#x3D;3$成立<br>$$<br>a_2&#x3D;2+p \Rightarrow pa_2+1&#x3D; p(p+2)+1 &#x3D;(p+1)^2 \\<br>p, p&#x3D;2 \in P ,p &gt;3 \Rightarrow p \not\equiv 0 (\mod 3),<br>$$<br>如果$p \equiv 1 (\mod 3)\Rightarrow p+2 \equiv 0(\mod 3)$矛盾<br>$$<br>\therefore p \equiv -1 (\mod 3) \Rightarrow 3 \mid (p+1) \Rightarrow 3 \mid (p+1)^2<br>$$</p>
+<p>设$k&#x3D;3,4 \cdots n$,其中 $3 \leq n \leq p-2$成立<br>$$<br>a_k&#x3D;a_{k-1}+ \lceil \frac{pa_{k-1}}{k} \rceil&#x3D;a_{k-1}+\frac{pa_{k-1}+1}{k} \Rightarrow ka_k&#x3D;(k+p)a_{k-1}+1 \\<br>\Rightarrow (k-1)a_{k-1}&#x3D;(k+p-1)a_{k-2}+1\\<br>ka_k+(k+p-1)a_{k-2}&#x3D;(2k+p-1)a_{k-1} \Rightarrow k(a_k-a_{k-1})&#x3D;(k+p-1)(a_{k-1}-a_{k-2})<br>\\<br>\Rightarrow a_k-a_{k-1}&#x3D; \frac{k+p-1}{k}(a_{k-1}-a_{k-2})&#x3D; \frac{k+p-1}{k}\frac{k+p-2}{k-1}(a_{k-2}-a_{k-3})&#x3D;\cdots \\&#x3D;\frac{(k+p-1)(k+p-2) \cdots(p+3)}{k(k-1)\cdots 4}(a_3-a_2),a_3-a_2&#x3D;\frac{(p+1)^2}{3} \\<br>\therefore a_k-a_{k-1}&#x3D;\boxed{\frac{(k+p-1)(k+p-2) \cdots(p+3)}{k(k-1)\cdots 4}} \cdot \frac{(p+1)^2}{3}&#x3D;<br>$$</p>
+<p>对方框中的部分利用组合数进行分析，则通过变形可以得到<br>$$<br>a_k-a_{k-1}&#x3D;\frac{(k+p-1)(k+p-2) \cdots(p+3)(p+2)(p+1)p}{k(k-1)\cdots 4\cdot3\cdot2 \cdot 1}\cdot\frac{6}{p(p+1)(p+2)} \frac{(p+1)^2}{3}\\<br>&#x3D;C_{k+p-1}^{k}\cdot \frac{2(p+1)}{p(p+2)}&#x3D;\frac{2(p+1)}{p(p+2)}C_{k+p-1}^{p-1}<br>$$<br>利用累差法<br>$$<br>a_3-a_2&#x3D;\frac{2(p+1)}{p(p+2)}C_{p+2}^{p-1} \\<br>a_4-a_3&#x3D;\frac{2(p+1)}{p(p+2)}C_{p+3}^{p-1} \\<br>\cdots \\<br>a_k-a_{k-1}&#x3D;\frac{2(p+1)}{p(p+2)}C_{p+k-1}^{p-1} \\<br>\therefore a_k&#x3D;p&#x3D;2+p+\frac{2(p+1)}{p(p+2)}(C_{p+2}^{p-1}+C_{p+3}^{p-1} +\cdots+C_{p+k-1}^{p-1})<br>$$<br>由朱世杰恒等式得到<br>$$<br>C_{p+2}^{p-1}+C_{p+3}^{p-1}+\cdots+C_{p+k-1}^{p-1}&#x3D;C_{p+k}^{p}-(C_{p-1}^{p-1}+C_{p}^{p-1}+C_{p+1}^{p-1}),<br>\quad<br>C_{p-1}^{p-1}+C_{p}^{p-1}+C_{p+1}^{p-1}&#x3D;C_{p+2}^{p} \\<br>a_k&#x3D;p+2+\frac{2(p+1)}{p(p+2)}(C_{p+k}^{p}-C_{p+2}^{p})<br>$$<br>现在只需证:<br>$$<br>n+1 \mid pa_n+1&#x3D;p(p+2+\frac{2(p+1)}{p(p+2)}(C_{p+k}^{p}-C_{p+2}^{p}))+1<br>$$<br>其中<br>$$<br>p(p+2+\frac{2(p+1)}{p(p+2)}(C_{p+k}^{p}-C_{p+2}^{2})+1&#x3D;p(p+2)+\frac{2(p+1)}{(p+2)}C_{p+n}^{p}-\frac{2(p+1)}{(p+2)} \frac{(p+1)(p+2)}2+1 \\<br>&#x3D;\frac{2(p+1)}{p+2}C_{p+n}^{p}<br>$$<br>只需证<br>$$<br>n+1 \mid \frac{2(p+1)}{p+2}C_{p+n}^{p} \in \mathbb{Z}<br>$$</p>
+<p>$$<br>n \leq p-2 \Rightarrow p \geq n+2 \Rightarrow p+2 \geq n+4 &gt; n+1 \Rightarrow (n+1,p+2)&#x3D;1<br>$$</p>
+<p>只需证<br>$$<br>(n+1) \mid 2(p+1)C_{p+n}^{p} \Leftarrow (n+1) \mid C_{p+n}^{p}<br>$$<br>考虑$n+1$的任一素因子$q$<br>$$<br>v_q(n+1)&#x3D;l,\quad Krummer:v_q( C_{p+n}^{p})&#x3D;\frac{S_q(p)+Sq(n)-S_q(n+p)}{q-1}<br>$$<br>(1)若p在q进制下的末位为0,<br>$$<br>q \mid p, p &gt;q \Rightarrow p \notin P<br>$$<br>矛盾</p>
+<p>（2）p在q进制下末位非0：至少是1：<br>$$<br>n \equiv -1 (\mod q^l)<br>$$<br>则n在q进制下末l位都是q-1，则n+p在q进制下进位l次<br>$$<br>v_q(C_{p+n}^{p}) \geq l&#x3D;v_q(n+1) \Leftrightarrow n+1 \mid C_{p+n}^{p}<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/%E5%8B%92%E8%AE%A9%E5%BE%B7%E5%85%AC%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -168,10 +388,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-04-25 03:52:11 / Modified: 11:47:59" itemprop="dateCreated datePublished" datetime="2022-04-25T03:52:11+08:00">2022-04-25</time>
+              <time title="Created: 2022-04-25 03:52:11" itemprop="dateCreated datePublished" datetime="2022-04-25T03:52:11+08:00">2022-04-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-04-26 02:02:19" itemprop="dateModified" datetime="2022-04-26T02:02:19+08:00">2022-04-26</time>
+              </span>
 
           
 
@@ -1095,7 +1321,7 @@ $$
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
