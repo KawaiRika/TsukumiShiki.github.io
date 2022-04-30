@@ -170,7 +170,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-30 01:03:03 / Modified: 15:27:31" itemprop="dateCreated datePublished" datetime="2022-04-30T01:03:03+08:00">2022-04-30</time>
+              <time title="Created: 2022-04-30 01:03:03 / Modified: 15:31:50" itemprop="dateCreated datePublished" datetime="2022-04-30T01:03:03+08:00">2022-04-30</time>
             </span>
 
           
@@ -219,6 +219,9 @@
 <h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="Frobenius-问题"><a href="#Frobenius-问题" class="headerlink" title="Frobenius 问题"></a>Frobenius 问题</h4><p>设$a,b \in N$,(a,b)&#x3D;1,证明当$c&gt;ab-a-b时，方程ax+by&#x3D;c (*)$有非负整数解; 当·c&#x3D;ab-a-b时，方程没有非负整数解</p>
 <p>&lt;1&gt;当$c&gt;ab-a-b$:通解<br>$$<br>\begin{cases}<br>x&#x3D;x_0+bt \\<br>y&#x3D;y_0-at<br>\end{cases} (t \in Z)<br>$$<br>其中$(x_0,y_0)$是一组解，可以通过调节t的取值使$ 0 \leq x_1 \leq b-1, by_1&#x3D;c-ax_1 &gt;ab-a-b-a(b-1)&#x3D;-b$</p>
 <p>$\Rightarrow y_1&gt;-1$，方程有非负整数解</p>
+<p>&lt;2&gt;c&#x3D;ab-a-b：设(x_0,y_0)为（*）的非负整数解，则<br>$$<br>ax_0+by_0-ab-a-b \Rightarrow a(x_0+1)+b(y_0+1)&#x3D;ab \cdots(2)\Rightarrow a \mid b(y_0+1) \\<br>\Longrightarrow _{(a,b)&#x3D;1} a\mid y_0+1 \Longrightarrow y_0+1 \geq a<br>$$<br>同理可得$x_0+1 \geq b$</p>
+<p>则（2）$ LHS \geq ab+ab&#x3D;2ab&gt;ab&#x3D;RHS$矛盾</p>
+<p>所以原方程没有非负整数解</p>
 <h4 id="1971普特南数学竞赛：用面值a-b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a-b"><a href="#1971普特南数学竞赛：用面值a-b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a-b" class="headerlink" title="1971普特南数学竞赛：用面值a,b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a,b."></a>1971普特南数学竞赛：用面值a,b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a,b.</h4><p>一般模型：用面值为$a,b(a,b \in N^*)$两种邮票支付邮资，有多少种邮资不能被支付？</p>
 <p>思路1：设$a,b$两种邮票分别有$x,y$张，则可以支付费用为$ax+by$</p>
 <p>$(a,b)&#x3D;1$,否则若$d&#x3D;（a,b)$.则$d \mid ax+by$ ,则一切不是d的倍数的正整数都不能用$ax+by$表示，即有无限种无法被支付的邮资，矛盾.</p>
