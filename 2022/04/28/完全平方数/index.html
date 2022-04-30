@@ -28,7 +28,7 @@
 <meta property="og:description" content="完全平方数                   MathJax.Hub.Config({             tex2jax: {             skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],             inlineMath: [[&#39;$&#39;,&#39;$&#39;]]             }">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-04-28T04:21:09.000Z">
-<meta property="article:modified_time" content="2022-04-29T00:55:26.897Z">
+<meta property="article:modified_time" content="2022-04-29T03:17:54.609Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -180,7 +180,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-29 08:55:26" itemprop="dateModified" datetime="2022-04-29T08:55:26+08:00">2022-04-29</time>
+                <time title="Modified: 2022-04-29 11:17:54" itemprop="dateModified" datetime="2022-04-29T11:17:54+08:00">2022-04-29</time>
               </span>
 
           
@@ -241,7 +241,41 @@
 </ol>
 <p>例3：正整数n的平方的十位数字是7，<br>$$<br>n-100 \times [\frac{n}{100}]<br>$$<br>​    </p>
 <p>的所有可能值之和是多少？</p>
-<p>设$n&#x3D;\overline{xab}$  其中$\overline{ab}$ 是n的末两位数字，x是末两位前的部分<br>$$<br>n-100 \times [\frac{n}{100}]&#x3D;\overline{xab}-100\times[x.ab]&#x3D;\overline{xab}-\overline{x00}&#x3D;\overline{\ab}<br>$$<br>原式即n的末位数字<br>$$<br>n^2 \equiv (10a+b)^2 \equiv 2ab\cdot 10+b^2(\mod 100)<br>$$<br>$n^2$的十位数字$ 7&#x3D;2ab$的个位$+b^2$的十位 $\Rightarerow b^2$的十位是奇数 $\Rightarrow b^2$的个位是$6$</p>
+<p>设$n&#x3D;\overline{xab}$  其中$\overline{ab}$ 是n的末两位数字，x是末两位前的部分<br>$$<br>n-100 \times [\frac{n}{100}]&#x3D;\overline{xab}-100\times[x.ab]&#x3D;\overline{xab}-\overline{x00}&#x3D;\overline{ab}<br>$$<br>原式即n的末位数字<br>$$<br>n^2 \equiv (10a+b)^2 \equiv 2ab\cdot 10+b^2(\mod 100)<br>$$<br>$n^2$的十位数字$ 7&#x3D;2ab$的个位$+b^2$的十位 $\Rightarerow b^2$的十位是奇数 $\Rightarrow b^2$的个位是$6 \Rightarrow b&#x3D;6$或$4$</p>
+<p>&lt;1&gt; 若b&#x3D;4,<br>$$<br>(10a+4)^2&#x3D;100a^2+80a+16&#x3D;100a^2+(8a+1) \times 10 +6<br>$$<br>则<br>$$<br>8a+1 \equiv 7 (\mod 10) \Rightarrow 8a \equiv 6 (\mod 10) \Rightarrow 4a \equiv 3(\mod 5)\\<br>\Rightarrow 4a \equiv8(\mod 5) \Rightarrow a \equiv 2(\mod 5)<br>$$<br>则a等于2或7</p>
+<p>&lt;2&gt;若b&#x3D;6,<br>$$<br>(10a+6)^2&#x3D;100a^2+120a+36&#x3D;100(a^2+a)+(2a+3) \times 10 +6<br>$$<br>则可以得到<br>$$<br>2a+3 \equiv 7 (\mod 10)\Rightarrow 2a \equiv 4(\mod 19)\Rightarrow a \equiv2 (\mod 5)<br>$$<br>a等于2或7.综上<br>$$<br>n-100 \times [\frac{n}{100}]&#x3D;24，74，26，76<br>$$<br>和为$24+74+26+76&#x3D;200$</p>
+<p>例4：形如$1\underbrace{4\cdots 4}_n (n \in N^*)$的完全平方数有多少个？</p>
+<p>显然<br>$$<br>144&#x3D;12^2,1444&#x3D;38^2<br>$$<br>现在证明n只能小于等于3</p>
+<p>$n \geq 4,1\underbrace{4\cdots 4}<em>n&#x3D; 4 \times 36\underbrace{11 \cdots1}</em>{n-2}$是平方数,<br>$$<br>\Rightarrow 36\underbrace{11 \cdots1}<em>{n-2}<br>$$<br>是平方数<br>$$<br>n-2 \geq 2 \Rightarrow 36\underbrace{11 \cdots1}</em>{n-2} \equiv3(\mod 4),<br>$$<br>矛盾.所以这样的平方数有且仅有两个.</p>
+<p>例5：一个自然数的k次方的末三位数都是$a^k$(a,k为大于1的自然数)则称其为幸运数，在<br>$$<br>1,2, 3, \cdots ,2015<br>$$<br>中有几个幸运数？</p>
+<p>$$<br>a^k&#x3D;2^2,2^3,3^2<br>$$</p>
+<p>a&#x3D;3,k&#x3D;2时显然不符合完全平方数的尾数特征（末位为9的完全平方数倒数第二位应为偶数）</p>
+<p>&lt;1&gt;k&#x3D;2,a&#x3D;2即一个平方数的末三位都是444</p>
+<p>设所求的整数为x<br>$$<br>1000\mid x^2-38^2&#x3D;(x+38)(x-38),1000&#x3D;2^3 \times 5^3 \\<br>1.\therefore x+38 \equiv x-38 (\mod 4) \Rightarrow 4 \mid (x+38),4 \mid (x-38) \\<br>2. x+38 \not \equiv x-38(\mod 5) \Rightarrow 125 \mid x+38 \or 125 \mid x-38<br>$$<br>则x-28,x+38必有一个是500的倍数</p>
+<p>$$<br>(1)x&#x3D;500k-38(k \in N^*):1 \leq 500k-38 \leq 2015 \Rightarrow 1 \leq k \leq 4\\<br>(2)x&#x3D;500+38(k \in N^*):1 \leq 500k+38 \leq 2015 \Rightarrow 0 \leq k \leq 3 \\<br>(500k \pm 38)^2&#x3D;25000k^2 \pm38000k+1444<br>$$<br>末三位：444.这样的幸运数有八个。</p>
+<p>&lt;2&gt;$k&#x3D;3,a&#x3D;2$,末三位为888，设所求为y,则$y^3&#x3D;1000m+888 (m \in N)$</p>
+<p>设y&#x3D;2n<br>$$<br>n^3 &#x3D;125m+111 \cdots(2) \Rightarrow n^3 \equiv 1(\mod 5) \Rightarrow n \equiv 1 (\mod 5)\\<br>n&#x3D;5p+1(p \in N^*),125p^3+75p^2+15p&#x3D;125m+110 \\<br>25p^3+15p^2+3p&#x3D;25m+22 \\<br>\Rightarrow 3(5p^2+p+1)&#x3D;25(m+1-p^3) \Rightarrow 25 \mid 5p^2+p+1 \Rightarrow 5 \mid p+1,p&#x3D;5s-1,s \in N^* \\<br>\Rightarrow 25 \mid 5p^2+5s \Rightarrow 5 \mid p^2+s&#x3D;(5s-1)^2+s&#x3D;25s^2-10s+(s+1)<br>\Rightarrow 5 \mid s+1 \\<br>s&#x3D;5q-1(q \in N^*) \\<br>y&#x3D;2n&#x3D;2(5p+1)&#x3D;10p+2&#x3D;10(5s-1)+2&#x3D;50s-8&#x3D;50(5q-1)-8&#x3D;250q-8 \\<br>1 \leq 250q-58 \leq 2015 \Rightarrow 1 \leq q \leq 8<br>$$<br>容易验证$y&#x3D;250q-58$满足题设则上述形式有8个，综上一共16个。</p>
+<ol start="3">
+<li><p>因数性质</p>
+<p>(1)偶指性：按唯一分解式分解成素因数之后，每一种素因子的指数都是偶数，反之亦然.</p>
+<p>若干个平方数之积必为平方数，这是显然对</p>
+<p>(2)完全平方数有奇数个因数，反之亦然</p>
+<p>(3)素数的平方有且仅有三个因数($1,p,p^2$)，反之亦然</p>
+<p>(4)两个互素数相乘如果得到完全平方数，这两个数都是完全平方数</p>
+<p>(5)a,b是完全平方数，如果$a \mid b$,则$\frac{b}{a}$也是完全平方数</p>
+</li>
+</ol>
+<p>例6：求所有正整数m,n满足<br>$$<br>6^m+2^n+2<br>$$<br>为完全平方数<br>$$<br>6^m+2^n+2&#x3D;2(2^{m-1}\cdot3^m+2^{n-1}+1) \quad odd \Rightarrow 2 \mid 2^{m-1}\cdot3^m+2^{n-1}+1 \\<br>\Rightarrow 2 \nmid2^{m-1}\cdot3^m+2^{n-1}<br>$$</p>
+<p>$\Rightarrow 2^{m-1}\cdot 3^m$和$2^{n-1}$一奇一偶</p>
+<p>，则m,n必有一个为1，另一个大于1</p>
+<p>（1）若m&#x3D;1:只需要保证 $n \geq 2, $,$8+2^n$是完全平方数，<br>$$<br>8&#x3D;2^n&#x3D;4(2^{n-2}+2)<br>$$</p>
+<p>则$2^{n-2}+2$依然是完全平方数</p>
+<p>$n \geq 4:$<br>$$<br>2^{n-2}+2 \equiv2(\mod 4)<br>$$<br>矛盾<br>$$<br>\therefore n&#x3D;2 \or3<br>$$<br>通过检验n&#x3D;3满足</p>
+<p>(2)$n&#x3D;1:6^m+4 \equiv (-1)^m+4\equiv 5,3(\mod 7)$,矛盾,它不可能是完全平方数.</p>
+<p>综上，<br>$$<br>(m,n)&#x3D;(1,3)<br>$$</p>
+<p>给定正整数$u,v,{a_n}$定义如下：$a_1&#x3D;u+v$，对整数 m \geq 1,有<br>$$<br>\begin{cases}<br>a_{2m}&#x3D;a_m+u \\<br>a_{2m+1}&#x3D;a_m+v<br>\end{cases}<br>$$<br>记<br>$$<br>S_m&#x3D;a_1+a_2+\cdots+a_m(m&#x3D;1,2,\cdots)<br>$$<br>证明：${S_n}$中有无穷多项是完全平方数</p>
+<p>$$<br>a_1&#x3D;u+v,a_2&#x3D;a_1+u&#x3D;2u+v,a_3&#x3D;a_1+v&#x3D;u+2v,a_4&#x3D;a_2+u&#x3D;3u+v \\<br>a_5&#x3D;2u+2v,a_6&#x3D;2u+2v,a_7&#x3D;u+3v \cdots \cdots<br>$$<br>列举可以得到<br>$$<br>S_1&#x3D;u+v,S_3&#x3D;4u+4v,S_7&#x3D;12u+12v,S_{15}&#x3D;32u+32v \\<br>1&#x3D;2-1;3&#x3D;2^2-1,4&#x3D;2\cdot2^{2-1};7&#x3D;2^3-1,12&#x3D;3\cdot2^{3-1};15&#x3D;2^4-1,32&#x3D;4 \cdot2^{4-1}<br>$$<br>猜想<br>$$<br>S_{2^n-1}&#x3D;n\cdot2^{n-1}(u+v) \cdots(1)<br>$$<br>只需证<br>$$<br>\frac{S_{2^{n-1}}}{2^{n-1}}&#x3D;n(u+v) \Rightarrow \frac{S_{2^{n+1}-1}}{2^{n}}-\frac{S_{2^{n}-1}}{2^{n-1}} \Leftarrow S_{2^{n+1}-1}&#x3D;2S_{2^n-1}+2^n(u+v) \cdots(2)<br>$$</p>
+<p>$$<br>S_{2^{n+1}-1}&#x3D;a_1+a_2+\cdots+a_{2^{n+1}-1}&#x3D;a_1+(a_2+a_3)+(a_4+a_5)+\cdots+a_{2^{n+1}-2}+a_{2^{n+1}-1} \\<br>&#x3D;(u+v)+(2a_1+u+v)+(2a_2+u+v)+\cdots+(2a_{2^n-1}+u+v) \\<br>&#x3D;2(a_1+a_2+\cdots+a_{2^n-1})+2^n(u+v) \\<br>&#x3D;2S_{2^n-1}+2^n(u+v)<br>$$<br>故(2)成立得到(1)成立<br>$$<br>S_{2^n-1}&#x3D;n2^{n-1}(u+v)<br>$$<br>令<br>$$<br>n&#x3D;2(u+v) \cdot k^2, k \in N^*<br>$$<br>则<br>$$<br>S_{2^n-1}&#x3D;2(u+v) \cdot k^22^{2(u+v) \cdot k^2-1}(u+v) \\<br>&#x3D;2^{2(u+vk^2)}(u+v)^2k^2&#x3D;(2^{(u+v)k^2\cdot(u+v)\cdot k})^2<br>$$<br>为完全平方数，由k的任意性，这样的完全平方数有无穷多个.</p>
 
     </div>
 
@@ -260,7 +294,10 @@
     <a href="/2022/04/28/Krummer/" rel="prev" title="Krummer">
       <i class="fa fa-chevron-left"></i> Krummer
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/04/30/%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B/" rel="next" title="不定方程">
+      不定方程 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -333,7 +370,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
