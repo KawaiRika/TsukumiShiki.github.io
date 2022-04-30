@@ -28,7 +28,7 @@
 <meta property="og:description" content="不定方程不定方程（丢番图方程） 未知数个数大于方程个数，且解为整数。 例：$4x+7y&#x3D;190$  若$x,y \in R$为实数，显然有无数组解  若$x,y \in  Q$ 有武术组解  $x ,y \in Z: -y \equiv 2 (\mod 4) \Rightarrow y \equiv 2 (\mod 4)$$$\begin{cases}y&#x3D;2+4t \\x&amp;#x">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-04-29T17:03:03.000Z">
-<meta property="article:modified_time" content="2022-04-30T02:05:26.947Z">
+<meta property="article:modified_time" content="2022-04-30T07:27:31.738Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-30 01:03:03 / Modified: 10:05:26" itemprop="dateCreated datePublished" datetime="2022-04-30T01:03:03+08:00">2022-04-30</time>
+              <time title="Created: 2022-04-30 01:03:03 / Modified: 15:27:31" itemprop="dateCreated datePublished" datetime="2022-04-30T01:03:03+08:00">2022-04-30</time>
             </span>
 
           
@@ -208,7 +208,31 @@
 <p>关于二元一次不定方程通解的结论</p>
 <p>若$x_0,y_0$是方程$ax+by&#x3D;c(a,b,c \in Z,ab\neq 0)$的一组整数解（称为特解），则此方程的一切整数解（通解）可表示为<br>$$<br>\begin{cases}<br>x&#x3D;x_0+\frac{b}{(a,b)}t \\<br>y&#x3D;y_0-\frac{a}{(a,b)}t<br>\end{cases}  ,t \in Z<br>$$</p>
 <p>证：$x_0,y_0$为其中一组解$ \RIghtarrow ax_0+by_0&#x3D;c \cdots (4)$<br>$$<br>\therefore a(x_0+\frac{b}{(a,b)}t)+b(y_0-\frac{a}{(a,b)}t )&#x3D;ax_0+by_0&#x3D;c \cdots (5)<br>$$<br>所以（5）是（3）的解</p>
-<p>设<br>$$<br>x^*,y^*<br>$$<br>为（3）的任一解，则<br>$$<br>ax^*+by*&#x3D;c \cdots(6)<br>$$</p>
+<p>设<br>$$<br>x^*,y^*<br>$$<br>为（3）的任一解，则<br>$$<br>ax^*+by*&#x3D;c \cdots(6)<br>$$<br>(6)-(4)：<br>$$<br>a(x^*-x_0)+b(y^*-y_0)&#x3D;0 \Leftrightarrow ax^*-x_0&#x3D;-b(y^*-y_0) \\<br>\Leftrightarrow ( \frac{a}{(a,b)}, \frac{b}{(a,b)})&#x3D;1(x^*-x_0)&#x3D;-\frac{b}{(a,b)}(y^*-y_0) \\<br>\because ( \frac{a}{(a,b)}, \frac{b}{(a,b)})&#x3D;1 \Longrightarrow \frac{a}{(a,b)} \mid y^*-y_0, y^*-y_0&#x3D;- \frac{a}{(a,b)}t,t \in Z \\<br>\Rightarrow x^*-x_)&#x3D; \frac{b}{(a,b)}t \\<br>\therefore \begin{cases}<br>x^*&#x3D;x_0+ \frac{b}{(a,b)}t,\\<br>y^*&#x3D;y_0- \frac{a}{(a,b)}t<br>\end{cases}<br>$$<br>即证</p>
+<p>根据定理3，要写出二元一次方程的全部整数解，只需要找到一组解，寻找特解的方法根据实际情况来定</p>
+<p>（1）如果系数较小，可以用整除或同余分析法</p>
+<p>（2）如果系数较大，利用辗转相除法.实际上，二元一次不定方程整数解的存在性的充分条件就是用Bezout定理证明的，而Bezout恒等式的系数就是用辗转相除法得到的.</p>
+<p>例 求分母不超过100且最接近<br>$$<br>\frac{7}{13}<br>$$<br>但是不等于<br>$$<br>\frac{7}{13}<br>$$<br>的分数.</p>
+<p>设所求为\frac{a}{b}其中a,b \in N^*,(a,b)+1,a \leq 100<br>$$<br>&lt;1&gt; \frac{a}{b}&gt;\frac{7}{13}:\frac{a}{b}-\frac{7}{13}&#x3D;\frac{13b-7a}{13a}<br>$$<br>考虑13b-7a&#x3D;1:<br>$$<br>\begin{cases}<br>a&#x3D;13k-2\\b&#x3D;7k-1<br>\end{cases} (k \in Z) \\<br>\\<br>$$</p>
+<p>$$<br>a&#x3D;13k-2  \leq 100 \Rightarrow k \leq 7<br>$$</p>
+<p>所以不超过100的最大a为89，b&#x3D;98</p>
+<p>此时<br>$$<br>\frac{13b-7a}{13a}&#x3D;\frac{1}{13 \times 89}<br>$$</p>
+<p>$$<br>13b-7a&gt;1:\frac{13b-7a}{13a} \geq \frac{2}{13 \times 100}&#x3D;\frac{1}{13 \times 50}&gt;\frac{1}{13 \times 89}<br>$$</p>
+<p>$$<br>&lt;2&gt;  \frac{a}{b}&lt;\frac{7}{13}:\frac{7}{13}-\frac{a}{b}&#x3D;\frac{7a-13b}{13a}<br>$$</p>
+<p>同理,7a-13b&#x3D;1时a最大为93，b&#x3D;50<br>$$<br>\frac{7a-13b}{13a} &#x3D; \frac{1}{13 \times 93}<br>$$</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="Frobenius-问题"><a href="#Frobenius-问题" class="headerlink" title="Frobenius 问题"></a>Frobenius 问题</h4><p>设$a,b \in N$,(a,b)&#x3D;1,证明当$c&gt;ab-a-b时，方程ax+by&#x3D;c (*)$有非负整数解; 当·c&#x3D;ab-a-b时，方程没有非负整数解</p>
+<p>&lt;1&gt;当$c&gt;ab-a-b$:通解<br>$$<br>\begin{cases}<br>x&#x3D;x_0+bt \\<br>y&#x3D;y_0-at<br>\end{cases} (t \in Z)<br>$$<br>其中$(x_0,y_0)$是一组解，可以通过调节t的取值使$ 0 \leq x_1 \leq b-1, by_1&#x3D;c-ax_1 &gt;ab-a-b-a(b-1)&#x3D;-b$</p>
+<p>$\Rightarrow y_1&gt;-1$，方程有非负整数解</p>
+<h4 id="1971普特南数学竞赛：用面值a-b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a-b"><a href="#1971普特南数学竞赛：用面值a-b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a-b" class="headerlink" title="1971普特南数学竞赛：用面值a,b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a,b."></a>1971普特南数学竞赛：用面值a,b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a,b.</h4><p>一般模型：用面值为$a,b(a,b \in N^*)$两种邮票支付邮资，有多少种邮资不能被支付？</p>
+<p>思路1：设$a,b$两种邮票分别有$x,y$张，则可以支付费用为$ax+by$</p>
+<p>$(a,b)&#x3D;1$,否则若$d&#x3D;（a,b)$.则$d \mid ax+by$ ,则一切不是d的倍数的正整数都不能用$ax+by$表示，即有无限种无法被支付的邮资，矛盾.</p>
+<p>设<br>$$<br>m&#x3D;ax+by<br>$$<br>下证<br>$$<br> m \geq ab<br>$$<br>的一且邮资$m$都可以被支付<br>$$<br>\because (a,b)&#x3D;1 \\<br>\therefore 0 \cdot b, 1 \cdot b,2 \cdot b \cdots ,(a-1) \cdot  b<br>$$<br>构成$\mod a$的完全剩余系<br>$$<br>\therefore m- 0 \cdot b, m -1 \cdot b, \cdots ,m-(a-1)b<br>$$<br>中有a的倍数，即<br>$$<br>\exist y \in [0,a-1]<br>$$<br>且 $y \in \mathbb{Z} $使$m-by&#x3D;ax$，即使$ax+by&#x3D;m$有非负整数解.</p>
+<p>则不能支付的范围$m \in [0,ab)$</p>
+<p>$$<br>0 \leq m &lt;ab:<br>$$<br>若m是可支付邮资，则必存在闭第一象限的整点$(x_0,y_0)$ 在直线ax+by&#x3D;m上.</p>
+<p>下证$ 0 \leq m &lt; ab$时。每个可支付邮资m与闭第一象限内唯一整点$x_0,y_0$一一对应.</p>
+<p>若不然，假设$(x_1,y_1),(x_2,y_2)$都在直线ax+by&#x3D;m上，则<br>$$<br>\begin{cases}<br>ax_1+by_1&#x3D;m \\<br>ax_2+by_2&#x3D;m<br>\end{cases} \Rightarrow<br>a(x_1-x_2)+b(y_1-y_2)&#x3D;0 \Rightarrow b \mid a(x_1-x_2) \Rightarrow b \mid x_1-x_2<br>$$<br>由<br>$$<br>0 \leq ax_1 \leq m &lt;ab \Rightarrow 0 \leq x &lt;b<br>$$<br>同理可得<br>$$<br>0 \leq x_2 &lt;b \Rightarrow |x_1-x_2|&lt;b \Rightarrow x_1&#x3D;x_2\Rightarrow y_1&#x3D;y_2<br>$$<br>矛盾.又显然每个闭的第一象限整点$(x_0,y_0)$只与唯一的m对应，得证.</p>
+<p>现在考虑满足$ax+by&lt;ab$即$\frac{x}{a}+\frac{y}{a}&lt;1$的非负整数时的$(x,y)$</p>
+<p>则通过线性规划作图，可知整点个数（不含线段ab）为<br>$$<br>\frac{(a+1)(b+1)-2}{2}<br>$$<br>根据题意，那就是<br>$$<br>ab-\frac{(a+1)(b+1)-2}{2}&#x3D;35 \Rightarrow \frac{(a-1)(b-1)}{2}&#x3D;35 \Rightarrow (a-1)(b-1)&#x3D;70 \\<br>\Rightarrow \begin{cases}a&#x3D;11\\b&#x3D;8<br>\end{cases}<br>$$<br>思路2：引理1：<br>$$<br>a,b \in<br>$$</p>
 
     </div>
 
@@ -286,7 +310,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">不定方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E6%AC%A1%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">一次不定方程</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">不定方程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E6%AC%A1%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">一次不定方程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.0.1.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Frobenius-%E9%97%AE%E9%A2%98"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">Frobenius 问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1971%E6%99%AE%E7%89%B9%E5%8D%97%E6%95%B0%E5%AD%A6%E7%AB%9E%E8%B5%9B%EF%BC%9A%E7%94%A8%E9%9D%A2%E5%80%BCa-b%E4%B8%A4%E7%A7%8D%E9%82%AE%E7%A5%A8%E6%94%AF%E4%BB%98%E9%82%AE%E8%B5%84%EF%BC%8C%E6%9C%8935%E4%B8%AA%E8%B5%84%E8%B4%B9%E6%94%AF%E4%BB%98%E4%B8%8D%E5%88%B0%EF%BC%8C%E4%BE%8B%E5%A6%8258%E5%B0%B1%E6%98%AF%E5%85%B6%E4%B8%AD%E4%B9%8B%E4%B8%80%EF%BC%8C%E6%B1%82a-b"><span class="nav-number">1.1.0.3.</span> <span class="nav-text">1971普特南数学竞赛：用面值a,b两种邮票支付邮资，有35个资费支付不到，例如58就是其中之一，求a,b.</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
