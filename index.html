@@ -145,6 +145,514 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/04/pell/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/04/pell/" class="post-title-link" itemprop="url">pell</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-05-04 15:41:33" itemprop="dateCreated datePublished" datetime="2022-05-04T15:41:33+08:00">2022-05-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-12 23:24:33" itemprop="dateModified" datetime="2022-05-12T23:24:33+08:00">2022-05-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+<h1 id="佩尔方程"><a href="#佩尔方程" class="headerlink" title="佩尔方程"></a>佩尔方程</h1><p>定义：形$如x^2-Dy^2&#x3D;1,D \in Z,D \neq 0$称为佩尔方程</p>
+<p>当D&lt;0时候，只有平凡解（$\pm 1,0$）</p>
+<p>当D为完全平方数时，也只有平凡解.</p>
+<p>通常只研究D&gt;0且不为完全平方数的情形.</p>
+<p>使$x_0+\sqrt{D}y_0$最小的一组解$(x_0,y_0)$为方程的最小解或基本解.</p>
+<p>定理1：设$(x_0,y_0)$是方程的基本解，其任一组正整数解为$(x,y)$，则必有$x_0 \leq x, y_0 \leq y$</p>
+<p>证：假设$x_0&gt;x$: 则$(x_0)^2&#x3D;D(y_0)^2+1&gt;x^2&#x3D;Dy^2+1 \Rightarrow y_0&gt;y$</p>
+<p>此时$$x_0+\sqrt{D}y_0 &gt;x+\sqrt{D}y$ 这与$(x_0,y_0)$是原方程正整数解中使$x_0+\sqrt{D}y_0$的最小一组解矛盾.</p>
+<p>定理2：方程有无穷多组正整数解，其全部正整数解都可以由基本解$(x_0,y_0)$表示为<br>$$<br>x_n+\sqrt{D}y_n&#x3D;(x_0+\sqrt{D}y_0)^n \cdots(1)<br>$$<br>其中n是任意正整数</p>
+<p>证：根据二项式定理,<br>$$<br>\sqrt D \in R &#x2F;Q<br>$$<br>对正整数n以及满足（1）的正整数对(x_n,y_n)，有<br>$$<br>x_n-\sqrt{D}y_n&#x3D;(x_0-\sqrt{D}y_0)^n\cdots(2)<br>$$<br>（1）x  (2)得到<br>$$<br>x_n^2-Dy_n^2&#x3D;(x_0-\sqrt{D}y_0)^n(x_0+\sqrt{D}y_0)^n&#x3D;(x_n^2-Dy_n^2)^n&#x3D;1<br>$$<br>所以满足(1)的正整数对(x_n,y_n)为原方程的解.</p>
+<p>现证明原方程的正整数解只能由（1）产生, 即<br>$$<br>x+ \sqrt{D}y \neq (x_0+\sqrt{D}y_0)^n<br>$$<br>则显然存在唯一r \in N^* 使得<br>$$<br>(x_0+\sqrt{D}y_0)^r&lt;x+\sqrt{D}y&lt;(x_0+\sqrt{D}y_0)^{r+1} \Longleftrightarrow 1 &lt; \frac{x+\sqrt{D}y}{(x_0+\sqrt{D}y_0)^r}&lt;x_0+\sqrt{D}y_0\\<br>\Longleftrightarrow 1 &lt; (x+\sqrt{D}y){(x_0-\sqrt{D}y_0)^r}&lt;x_0+\sqrt{D}y_0 \cdots(3 )<br>$$<br>令$(x+\sqrt{D}y){(x_0-\sqrt{D}y_0)^r}&#x3D;X+\sqrt{D}Y$现证X,Y也是原方程的整数解,</p>
+<p>$$<br>X-DY^2&#x3D;(X+\sqrt{D}Y)(X-\sqrt{D}Y)&#x3D;(x+\sqrt{D}y)(x_0-\sqrt{D}y_0)^r(x-\sqrt{D}y)(x_0+\sqrt{D}y_0)^r\\<br>&#x3D;(x^2-Dy^2)(x_0^2-Dy_0^2)^r&#x3D;1<br>$$<br>即证，且由（3）：$1 &lt;X+\sqrt{D}Y&lt;x_0+\sqrt{D}y_0 \cdots(3 )$现在只需证明$X,Y$为正整数即可推出矛盾<br>$$<br>X+\sqrt{D}Y&gt;1 \Rightarrow 0 &lt;X-\sqrt{D}Y&#x3D;\frac{1}{X+\sqrt{D}Y}&lt;1 \\<br>\Rightarrow 2x&gt;1<br>$$</p>
+<p>$$<br>2X&gt;1 \Rightarrow x&gt;0,X\in Z \Rightarrow X \in N^* \\<br>X-\sqrt{D}Y&lt;1&lt;X+\sqrt{D}Y \Rightarrow \sqrt{D}Y&gt;0 \Rightarrow Y&gt;0 ,Y \in Z \Rightarrow Y\in N^*<br>$$</p>
+<p>由此，原方程所有正整数解由<br>$$<br>x_n+y_n \sqrt{D}&#x3D;(x_0+\sqrt{D}y_0)^n<br>$$<br>组成.</p>
+<p>递推关系<br>$$<br>\begin{cases}<br>x_n&#x3D;2x_0x_{n-1}-x_{n-2}\\<br>y_n&#x3D;2x_0y_{n-1}-y_{n-2}<br>\end{cases}<br>$$<br>证：<br>$$<br>x_n+y_n \sqrt{D}&#x3D;(x_0+\sqrt{D}y_0)^n&#x3D;(x_0+\sqrt{D}y_0)^{n-1}(x_0+\sqrt{D}y_0)&#x3D;(x_{n-1}+\sqrt{D}y_{n-1})(x_0+\sqrt{D}y_0) \\<br>&#x3D;x_0x_{n-1}+Dy_0y_{n-1}+\sqrt{D}(x_0y_{n-1}+y_0x_{n-1}) \Rightarrow \begin{cases}<br>x_n&#x3D;x_0x_{n-1}+Dy_0y_{n-1} \cdots(3)\\<br>y_n&#x3D;x_0y_{n-1}+y_0x_{n-1} \cdots(4)<br>\end{cases}<br>$$<br>通过（3）（4）变形得到<br>$$<br>x_0x_{n-1}&#x3D;x_0^2x_{n-2}+Dx_0y_0y_{n-2} \cdots(5) \\<br>(3)-(5) \Rightarrow x_n&#x3D;2x_0x_{n-1}-x_0^2x_{n-1}+Dy_0(\boxed{y_{n-1}-x_0y_{n-2} })\cdots(6) \\<br>(4 ) \longrightarrow y_{n-1}-x_0y_{n-2}&#x3D;y_0x_{n-2}<br>$$<br>带入即<br>$$<br>\Longrightarrow (6): x_n&#x3D;2x_0x_{n-1}-x_0^2x_{n-1}+Dy_0^2x_{n-2}&#x3D;2x_0x_{n-1}-x_{n-2}(x_0^2-Dy_0^2)&#x3D;2x_0x_{n-1}-x_{n-2}<br>$$<br>另一方面，将（5）带入（4）得到<br>$$<br>y_n&#x3D;x_0y_{n-1}+y_0(x_0x_{n-2}+Dy_0y_{n-2})&#x3D;x_0y_{n-1}+x_0y_0x_{n-2}-Dy_0^2y_{n-2} \cdots(7)<br>$$<br>将$Dy_0^2&#x3D;x_0^2-1$替换到（7）则可以得到<br>$$<br>x_0y_{n-1}+x_0y_0x_{n-2}-(x_0^2-1)y_{n-2}&#x3D;x_0y_{n-1}+x_0(y_0x_{n-2}+x_0y_{n-2})-y_{n-2}\\ \longrightarrow^{(4)}2x_0y_{n-1}-y_{n-2}<br>$$<br>定义3:形如<br>$$<br>x^2-Dy^2&#x3D;-1<br>$$<br>也为佩尔方程</p>
+<p>定理3：设$D \in N^*$不是完全平方数，若方程$x^2-Dy^2&#x3D;-1$有正整数解，则也有无穷多组正整数解，且全部正整数解也都可以由其基本解(x_0,y_0)可以表示为<br>$$<br>x+ \sqrt{D}y&#x3D;(x_0+\sqrt{D}y_0)^{2n+1},n \in N^*<br>$$<br>注：</p>
+<ol>
+<li><p>此方程不一定有正整数解，但第一个佩尔方程一定有正整数解.</p>
+</li>
+<li><p>基本解(x_0,y_0)也是其所有整数解中使得$x+ \sqrt{D}y$的最小解</p>
+</li>
+<li><p>判断$D_i$等于何时有正整数解是一个困难的问题.</p>
+</li>
+</ol>
+<p>例1：称能表示为$1+2+3+\cdots+k$的形式的自然数为三角数，求一个四位数N,它既是三角数，也是完全平方数.</p>
+<p>证：<br>$$<br>\frac{k(k+1)}{2}&#x3D;m^2(k,m \in N^*) \Rightarrow k^2+k&#x3D;2m^2 \\4k^2+4k&#x3D;8m^2 \\<br>4k^2+4k+1-1&#x3D;2\cdot(2m)^2\\<br>(2k+1)^2-2(2m)^2&#x3D;1<br>$$<br>令$x&#x3D;2k+1,y&#x3D;2m$则<br>$$<br>x^2-2y^2&#x3D;1(32 \leq m \leq 99) \\<br>\Rightarrow 64 \leq y \leq 198 (x_0,y_0&#x3D;3,2)<br>$$<br>根据定理2：<br>$$<br>x_1+\sqrt{D}y_1&#x3D;(3+\sqrt2\times 2)^2&#x3D;9+12\sqrt2+8&#x3D;17+12\sqrt{2} \\<br>\Rightarrow x_1,y_1&#x3D;17,12<br>$$<br>由递推关系<br>$$<br>y_n&#x3D;2x_0 y_{n-1}-y_{n-2}&#x3D;6y_{n-1}-y_{n-2}\\<br>y_2&#x3D;6y_1-y_0&#x3D;6 \times 12-2&#x3D;70,y_3&#x3D;6y_2-y_1&#x3D;6 \times 70-12&#x3D;408&gt;198 \\<br>\therefore m&#x3D;\frac{y_2}{2}&#x3D;35 \\<br>$$<br>所以所求四位数为$35^2&#x3D;1225$.</p>
+<p>求最小的正整数n&gt;1，使得$1^2,2^2,3^2, \cdots, n^2$的算数平均数是一个完全平方数.<br>$$<br>\frac{1^2+2^2+3^2+ \cdots+n^2}{n}&#x3D;m^2(n&gt;1,n,m \in N^*)\Rightarrow \frac{1}{6}(n)(n+1)(2n+1)&#x3D;m^2 \\<br>\Rightarrow 2n^2+3n+1&#x3D;6m^2\Rightarrow 16n^2+24n+9-1&#x3D;3(4m)^2 \\<br>\Rightarrow  (4n+3)^2-3(4m)^2&#x3D;1 \Longrightarrow x^2-3y^2&#x3D;1<br>$$<br>其中解$(x_1,y_1)&#x3D;(2,1) \rightarrow (x_0,y_0)&#x3D;(1,0)$<br>$$<br>\begin{cases}x_k&#x3D;4x_{k-1}-x_{k-2},x_0&#x3D;1,x_1&#x3D;2\\<br>y_k&#x3D;4y_{k-1}-y_{k-2},y_0&#x3D;0,y_1&#x3D;1<br>\end{cases}<br>\\<br>\Rightarrow x_k \equiv -x_{k-2},y_k \equiv -y_{k-2}(\mod 4)<br>$$</p>
+<p>$$<br>\\<br>\Rightarrow {x_k} \equiv 1,2,3,2,1,2,3,2 \cdots \\<br> \Rightarrow {y_k} \equiv 0,1,0,3,0,1,0,3\cdots<br>$$<br>满足<br>$$<br>\begin{cases}x \equiv 3(\mod 4) \Rightarrow k&#x3D;2,6,1,0, \cdots\equiv2(\mod 4)<br>\\y \equiv 0(\mod 4) \Rightarrow k&#x3D;0,2,4,6 \Rightarrow k&#x3D;2p(\mod 4)\end{cases}<br>$$</p>
+<p>$$<br>k&#x3D;2p\equiv2(\mod 4)\Rightarrow p \equiv 1(\mod 2),p&#x3D;2s+1(s \in N) \\<br>\therefore k&#x3D;2(2s+1)&#x3D;4s+2 \\<br>k&#x3D;2:x_2&#x3D;4x_1-x_0&#x3D;7&#x3D;4n+3\Rightarrow n&#x3D;1<br>$$</p>
+<p>不满足n&gt;1。<br>$$<br>k&#x3D;6:x_6&#x3D;4x_5-x_4&#x3D;15x_4-4x_3&#x3D;\cdots&#x3D;790x_1-209x_0&#x3D;780\times2-209\times 1&#x3D;1351&#x3D;4n+3 \\<br>\Rightarrow n&#x3D;337<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/03/%E6%95%B0%E5%88%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/03/%E6%95%B0%E5%88%86/" class="post-title-link" itemprop="url">数分</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-05-03 12:56:36" itemprop="dateCreated datePublished" datetime="2022-05-03T12:56:36+08:00">2022-05-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-07 14:09:40" itemprop="dateModified" datetime="2022-05-07T14:09:40+08:00">2022-05-07</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+<h1 id="数分"><a href="#数分" class="headerlink" title="数分"></a>数分</h1><p>复习笔记罢了.</p>
+<h2 id="一致收敛"><a href="#一致收敛" class="headerlink" title="一致收敛"></a>一致收敛</h2><p>函数项级数主要研究关于一致收敛以及极限是否可以交换的问题. </p>
+<p>Ex：<br>$$<br>X&#x3D;{x \geq 0} \\<br>f_n(x)&#x3D;x^n, \lim_{\forall x \in X ,\quad n \rightarrow \infty}x^n<br>$$</p>
+<p>则显然 ${f_n(x)}$的收敛集为$[0,1)$<br>$$<br>\lim_{n \rightarrow \infty}\begin{cases}<br>0 ,\quad0 \leq x&lt;1\\<br>1  , \quad x&#x3D;1<br>\end{cases}<br>$$<br>${f_n(x)}$连续，但是这个序列的极限并不连续. 研究在什么情况下函数依然连续？这就是一致连续的概念</p>
+<p>Ex:<br>$$<br>f_n(x)&#x3D;\frac{\sin n^2x}{n},X&#x3D;\R\\<br>\forall x\in \R ,\quad \lim_{n \rightarrow \infty}f_n(x)&#x3D;0.\\<br>f_n’(x)&#x3D;\frac{n^2\cos n^2x}{n}<br>$$<br>当原函数序列是可微函数，但导数并不一定收敛，且收敛之后的导数也并不一定是极限函数的导数.</p>
+<p>Ex:<br>$$<br>\forall 0 &lt;x&lt;1,f_n(x)&#x3D;2(n+1)x(1-x^2)^n<br>$$<br>显然<br>$$<br>0 \leq f_n(x) \leq 2(n+1)x(1-x^2)^n \longrightarrow 0<br>$$</p>
+<p>$$<br>\int _{0}^{1}f_n(x)dx &#x3D;2(n+1)\int _{0}^{1}x(1-x^2)^ndx&#x3D;1<br>$$</p>
+<p>但是当$n \rightarrow \infty时f(x)$是0函数，故<br>$$<br>\int _{0}^{1}f(x)dx&#x3D;0<br>$$<br>显然极限不能与积分随便交换，函数列可积且函数可积，但是极限符号不能随便交换.</p>
+<p>例：<br>$$<br>f_m(x)&#x3D;\lim_{n \rightarrow \infty}\cos(\pi x m!)^{2n}<br>$$<br>当$m!x$为整数时函数为1. x为有理数，m充分大时$f&#x3D;1$. x是无理数时显然为$0$.  这正是$Drichlet$函 数<br>$$<br>D(x)&#x3D;\begin{cases}1(x \in \Q)\\<br>0(x \notin \Q)<br>\end{cases}<br>$$</p>
+<p>对函数f积分<br>$$<br>\int_{a}^{b}f_m(x)dx&#x3D;0<br>$$<br>由于对给定的m,在固定区间内$m!x$为整数的只有有限个，显然为0. 但m取极限时时，函数f为$Drichlet$函数，这是不可积的。</p>
+<p>定义<br>$$<br>u_1(x_0)+u_2(x_0)+\cdots \sum_{n&#x3D;1}^{\infty}u_n(x)&#x3D;S(x)<br>$$</p>
+<ol>
+<li><p>函数项级数在某个集合$E$上的收敛性以及在收敛时的函数值是逐点定义的，一般称为逐点收敛（取一个点收敛于一个值）。为了研究函数项级数的和函数则需要比逐点收敛更强的条件：一致收敛。</p>
+<p>例：<br>$$<br>\sum_{n&#x3D;1}^{\infty}x^n: \overline{\lim_{n \rightarrow \infty}\sqrt[n]{|x_n|}}&#x3D;|x|&lt;1<br>$$<br>则根据级数判别法，$\sum_{n&#x3D;1}^{\infty}x^n$在$(-1,1)$上收敛，和函数为<br>$$<br>S(x)&#x3D;\sum_{n&#x3D;1}^{\infty}x^n&#x3D;\frac{x}{1-x}<br>$$</p>
+<p>$$<br>\sum_{n&#x3D;1}^{\infty}e^{-nx}&#x3D;\sum_{n&#x3D;1}^{\infty}(e^{-x})^n,S(x)&#x3D;\sum_{n&#x3D;1}^{\infty}e^{-nx},E&#x3D;(0,\infty) \Rightarrow S(x)&#x3D;\frac{e^{-x}}{1-e^{-x}}&#x3D;\frac{1}{e^x+1}<br>$$</p>
+</li>
+<li><p>函数项级数在E上的一致收敛性质是一种整体性质,此性质已经多次出现，体现了一种整体的性质。包括函数在某个区间上的有界性，一致连续性和Riemann可积分性。相反，函数的连续性，可微性和函数项级数的逐点收敛性则是函数的局部性质。</p>
+</li>
+<li><p>显然，函数项级数$\sum_{n&#x3D;1}^{\infty}u_n(x)$在集合E上的一致收敛性与该级数的部分和序列的一致收敛性等价</p>
+</li>
+<li><p>若函数数列${S_n(x)}$在数集E上收敛于极限函数S(x),则使用数列极限的定义不难得到2<br>$$<br>\forall \varepsilon&gt;0, \exist N&gt;0,\forall n&gt;N,x \in E,|S_n(x)-S(x)|&lt;\varepsilon \Leftrightarrow \lim_{n \rightarrow \infty}S_n(x)&#x3D;S(x)<br>$$</p>
+</li>
+</ol>
+<p>此时的<br>$$<br> \lim_{n \rightarrow \infty}S_n(x)&#x3D;S(x)<br>$$<br>与逐点收敛不同的是此时的$N$只与$\varepsilon$有关，对所有的$x \in E$同时适用，这便是收敛的一致性质.</p>
+<p>判别法：</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/01/ComplexAnalysis1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/01/ComplexAnalysis1/" class="post-title-link" itemprop="url">Complex Analysis 1</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-05-01 14:53:08" itemprop="dateCreated datePublished" datetime="2022-05-01T14:53:08+08:00">2022-05-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-07 14:47:18" itemprop="dateModified" datetime="2022-05-07T14:47:18+08:00">2022-05-07</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Complex-Analysis"><a href="#Complex-Analysis" class="headerlink" title="Complex Analysis"></a>Complex Analysis</h1><head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+
+<p><em>Hi</em> this is Rika. </p>
+<h2 id="Complex-analysis"><a href="#Complex-analysis" class="headerlink" title="Complex analysis"></a>Complex analysis</h2><p>Some interesting things to learn</p>
+<p>Integrals. Many kinds of functions do not have perfect antiderivative such as<br>$$<br>\int_{}^{}\frac{1}{1+x^4} dx<br>$$<br>but might have nice integrals over good regions<br>$$<br>\int_{-\infty}^{\infty}\frac{1}{1+x^4} dx<br>$$</p>
+<p>So instead of going from an arbitrary antiderivative from the function we might do something easily for the integer on a complex plane. Residue theorem convert the integrals into algebra.</p>
+<p> Fourier transform<br>$$<br>\mathcal{F}(f(t))&#x3D;\int_{-\infty}^{\infty}f(x)e^{-2\pi ixt}dx<br>$$<br>we have already learned Fourier series in the mathematical analysis, Fourier transform is an extension of the Fourier series and a tool of integers and probability. </p>
+<p>Factorial Gamma function<br>$$<br>(s-1)!&#x3D;\Gamma(s)&#x3D;\int_{0}^{\infty}e^{-x}x^{s-1}dx , \\<br>\Gamma (s+1)&#x3D;s\Gamma(s),\Gamma(\frac{1}{2})&#x3D;\sqrt\pi<br>$$<br>Number theorem: Riemann zeta function and Euler product<br>$$<br>\zeta (s)&#x3D; \sum_{n&#x3D;1}^{\infty}\frac{1}{n^s}&#x3D;\prod_{p \in P}(1-\frac{1}{p^s})^{-1},\Re(s)&gt;1<br>$$<br>in the mathematical analysis we have already proved<br>$$<br>\zeta(2) \quad and \quad \zeta(2n)<br>$$<br>in complex analysis ,it has more applications.</p>
+<p>Cauchy theorem<br>$$<br>\oint f(z)dz&#x3D;0<br>$$<br>when f is the analytic function. </p>
+<h2 id="1-Complex-differentiable"><a href="#1-Complex-differentiable" class="headerlink" title="1. Complex differentiable"></a>1. Complex differentiable</h2><p>$$<br>\lim_{h \rightarrow 0}\frac{f(z+h)-f(z)}{h}&#x3D;f’(z)<br>$$</p>
+<p>Example:<br>$$<br>f(z)&#x3D;\bar z&#x3D;\overline{x+iy}&#x3D;x-iy \\<br>\lim_{h \rightarrow 0}\frac{f(z+h)-f(z)}{h}&#x3D;\lim_{h \rightarrow 0} \frac{\bar h}{h} \\<br>&lt;1&gt;:h \in \mathbb{R}: \lim_{h \rightarrow 0} \frac{\bar h}{h}&#x3D;1 \\<br>&lt;2&gt; h \in i\mathbb{R}(h&#x3D;ik,k \in \mathbb{R})  \lim_{k \rightarrow 0} \frac{ -ik}{ik}&#x3D;-1<br>$$<br>In order to make the function</p>
+<p>$$<br>f(z)&#x3D; \bar z :\mathbb C \rightarrow \mathbb C<br>$$<br> differentiable, it has to make sure the limit exist in all of the path. Obviously, it is not equal when h in the real number and the imagine number which is not differentiable. </p>
+<p>Now here is a theorem that shows the equivalent way to determine a complex function is differentiable or not. </p>
+<p>The complex variable z can be written as<br>$$<br>z&#x3D;x+iy<br>$$<br>so that could change function f in to<br>$$<br>f(z)&#x3D;u(x,y)+iv(x,y)<br>$$<br>assume f  complex differentiable find condition for u and v.</p>
+<h6 id="In-real-axis-h-x3D-h-in-mathbb-R"><a href="#In-real-axis-h-x3D-h-in-mathbb-R" class="headerlink" title="In real axis:  $h&#x3D;h \in \mathbb{R}$"></a>In real axis:  $h&#x3D;h \in \mathbb{R}$</h6><p>$$<br>f’(z)&#x3D;\lim_{h \rightarrow 0}\frac{u(x+h,y)+iv(x+h,y)-u(x,y)-iv(x,y)}{h} &#x3D; \\<br>\lim_{h \rightarrow 0}\frac{u(x+h,y)-u(x,y)}{h}+i\lim_{h \rightarrow 0}\frac{v(x+h,y)-v(x,y)}{h} \\<br>&#x3D;\frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}&#x3D;u_x+iv_x<br>$$</p>
+<h6 id="In-imagine-axis"><a href="#In-imagine-axis" class="headerlink" title="In imagine axis:"></a>In imagine axis:</h6><p>$$<br>h \in i \mathbb{R},h&#x3D;ik<br>$$</p>
+<p>$$<br>f’(z)&#x3D;\lim_{k \rightarrow 0}\frac{u(x,y+k)+iv(x,y+k)-u(x,y)-iv(x,y)}{ik}  \\<br>\lim_{k \rightarrow 0}\frac{u(x,y+k)-u(x,y)}{ik}+\lim_{k \rightarrow 0}\frac{v(x,y+k)-v(x,y)}{k} \\<br>$$</p>
+<p>$$<br>&#x3D;-i\frac{\partial u}{\partial y}+\frac{\partial v}{\partial y}&#x3D;v_y-iu_y<br>$$</p>
+<p>get the Cauchy Riemann equation:<br>$$<br>f’(z)&#x3D;\frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}&#x3D;-i\frac{\partial u}{\partial y}+\frac{\partial v}{\partial y}\\<br>\boxed{\frac{\partial u}{\partial x}&#x3D;\frac{\partial v}{\partial y},\frac{\partial v}{\partial x}&#x3D;-\frac{\partial u}{\partial y}}<br>$$</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/01/%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/01/%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B/" class="post-title-link" itemprop="url">勾股方程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-05-01 09:27:51" itemprop="dateCreated datePublished" datetime="2022-05-01T09:27:51+08:00">2022-05-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-04 15:41:23" itemprop="dateModified" datetime="2022-05-04T15:41:23+08:00">2022-05-04</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+<h1 id="勾股方程"><a href="#勾股方程" class="headerlink" title="勾股方程"></a>勾股方程</h1><p>定义：</p>
+<p>由勾股定理引出的一个方程$x^2+y^2&#x3D;z^2\cdots (1)$，则根据勾股定理，满足方程(1)的|x|,|y|,|z|是可以作为直角三角形三边长度的.</p>
+<h3 id="勾股方程整数解要满足的必要条件"><a href="#勾股方程整数解要满足的必要条件" class="headerlink" title="勾股方程整数解要满足的必要条件"></a>勾股方程整数解要满足的必要条件</h3><p>定理1：</p>
+<p>设$(x,y,z)$为方程$x^2+y^2&#x3D;z^2 \cdots (1)$的解，则$60 \mid xyz$</p>
+<p>证：$60&#x3D;3 \times 4 \times 5$只需证明<br>$$<br>3 \mid xyz,4 \mid xyz ,5 \mid xyz<br>$$</p>
+<ol>
+<li><p>$\mod 3$:</p>
+<p>若$x,y$都不是$3$的倍数,则$z^2&#x3D;x^2+y^2 \equiv 2 (\mod 3)$,则和$z^2$为完全平方数矛盾.\</p>
+</li>
+<li><p>$\mod 5$  (1)$x,y$中有5的倍数，则$5 \mid xyz (2)$ 若没有，则$z^2 \equiv 0, \pm 2(\mod 5) $由于$z^2$是平方数，<br>$$<br>\Rightarrow z^2 \equiv 0 (\mod 5) \Rightarrow 5 \mid z \\<br>\therefore 5 \mid xyz<br>$$</p>
+</li>
+<li><p>$\mod 4,8$若x,y为奇，则$z^2 \equiv 2(\mod 4)$矛盾.则x,y中必有偶数，则设2\mid x<br>$$<br>&lt;1&gt; 2\mid y \Rightarrow 4 \mid xyz \\<br>&lt;2&gt; 2\nmid y : z \equiv 1 (\mod 2) \Rightarrow x^2&#x3D;z^2-y^2 \equiv 0(\mod 8)\\<br>\Rightarrow 4 \mid x \Rightarrow 4 \mid xyz<br>$$</p>
+</li>
+</ol>
+<p>即证.</p>
+<p>模分析是一种必要性分析，这种分析手段一般通过枚举否定缩小包围圈来减少工作量.</p>
+<p>​                </p>
+<p>例1：a,b,c是不同正整数，$a^2+b^2&#x3D;c^2$,则乘积$abc$最接近$2018$的值是多少?</p>
+<p>显然 $60 \mid abc$ 设$abc&#x3D;60m,m \in N^*$<br>$$<br>60m \leq 2018 \Rightarrow m \leq 33 \\<br>60 \times 33&#x3D;1980, 2018-1980&#x3D;38, \\<br>60 \times 34&#x3D;2040,2040-2018&#x3D;22<br>$$<br>构造：当$a15,b&#x3D;8,c&#x3D;17$时$ 15^2+8^2&#x3D;17^2$且$15 \times 8 \times 17&#x3D;2040$</p>
+<p>$\therefore abc$最接近$2018$的是$2040$.</p>
+<h3 id="勾股方程的通解"><a href="#勾股方程的通解" class="headerlink" title="勾股方程的通解"></a>勾股方程的通解</h3><p>方程$x^2+y^2+z^2$满足$x,z,&gt;0,(x,y)&#x3D;d$的全部整数解<br>$$<br>\begin{cases}<br>x&#x3D;2uvd\\<br>y&#x3D;(u^2-v^2)d\\<br>z&#x3D;(u^2+v^2)d<br>\end{cases},u,v \in N^*,(u,v)&#x3D;1,u&gt;v<br>$$<br>证：1. x,y中至少有一个偶数，否则x,y都是奇数，则$z^2\equiv 2(\mod 4)$,矛盾,不妨设$2 \mid x$</p>
+<ol start="2">
+<li><p>总科假定$(x,y)&#x3D;1$,否则$(x,y)&#x3D;d&gt;1,d^2 \mid x^2+y^2 \Rightarrow d^2 \mid z^2 \Rightarrow d \mid z$</p>
+<p>设<br>$$<br>x&#x3D;dx_1,y&#x3D;d_1,z&#x3D;dz_1 \Rightarrow x_1^2+y_1^2&#x3D;z_1^2<br>$$<br>其中(x_1,y_1)&#x3D;1,故总可假定(x,y)&#x3D;1.同理，在x,y互素的条件下，易知(x,z)&#x3D;1,(y,z)&#x3D;1</p>
+</li>
+<li><p>$$<br>x^2&#x3D;z^2-y^2&#x3D;(z+y)(z-y) \cdots (1)\\<br>\because (z,x)&#x3D;(y,x)&#x3D;1,2\mid x\\<br>\therefore y,z \equiv1 (\mod 2 )\Rightarrow 2\mid z+y,z-y<br>$$</p>
+<p>对（1）两边同时除以4，得到<br>$$<br>(\frac{x}{2})^2&#x3D;\frac{z+y}{2}\cdot\frac{z-y}{2}<br>$$</p>
+</li>
+</ol>
+<p>其中<br>$$<br>(\frac{z+y}{2},\frac{z-y}{2})&#x3D;(z,\frac{z+y}{2})&#x3D;(z,z+y)&#x3D;(z,y)&#x3D;1 \\<br>$$<br>$\therefore \frac{z+y}{2},\frac{z-y}{2}$都是完全平方数<br>$$<br>\therefore \frac{z+y}{2}&#x3D;u^2,\frac{z-y}{2}&#x3D;v^2,u,v \in N^*,(u,v)&#x3D;1<br>$$<br>则<br>$$<br>\begin{cases}<br>x&#x3D;2uv \\<br>y&#x3D;(u^2-v^2)\\<br>z&#x3D;u^2+v^2<br>\end{cases}, u,v \in N^*.(u,v)&#x3D;1<br>$$<br>考虑$(x,y)&#x3D;d$,则原方程通解<br>$$<br>\begin{cases}<br>x&#x3D;2uvd \\<br>y&#x3D;(u^2-v^2)d\\<br>z&#x3D;(u^2+v^2)d<br>\end{cases}, u,v \in N^*.(u,v)&#x3D;1<br>$$<br>注：&lt;1&gt; u,v一奇一偶</p>
+<p>&lt;2&gt; 若$a,b \in Z ,a+bi$为复整数（高斯整数）<br>$$<br>\forall u+vi(u,v \in Z) \Rightarrow (u+vi)^2&#x3D;u^2-v^2+2uvi \\<br>(u^2-v^2)^2+(2uv)^2&#x3D;(u^2+v^2)^2<br>$$</p>
+<p>例2：求方程<br>$$<br>\frac{1}{x^2}+\frac{1}{y^2}&#x3D;\frac{1}{z^2}<br>$$<br>的整数解<br>$$<br>\frac{x^2+y^2}{x^2y^2}&#x3D;\frac{1}{z^2} \Rightarrow x^2+y^2&#x3D;(\frac{xy}{z})^2 \cdots(1)<br>$$</p>
+<p>$$<br>x^2,y^2 \in Z \Rightarrow z\mid xy<br>$$</p>
+<p>令xy&#x3D;tz,t \in N^*<br>$$<br>(1) \Rightarrow x^2+y^2&#x3D;t^2 \cdots (2)<br>$$<br>由定理2，方程（2）的通解为<br>$$<br>\begin{cases}<br>x&#x3D;2uvd \\<br>y&#x3D;(u^2-v^2)d\\<br>t&#x3D;(u^2+v^2)d<br>\end{cases}, u,v \in N^*.(u,v)&#x3D;1<br>$$<br>由<br>$$<br>xy&#x3D;tx \Rightarrow 2uvd \cdot(u^2-v^2)d&#x3D;(u^2+v^2)d \cdot z \Rightarrow z(u^2+v^2)&#x3D;2uv(u^2-v^2)d \cdots(3)<br>$$<br>显然<br>$$<br>u^2+v^2<br>$$<br>与<br>$$<br>2,u,v,u^2-v^2<br>$$<br>均互素，<br>$$<br>\Rightarrow (u^2+v^2)\mid d<br>$$<br>设$d&#x3D;(u^2+v^2)k, k \in N^*$</p>
+<p>所以原方程解为<br>$$<br>\begin{cases}<br>x&#x3D;2uv(u^2+v^2)k\\<br>y&#x3D;(u^4-v^4)k \\<br>z&#x3D;2uv(u^2-v^2)k<br>\end{cases}<br>$$<br>或<br>$$<br>\begin{cases}<br>y&#x3D;2uv(u^2+v^2)k\\<br>x&#x3D;(u^4-v^4)k \\<br>z&#x3D;2uv(u^2-v^2)k<br>\end{cases}<br>$$</p>
+<p>现在考虑能出现在本元勾股数中的数的特点.</p>
+<p>例：设$n&gt;2$,则$n$出现在一组本原勾股数中的充分必要条件是<br>$$<br>n \not\equiv 2(\mod 4)<br>$$<br>将n分为奇数偶数来分开讨论.<br>$$<br>&lt;1&gt; n^2+(\frac{n^2-1}{2})^2&#x3D;(\frac{n^2+1}{2})^2<br>$$<br>这表明(n^2,(\frac{n^2-1}{2})^2,(\frac{n^2+1}{2})^2)是一组勾股数，且显然是一组本元勾股数：<br>$$<br>(\frac{n^2-1}{2},\frac{n^2+1}{2})&#x3D;1<br>$$<br>n为偶数时：<br>$$<br>n \not\equiv 2(\mod 4) \Rightarrow4 \mid n. n^2+(\frac{n^2}{4}-1)^2&#x3D;(\frac{n^2}{4}+1)^2<br>$$<br>这表示$(n^2,(\frac{n^2}{4}-1)^2,(\frac{n^2}{4}+1)^2)$为一组勾股数<br>$$<br>((\frac{n^2}{4}-1)^2,(\frac{n^2}{4}+1)^2)&#x3D;1<br>$$<br>必要性：设x,y,z是一组本元勾股数，由定理1，<br>$$<br>4 \mid xyz<br>$$<br>本元勾股数中x,y,z必然有一个偶数,则x,y,z中必有一个4的倍数，另外两个为奇数，则<br>$$<br>x,y,z \equiv0,1,3(\mod 4)\Rightarrow x,y,z \not\equiv 2(\mod 4)<br>$$</p>
+<p>例：对给定非负整数k，都存在正整数n,恰好在k组勾股数中出现</p>
+<p>证：对$k \geq 0,n&#x3D;2^{n+1}$恰有k组勾股数中出现</p>
+<p>$k&#x3D;0:2^1&#x3D;2$显然不在任一组中出现，结论成立。</p>
+<p>假设对非负整数$k-1$成立，即2^k恰好出现在$k-1$组勾股数中</p>
+<p>由此，将没组中的三个勾股数都变成原来的两倍，则有$k-1$组非本元勾股数，每一组都有$2^{k+1}$若$2^{k+1}$出现在一组非本元勾股数中，约去2以后也可以得到一组勾股数。由归纳假设，$2^{k+1}$恰好在k-1组非本元勾股数中出现。下证$2^{k+1}$恰好在一组本元勾股数中出现。<br>$$<br>k \geq 1:4 \mid 2^{k+1}<br>$$<br>所以$2^{k+1}$一定出现在一组本元勾股数中，由定理2，对出现$2^{k+1}$的本元勾股数(x,y,z)<br>$$<br>\exist u &gt;v&gt;0,(u,v)&#x3D;1,x&#x3D;2uv,y&#x3D;u^2-v^2,z&#x3D;u^2+v^2<br>$$<br>只可能是<br>$$<br>x&#x3D;2uv&#x3D;2^{k+1} \Rightarrow uv&#x3D;2^k \Rightarrow u&#x3D;2^k,v&#x3D;1<br>$$<br>从而仅可能在一组本元勾股数中出现。即证。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/01/%E5%80%92%E6%95%B0%E5%BD%A2%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/01/%E5%80%92%E6%95%B0%E5%BD%A2%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B/" class="post-title-link" itemprop="url">倒数形不定方程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-05-01 07:51:45 / Modified: 09:28:50" itemprop="dateCreated datePublished" datetime="2022-05-01T07:51:45+08:00">2022-05-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="倒数形不定方程"><a href="#倒数形不定方程" class="headerlink" title="倒数形不定方程"></a>倒数形不定方程</h1><head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>形如<br>$$<br>\frac{1}{x}+\frac{1}{y}&#x3D;\frac{1}{n} (n \in N^*) \cdots(1)<br>$$<br>或</p>
+<p>$$<br>\frac{1}{x}+\frac{1}{y}&#x3D;\frac{1}{n} (n \in N^*) \cdots(2)<br>$$<br>类型的方程以及由这两个方程衍生出来的方程，则这种方程称作倒数型不定方程。其中（1）有通解.</p>
+<p>证：</p>
+<p>法1：分离常数<br>$$<br>\frac{1}{y}&#x3D;\frac{1}{n}-\frac{1}{x}&#x3D;\frac{x-n}{nx} \Rightarrow y&#x3D;\frac{nx}{x-n}&#x3D;\frac{n(x-n)+n^2}{x-n}&#x3D;n+\frac{n^2}{x-n}<br>$$<br>令$t_1&#x3D;x-n,t_2&#x3D;\frac{n^2}{x-n}$</p>
+<p>$$<br>\begin{cases}<br>x&#x3D;n+t_1 \\<br>y&#x3D;n+t_2<br>\end{cases},t_1t_2&#x3D;n^2,t_1, t_2 \in N^*<br>$$<br>法2：因式分解<br>$$<br>\frac{1}{x}+\frac{1}{y}&#x3D;\frac{1}{n} \Rightarrow xy-n(x+y)&#x3D;0 \Rightarrow (x-n)(y-n)&#x3D;n^2 \\<br>$$<br>令$t_1&#x3D;x-n,t_2&#x3D;y-n$<br>$$<br>\begin{cases}<br>x&#x3D;n+t_1 \\<br>y&#x3D;n+t_2<br>\end{cases},t_1t_1&#x3D;n^2,t_1, t_2 \in N^*<br>$$</p>
+<p>$$<br>\frac{1}{x}+\frac{1}{y}&#x3D;\frac{1}{6}, \quad 6^2&#x3D;36&#x3D;1 \times 36&#x3D;2 \times 18&#x3D;3 \times 12&#x3D;4 \times 9 &#x3D;6 \times 6 \\<br>\Rightarrow \frac{1}{6}&#x3D;\frac{1}{7}+\frac{1}{42}&#x3D;\frac{1}{8}+\frac{1}{24}&#x3D;\frac{1}{9}+\frac{1}{18}&#x3D;\frac{1}{10}+\frac{1}{15}&#x3D;\frac{1}{12}+\frac{1}{12}<br>$$<br>注：</p>
+<p>（1） 的正整数解的组数为$n^2$的正因数的个数,显然必为奇数</p>
+<p>（2）<br>$$<br>\frac {1}{x}+\frac {1}{y}+\frac {1}{z}&#x3D;1(x,y,z \in N^*)<br>$$<br>法1：将1分解<br>$$<br>1&#x3D;\frac{1}{2}+\frac{1}{2},\frac{1}{2}&#x3D;\frac{1}{4}+\frac{1}{4}&#x3D;\frac{1}{3}+\frac{1}{6} \\<br>\therefore 1&#x3D;\frac{1}{2}+\frac{1}{3}+\frac{1}{6} &#x3D;\frac{1}{2}+\frac{1}{4}+\frac{1}{4}<br>&#x3D;\frac{1}{3}+\frac{1}{3}+\frac{1}{3}<br>$$<br>法2：排序<br>$$<br> x \leq y \leq z ,1 \leq \frac{2}{x} \Rightarrow x \leq 3,x \geq 2 \\<br> x&#x3D;2:\frac{1}{y}+\frac{1}{z}+\frac{1}{y}&#x3D;\frac{1}{4}+\frac{1}{4}&#x3D;\frac{1}{3}+\frac{1}{6}\\(2,4,4),(2,3,6)\\<br> x&#x3D;3:\frac{1}{y}+\frac{1}{z}&#x3D;\frac{2}{3} \Rightarrow y \leq 3 \Rightarrow y&#x3D;3\\(3,3,3)<br>$$<br>将$x,y,z$交换，总共可得到$6+3+1&#x3D;10$组解</p>
+<p>例：求所有正整数$n$,使得关于$x,y$的方程$ \frac{1}{x}+\frac{1}{y}&#x3D;\frac{1}{n}$恰有2011组满足 x \leq y的正整数解$(x,y)$<br>$$<br>\begin{cases}<br>x&#x3D;n+t_1 \\<br>y&#x3D;n+t_2<br>\end{cases},t_1t_1&#x3D;n^2,t_1, t_2 \in N^*,t_1 \leq yt_2<br>$$</p>
+<p>设n^2的正因书个数为$r$,则$\frac{r+1}{2}&#x3D;2011 \Rightarrow r&#x3D;4021$<br>$$<br>\therefore n^2&#x3D;p^{4020} \Rightarrow n&#x3D;p^{2010}<br>$$<br>其中p为任意素数.</p>
+<p>例2： $\frac {1}{x}+\frac {1}{y}+\frac {1}{z}&#x3D;\frac{1}{2}(x \leq y \leq z)$的正整数解(x,y,z)组数是多少？</p>
+<p>法1：分部分拆<br>$$<br>\frac{1}{2}&#x3D;\frac{1}{4}+\frac{1}{4}&#x3D;\frac{1}{3}+\frac{1}{6}<br>$$</p>
+<p>$$<br>&lt;1&gt; \frac{1}{2}&#x3D;\frac{1}{4}+\frac{1}{4} \Longrightarrow 4^2&#x3D;16 &#x3D;1 \times 16&#x3D;2 \times 8 &#x3D;4 \times 4 \\<br>\therefore \frac{1}{4}&#x3D;\frac{1}{5}+\frac{1}{20}&#x3D;\frac{1}{6}+\frac{1}{12}&#x3D;\frac{1}{8}+\frac{1}{8},x \leq y \leq z:(4,5,20),(4,6,12),(4,8,8)<br>$$</p>
+<p>$$<br>&lt;2&gt;:\frac{1}{2}&#x3D;\frac{1}{3}+\frac{1}{6} \Longrightarrow 3^2&#x3D;9 &#x3D;1 \times 9&#x3D;3 \times 3 \\<br>(1) \frac{1}{3}&#x3D;\frac{1}{4}+\frac{1}{12}&#x3D;\frac{1}{6}+\frac{1}{6} \\<br>(2)6^2&#x3D;16 &#x3D;1 \times 36&#x3D;2 \times 18 &#x3D;3 \times 12&#x3D;4 \times 9&#x3D;6 \times 6 \\<br>\frac{1}{6}&#x3D;\frac{1}{7}+\frac{1}{42}&#x3D;\frac{1}{8}+\frac{1}{24}&#x3D;\frac{1}{9}+\frac{1}{18}&#x3D;\frac{1}{10}+\frac{1}{15}&#x3D;\frac{1}{12}+\frac{1}{12}<br>$$<br>法2：排序法<br>$$<br>\frac{1}{2} \leq \frac{3}{x} \Rightarrow x \leq 6,\because (x&lt;\frac{1}{2}) \Rightarrow<br>     x \geq 3 \Rightarrow x&#x3D;3,4,5,6<br>$$</p>
+<p>$$<br>&lt;1&gt;x&#x3D;3:\frac{1}{y}+\frac{1}{x}&#x3D;\frac{1}{6} \leq \frac{2}{y} \Rightarrow 7 \leq y \leq 12<br>\\<br>\begin{cases}<br>y&#x3D;7\\<br>z&#x3D;42<br>\end{cases}\begin{cases}<br>y&#x3D;8\\<br>z&#x3D;24<br>\end{cases}\begin{cases}<br>y&#x3D;9\\<br>z&#x3D;18<br>\end{cases}\begin{cases}<br>y&#x3D;10\\<br>z&#x3D;15<br>\end{cases}\begin{cases}<br>y&#x3D;11\\<br>z\notin Z<br>\end{cases}\begin{cases}<br>y&#x3D;12\\<br>z&#x3D;12<br>\end{cases}<br>$$</p>
+<p>$$<br>&lt;2&gt;x&#x3D;4:\frac{1}{y}+\frac{1}{z}&#x3D;\frac{1}{4} \leq \frac{2}{y}  \Rightarrow 5 \leq y \leq 8 \\<br>\begin{cases}<br>y&#x3D;5\\<br>z&#x3D;20<br>\end{cases}\begin{cases}<br>y&#x3D;6\\<br>z&#x3D;12<br>\end{cases}\begin{cases}<br>y&#x3D;7\\<br>z\notin Z<br>\end{cases}\begin{cases}<br>y&#x3D;8\\<br>z&#x3D;8<br>\end{cases}<br>$$</p>
+<p>$$<br>&lt;3&gt;x&#x3D;5:\frac{1}{y}+\frac{1}{z}&#x3D;\frac{3}{10} \leq \frac{2}{y}  \Rightarrow 5 \leq y \leq 6 \\<br>\begin{cases}<br>y&#x3D;5\\<br>z&#x3D;10<br>\end{cases}\begin{cases}<br>y&#x3D;6\\<br>z\notin Z<br>\end{cases}<br>$$</p>
+<p>$$<br>&lt;4&gt;x&#x3D;6:\frac{1}{y}+\frac{1}{z}&#x3D;\frac{1}{3} \leq \frac{2}{y}  \Rightarrow y&#x3D;6<br>\\<br>\begin{cases}<br>y&#x3D;6\\<br>z&#x3D;6<br>\end{cases}<br>$$</p>
+<p>例3：<br>$$<br>\frac{1}{x}+\frac{1}{y}&#x3D;\frac{3}{100}<br>$$<br>有序数对$(x,y)$<br>$$<br>\frac{3}{100} \leq \frac{2}{x} \Rightarrow x \leq [\frac{200}{3}]&#x3D;66 \\<br>\frac{1}{x} &lt;\frac{3}{100}  \Rightarrow x  &gt; \frac {100}{3} \Rightarrow x\geq 34<br>$$<br>此时间距太大，逐一枚举计算量过多。现在考虑因式分解<br>$$<br>x \leq y ,3xy-100(x+y)&#x3D;0 \Rightarrow 3 \times3xy-3\times 100(x+y)+10000&#x3D;10000 \\<br>\Rightarrow (3x-100)(3y-100)&#x3D;2^4 \times 5^4 \\<br>x \leq y \Rightarrow 34 \leq x \leq 66 \Rightarrow 0 &lt;3x-100\leq 98 \\<br>3x-100 \equiv2(\mod 3)<br>$$<br>可知$3x-100$不是完全平方数.<br>$$<br>\therefore 3x-100&#x3D;2,2^3,2 \times 5,2^2\times 5,2^3\times 5,2^4\times 5,2 \times 5^2<br>$$<br>带入发现整数共$6$组，考虑$x,y$交换顺序，则一共$12$组解.</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/30/%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -755,648 +1263,11 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E6%9C%80%E5%B0%8F%E6%95%B0%E5%9B%A0%E5%AD%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E6%9C%80%E5%B0%8F%E6%95%B0%E5%9B%A0%E5%AD%90/" class="post-title-link" itemprop="url">素因数分析最小数因子</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-04-14 21:18:08 / Modified: 16:47:36" itemprop="dateCreated datePublished" datetime="2022-04-14T21:18:08+08:00">2022-04-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="素因数分析1-最小数因子"><a href="#素因数分析1-最小数因子" class="headerlink" title="素因数分析1:最小数因子"></a>素因数分析1:最小数因子</h2><head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
-
-
-<p> 例1：证明<br>$$<br>n \in Z, n&gt;1 \Rightarrow n \nmid2^n-1 \\<br>$$<br>假设<br>$$<br>n \mid 2^n-1 ,<br>$$<br>由<br>$$<br>n&gt;1,<br>$$<br>设p为n的最小素因数,<br>$$<br>p \mid n\mid 2^n-1 \cdots(1) \\<br>\Rightarrow p<br>$$<br>为素数，<br>$$<br>\Rightarrow (2,p)&#x3D;1<br>$$<br>由Fermat小定理，<br>$$<br>p \mid 2^{p-1}-1 \cdots (2)<br>$$<br>由(1),(2)<br>$$<br>p \mid (2^n-1,2^{p-1}-1)&#x3D;2^{(n,p-1)}-1 \\<br>\because<br>$$<br>n的素因子<br>$$<br>\geq p,<br>$$<br>p-1素因子&lt;p.n与p-1没有公共素因子，则<br>$$<br>\\<br>\therefore(n,p-1)&#x3D;1, \therefore p \mid 2^1-1&#x3D;1 \Rightarrow<br>$$<br>矛盾。</p>
-<p>（2 求所有正奇数n使得<br>$$<br>n \mid 3^n+1<br>$$<br>显然n&#x3D;1为一个解，n&gt;1时取n的最小素因子p,则p为奇素数。</p>
-<p>一方面，<br>$$<br>p \mid 3^n+1 \Rightarrow p \mid (3^n+1)(3^n-1)&#x3D;3^{2n}-1 \cdots(1)<br>$$<br>另一方面(p,3)&#x3D;1<br>$$<br>\Longrightarrow_{(Fermat)} p \mid 3^{p-1}-1\cdots (2)<br>$$</p>
-<p>$$<br>(1)(2):p \mid ( 3^{2n}-1, 3^{p-1}-1)&#x3D;3^{(2n,p-1)}-1 \cdots(3) \\<br>\because<br>$$</p>
-<p>n的素因子大于等于p,p-1素因子&lt;p,p-1为偶，<br>$$<br>\therefore (2n,p-1)&#x3D;2,(3) \Rightarrow p \mid 8 \Rightarrow p&#x3D;2<br>$$<br>与p为奇数矛盾，综上有唯一解n&#x3D;1.</p>
-<p>例2：求所有正整数n和所有整数a,使得<br>$$<br>n \mid (a+1)^n-a^n<br>$$<br>显然n&#x3D;1对所有a都满足条件。</p>
-<p>n&gt;1时，取n最小素因子p则<br>$$<br>p \mid (a+1)^n-a^n \cdots(1)<br>$$<br>显然p不整除a+1,a中任一个，（否则整除其中一个必整除另一个，而二者相差1，矛盾）<br>$$<br>\therefore (p,a+1)&#x3D;1,(p,a)&#x3D;1<br>$$<br>由fermat小定理：<br>$$<br>\begin{cases}<br>a^{p-1} \equiv1(\mod p) \\<br>(a+1)^{p-1} \equiv1(\mod p) \\<br>\end{cases} \Rightarrow p \mid (a+1)^{p-1}-a^{p-1} \cdots (2) \\<br>$$<br>由(1),(2)<br>$$<br>\Rightarrow p \mid ((a+1)^{n}-a^{n},(a+1)^{p-1}-a^{p-1})&#x3D;(a+1)^{(n,p-1)}-a^{(n,p-1)} \\<br>$$<br>而(n,p-1)&#x3D;1.<br>$$<br>\therefore p \mid 1<br>$$<br>矛盾.<br>$$<br>\therefore (1,a)<br>$$<br>为所有解。</p>
-<p>例3：有一叠n&gt;1张卡片，在每张卡片上写有一个正整数，这叠卡片有如下性质：其中任意两张卡片上的数的算数平均值也等于这叠卡片中某一张或某几张卡片上的几何平均值.确定所有的n,使得可以推出这叠卡片上的数均相等？</p>
-<p>若n个数满足题设的性质，下设他们同时除以最大公因数也满足题设性质。</p>
-<p>设a1,a2,an满足题设性质,<br>$$<br> \\<br> d&#x3D;(a_1,a_2,\cdots a_n),a_1&#x3D;db_1,a_2&#x3D;db_2,\cdots a_n&#x3D;db_n,(b_1,b_2,\cdots b_n&#x3D;1)<br>$$<br>不妨设<br>$$<br>\frac{a_1+a_2}2 &#x3D; \sqrt[k]{a_{i_1}a_{i_2}\cdots a_{i_k}} \Leftrightarrow \frac{d(b_1+b_2)}{2}&#x3D; d\sqrt[k]{b_{i_1}b_{i_2}\cdots b_{i_k}} \\<br>\Leftrightarrow \frac{(b_1+b_2)}{2}&#x3D; \sqrt[k]{b_{i_1}b_{i_2}\cdots b_{i_k}}<br>$$<br>不妨设<br>$$<br>b_1 \geq b_2 \geq \cdots \geq b_n<br>$$<br>只需证<br>$$<br>b_1&#x3D;b_2&#x3D; \cdots &#x3D; b_n<br>$$<br>假设<br>$$<br>b_1 \geq 2,<br>$$<br>则必有素因子p,<br>$$<br>(b_1,b_2,\cdots,b_n)&#x3D;1<br>$$<br>知存在最小下标<br>$$<br>m \in {2,3,\cdots ,n} s.t.p \nmid b_m<br>$$<br>由<br>$$<br>b_1,b_2, \cdots b_n<br>$$<br>满足题设性质：<br>$$<br>\exist b_{i_1},\cdots,b_{i_k}<br>$$<br>使<br>$$<br>\frac{b_1+b_m}2&#x3D;\sqrt[k]{b_{i_1}\cdots b_{i_k}} \Rightarrow LHS,RHS \in \mathbb{N^*}<br>$$</p>
-<p>$$<br>\\<br>b_1 &gt;b <em>m \Rightarrow \frac{b_1+b_m}2&gt;b_m \Rightarrow \sqrt[k]{b</em>{i_1}\cdots b_{i_k}}&gt;b_m \Rightarrow b_{i_1}\cdots b_{i_k}<br>$$</p>
-<p>必有大于<br>$$<br>b_m<br>$$<br>的数，它的下标一定小于<br>$$<br>b_m<br>$$<br>此数必为p的倍数，<br>$$<br>\therefore p \mid \sqrt[k]{b_{i_1}\cdots b_{i_k}} \Rightarrow p\mid \frac{b_1+b_m}2<br>$$<br>但<br>$$<br>p \mid b_1,p\mid b_m \Rightarrow p \nmid \frac{b_1+b_m}2<br>$$<br>矛盾。<br>$$<br>\\<br>\therefore b_1&#x3D;1 \Rightarrow b_1&#x3D;b_2&#x3D;\cdots b_n&#x3D;1<br>$$<br>故只要<br>$$<br>n \geq 2, n \in \mathbb{Z}<br>$$<br>且这n个数满足题设性质则一定能推出n个数都相等。</p>
-<p>例4：已知p为素数，r为p被210除的余数，若r为一个合数，且可表示为两个完全平方数之和，求r.</p>
-<p>$$<br>\\<br>p&#x3D;210n+r(0&lt;r&lt;210)<br>$$<br>令q时是r的最小素因子，则<br>$$<br>r&#x3D;qm(q \leq m ,m \in \mathbb{N^*}) \\<br>210&gt;r&#x3D;qm \geq q^2 \Rightarrow q \leq 13<br>$$<br>另一方面r不能被2，3，5，7整除，否则p为荷属，矛盾<br>$$<br>\therefore q \geq 13, \therefore q&#x3D;11 \or 13<br>$$<br>令<br>$$<br>r&#x3D;a^2+b^2,a,b \in \mathbb{N^*} \\<br>$$<br>若q&#x3D;11，则<br>$$<br>11 \mid (a^2+b^2)，\forall t \in N, t^2 \equiv 0,1,4,9,5,3,(\mod 11) \\<br>\Rightarrow 11 \mid a,11 \mid b \Rightarrow r \geq 121+121&gt;210.<br>$$<br>矛盾。</p>
-<p>若q&#x3D;13:<br>$$<br>m \leq [\frac{210}{13}]&#x3D;1    6<br>$$<br>如果m&#x3D;16,15,14则，p分别为2，3，7倍数且大于2，3，7故为合数，矛盾.<br>$$<br>\therefore m&#x3D;13,<br>$$<br>此时<br>$$<br>r&#x3D;169&#x3D;5^2+12^2<br>$$<br>当r&#x3D;169,n&#x3D;1时，p&#x3D;379为素数。综上，r&#x3D;169.</p>
-<p>例5：设n为合数，对n的每个真因子d,在黑板上写上数d+1,求所有正整数n,使得黑板上的数恰是某正整数m的所有真因子。</p>
-<p>设n最小真因子为p,则p为素数，则p+1为m最小真因子，也为素数<br>$$<br>\therefore p&#x3D;2<br>$$<br>3为m的最小真因子<br>$$<br>\Rightarrow m<br>$$<br>为奇，m的所有真因子为奇，n的所有真因子为偶，则n没有奇素因，n为2的幂，<br>$$<br>\\<br>n&#x3D;2^k(k \geq 2, k \in \mathbb{Z}) \Rightarrow<br>$$<br>n的最大真因子为<br>$$<br>2^{k-1} \Rightarrow \\<br>$$<br>m最大真因子为<br>$$<br>2^{k-1}+1 \Rightarrow m&#x3D;3(2^{k-1}+1)<br>$$<br>若<br>$$<br>k \geq 4<br>$$<br>则2，4，8为n真因子，3，5，9为m真因子，则14为n真因子，与n为二次幂矛盾。<br>$$<br>\\<br>\therefore k&#x3D;2,3 \\<br>$$</p>
-<p>$$<br>k&#x3D;2:n&#x3D;4,<br>$$</p>
-<p>真因子为2，m&#x3D;9，真因子为3.</p>
-<p>k&#x3D;3:<br>$$<br>n&#x3D;8, \cdots 2,4,m&#x3D;3 \times 5&#x3D;15 \cdots 3,5<br>$$<br>综上n&#x3D;4,8.</p>
-<p>例6：求所有正整数n,使得满足以下条件</p>
-<p>①n至少4个正因数</p>
-<p>②对n任意因数<br>$$<br>a,b<br>$$<br>满足<br>$$<br>1&lt;a&lt;b&lt;n,<br>$$<br>都有<br>$$<br>(b-a) \mid n<br>$$<br>必要性分析.</p>
-<p>若n为奇数，则a,b为奇数<br>$$<br>\Rightarrow 2 \mid (b-a) \Rightarrow 2 \mid n<br>$$<br>矛盾.<br>$$<br> \therefore n<br>$$<br>为偶.取<br>$$<br>a&#x3D;1,b&#x3D;\frac{n}2, (\frac{n}{2}-2) \mid n,(\frac{n}{2}-2) \mid (n-4) \Rightarrow\\<br>(\frac{n}{2}-2) \mid 4 \Rightarrow  \frac{n}{2}&#x3D;1,2,4 \Rightarrow n&#x3D;6,8,12 \\<br>\therefore n&#x3D;6,8,12<br>$$</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E4%B9%8B%E6%95%B4%E6%95%B0%E7%9A%84p%E8%BF%9B%E8%B5%8B%E5%80%BC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/14/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%E4%B9%8B%E6%95%B4%E6%95%B0%E7%9A%84p%E8%BF%9B%E8%B5%8B%E5%80%BC/" class="post-title-link" itemprop="url">素因数分析最小数因子</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-04-14 21:18:08" itemprop="dateCreated datePublished" datetime="2022-04-14T21:18:08+08:00">2022-04-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-15 18:15:42" itemprop="dateModified" datetime="2022-04-15T18:15:42+08:00">2022-04-15</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="素因数分析之整数的p进赋值"><a href="#素因数分析之整数的p进赋值" class="headerlink" title="素因数分析之整数的p进赋值"></a>素因数分析之整数的p进赋值</h1><p>定义：对于非零整数<br>$$<br>n<br>$$<br>和素数<br>$$<br>pp<br>$$<br>定义<br>$$<br>v_p(n)<br>$$<br>是最大的非负整数k使得<br>$$<br>p^k \mid n<br>$$</p>
-<p>称<br>$$<br>v_p(n)<br>$$<br>n的p进赋值.</p>
-<p>注：(1) 最大非负整数k:使得<br>$$<br>\\<br>p^k \mid n \Longleftrightarrow p^k \mid\mid n \Rightarrow p^k \mid n \and p^{k+1} \nmid n \\<br>$$<br>例：<br>$$<br>2^2 \mid 12,2^2 \nmid 12 \Leftrightarrow 2^2 \mid \mid12 \Leftrightarrow V_2(12)&#x3D;2<br>$$<br>(2)<br>$$<br>V_p(n) \geq 1 \Leftrightarrow  p \mid n<br>$$<br>(3)<br>$$<br>V_p(n)<br>$$<br>是n的素因数分解式（唯一分解式）中素因子p的幂次，<br>$$<br>\\<br>n&gt;1:n&#x3D;p_1^{a_1}p2^{a_2} \cdots p_k^{a_k}&#x3D;p_1^{V_{p_1}(n)} p_2^{V_{p_2}(n)}\cdots p_k^{V_{p_k}(n)} \\<br>$$<br>(4)<br>$$<br>V_p(n)&#x3D;V_p(\mid n\mid),V_p(\pm 1)&#x3D;0<br>$$<br>(5)对正整数n,<br>$$<br>n&#x3D;p^{V_{p}(n)}m,(m,p)&#x3D;1.<br>$$<br>p为任意素数。</p>
-<p>​     [注]1. 若<br>$$<br>p \mid n, p \in {p_1,p_2 \cdots p_k} \\<br>$$<br>则<br>$$<br>n&#x3D;p^{V_{p}(n)}m,(m,p)&#x3D;1，V_p(n)\geq 1 \\<br>$$</p>
-<ol start="2">
-<li>若<br>$$<br>p \nmid n, p \notin {p_1,p_2 \cdots p_k} \\<br>$$<br>进而<br>$$<br>V_p(n)&#x3D;0 \\<br>$$<br>则<br>$$<br>n&#x3D;p^0m&#x3D;m<br>\begin{cases}<br>p_1^{V_{p_1}(n)}\cdots p_k^{V_{p_k}(n)},m&gt;1 \\<br>1, m&#x3D;1<br>\end{cases} \\<br>$$</li>
-</ol>
-<p>(6)设<br>$$<br>n&gt;1.n \in Z.n&#x3D; \prod_{p \mid n} p^{V_p(n)},V_p(n) \geq 1<br>\\<br>$$</p>
-<p>(7)<br>$$<br>p \nmid n<br>$$<br>时,<br>$$<br>V_p(n)&#x3D;0 \Rightarrow p^{V_p(n)}&#x3D;1,<br>$$</p>
-<p>定理1：<br>$$<br>a,b \in \mathbb{Z} \neq0\Rightarrow \boxed{v_p(ab)&#x3D;v_p(a)+v_p(b),v+p(a+b) \geq \min {v_p(a),v_p(b)}}\\<br>$$<br>证</p>
-<p>$$<br>a&#x3D;a&#x3D;p^{v_p(a)}m,b&#x3D;p^{v_p(b)}n,(m,p)&#x3D;(n,p)&#x3D;1 \\<br>ab&#x3D;p^{v_p(a)+v_p(b)}mn,(mn,p)&#x3D;1\\<br>\therefore v_p(ab)&#x3D;v_p(a)+v_p(b)</p>
-<p>\\<br>$$<br>不妨设<br>$$<br>v_p(a) \geq v_p(b),a+b&#x3D;p^{v_p(a)}m+p^{v_p(b)}n&#x3D;p^{v_p(a)}(p^{v_p(a)<br>-v_p(b)}m+n) \\<br>\Rightarrow p^{v_p(b) }\mid a+b \Rightarrow v_p(a+b) \geq v_p(b)&#x3D; \min{v_p(a),v_p(b)}<br>$$<br>推论：对任意非零整数a,设<br>$$<br>n \in N*  \Rightarrow v_p(a^n)&#x3D;nv_p(a)<br>$$<br>证:<br>$$<br>v_p(a^n)&#x3D;v_p(\underbrace{aa\cdots a}_{n})&#x3D;nv_p(a)<br>$$</p>
-<p>例1：正整数$$a,b,c$$满足<br>$$<br>a+b+c&#x3D;407,10^n \mid abc<br>$$<br>求n最大值.</p>
-<p>解：显然<br>$$<br>n&#x3D;\min{v_2(abc),v_5(abc} \\<br>$$</p>
-<p>$$<br>v_5(abc)&#x3D;v_5(a)+v_5(b)+v_5(b),\\<br>$$</p>
-<p>$$<br>5 \nmid 407 \Rightarrow a,b,c<br>$$</p>
-<p>最多有两个5的倍数，不妨设<br>$$<br>5 \mid a, 5 \mid b \Rightarrow 5 \nmid 407 \Rightarrow v_5(a) \leq 3,v_5(b) \leq 3<br>$$</p>
-<p>否则若<br>$$<br>v_5(a) &gt;3 \Rightarrow a \geq 5^4&#x3D;625&gt;407<br>$$<br>矛盾,<br>$$<br> \therefore v_5(abc) \leq 3+3 &#x3D;6  \Rightarrow n \leq 6<br>$$</p>
-<p>构造：<br>$$<br>a \geq 125,<br>$$<br>设<br>$$<br>n&#x3D;125k,(k \in N^*) \\<br>125k \leq 407-125 \Rightarrow k \leq2 2 \\<br>$$</p>
-<p>$k&#x3D;2$时<br>$$<br>b&#x3D;5^3 \times 2,a&#x3D; 5^3,c&#x3D;2^5<br>$$<br>此时<br>$$<br>v_5(abc)&#x3D;6,v_2(abc)&#x3D;6 \\<br>\therefore 10^6 \mid\mid abc<br>$$</p>
-<p>定理2：若a,b为非零整数，则对所有素数p<br>$$<br>\boxed{a \mid b \Leftrightarrow v_p(a) \leq v_p(b)}<br>$$<br>证<br>$$<br>\Longrightarrow : \\<br>a \mid b \Rightarrow b&#x3D;ac, c \in Z \Rightarrow v_p(b)&#x3D;v_p(ac)<br>&#x3D;v_p(a)+v_p(c) \geq v_p(a)  \\<br>$$</p>
-<p>$$<br>\\<br>\Longleftarrow :\\<br>v_p(a) \leq v_p(b)<br>$$</p>
-<p>对所有素数p成立<br>$$<br>\Leftrightarrow \frac{b}{a}&#x3D;\frac{\prod_{p}p^{v_p(b)}}{\prod_{p}p^{v_p(a)}} &#x3D;\prod_{p}p^{v_p(b)-v_p(a)} \in Z \\<br>\Rightarrow a\mid b.<br>$$</p>
-<p>推论<br>$$<br>a,b \in X \neq 0, n \in N^*, a^n \mid b^n \Leftrightarrow a \mid b<br>$$</p>
-<p>证：<br>$$<br>a^n \mid b^n \Leftrightarrow v_p(a^n) \leq v_p(b^n)<br>$$<br>对所有素数p成立<br>$$<br>\\<br>nv_p(a) \leq nv_p(b) \\<br>\Leftrightarrow v_p(a) \leq v_p(a) \\<br>\Leftrightarrow a \mid b<br>$$</p>
-<p>定理3：<br>$$<br>a,n \in N*,<br>$$<br>a是一个n次方数<br>$$<br>\Leftrightarrow n \mid v_p(a)<br>$$</p>
-<p>对所有素数p成立.</p>
-<p>证：<br>$$<br>\Rightarrow: a&#x3D;b^n, b \in Z,v_p(a)&#x3D;v_p(b^n)&#x3D;nv_p(b) \equiv 0(\mod n) \\<br>\Rightarrow n \mid v_p(a)<br>$$</p>
-<p>$$<br>\Leftarrow：<br>$$<br>若<br>$$<br>n \mid v_p(a)<br>$$<br>对所有整数p成立，则令<br>$$<br>v_p(a)&#x3D;nb_p,b_p \in Z<br>$$<br>令b<br>$$<br>b&#x3D; \prod_{p}p^{b_p}<br>$$</p>
-<p>则<br>$$<br>b^n&#x3D;\prod_{p}p^{nb_p}&#x3D;\prod_{p}p^{v_p(a)}&#x3D;a<br>$$<br>推论:<br>$$<br>a,b \in  N^*,(a,b)&#x3D;1,ab<br>$$<br>为n次方数，则<br>$$<br>a,b<br>$$<br>都是n次方数.</p>
-<p>证：设<br>$$<br>ab&#x3D;c^n<br>$$<br>对所有素数p,有<br>$$<br>v_p(ab)&#x3D;v_p(a)+v_p(b)&#x3D;nv_p(c) \\<br>$$</p>
-<p>$$<br>\because (a,b)&#x3D;1, \therefore p<br>$$<br>不能同时整除<br>$$<br>a,b<br>$$</p>
-<p>$$<br>\therefore v_p(a),v_p(b)<br>$$<br>中有一个为0，另一个为<br>$$<br>v_p(c)<br>$$</p>
-<p>$$<br>\therefore n \mid v_p(a),n \mid v_p(b)<br>$$<br>对所有整数都成立</p>
-<p>$$<br>\therefore a,b<br>$$<br>都为n次方数</p>
-<p>定理4：对所有非零整数<br>$$<br>a,b,<br>$$<br>有<br>$$<br> v_p(a,b)&#x3D;\min{v_p(a),v_p(b)}, v_p[a,b]&#x3D;\max{v_p(a),v_p(b)},<br>$$</p>
-<p>例2：证明:对所有<br>$$<br>n \geq2,[1,2,\cdots n] \leq n^{\pi(n)}<br>$$</p>
-<p>引理：</p>
-<p>$$<br>n \geq 2, n\in Z,p<br>$$<br>为素，则<br>$$<br>V_p[1,2,\cdots n]&#x3D; [\log_pn]<br>$$<br>引理:证明：由定理4可得<br>$$<br>V_p[1,2,\cdots n] &#x3D;\max_{1 \leq i\leq n}V_p(i)<br>$$</p>
-<p>设<br>$$<br>[\log_p n]&#x3D;k, k \leq\log_p n &lt;k+1 \Rightarrow p^k \leq n &lt; p^{k+1}<br>$$</p>
-<p>显然1，2，… n都不是<br>$$<br>p ^{k+1}<br>$$<br>倍数.</p>
-<p>$$<br>\therefore \max_{1 \leq i\leq n}V_p(i) &#x3D;V_p(p^k)&#x3D;k<br>$$</p>
-<p>由前述<br>$$<br>p^k \leq b &lt;p ^{k+1},V_p[1,2,\cdots n]&#x3D;k \\<br>\therefore p^{V_p[1,2,\cdots n]}&#x3D;p^k \leq n \\<br>p_1{V_{p_1}[1,2,\cdots n]} \leq n  \\<br>p_2{V_{p_2}[1,2,\cdots n]} \leq n \\<br>\cdots \cdots \\<br>p_m{V_{p_m}[1,2,\cdots n]} \leq n \\<br>$$</p>
-<p>其中<br>$$<br>p_1,p_2, \cdots p_m<br>$$<br>为<br>$$<br>[1,2, \cdots n]<br>$$<br>所有素因子.对上述式求乘积得到</p>
-<p>$$<br>\prod_{p \mid [1,2,\cdots n]}p^{V_p([1,2,\cdots n])} \Rightarrow [1,2,\cdots n] \leq n^{\pi (n)}<br>$$</p>
-<p>例3：是否存在正整数的无限集，使其中任何非空子集元素之和不是整数的高次幂?</p>
-<p>$$<br>a_n&#x3D;2^n \cdot 3^{n+1}, n \in N^*,A &#x3D; {a_1,a_2, \cdots}<br>$$</p>
-<p>设<br>$$<br>i_1&lt;i_2 &lt; \cdots &lt;i_k<br>$$<br>是一个非空子集中的元素的下标，</p>
-<p>这些元素之和<br>$$<br>S&#x3D;a_{i_1}+a_{i_2}+\cdots a_{i_k} \\<br>&#x3D;2^{i_1}+3^{i_1+1}+2^{i_2}+3^{i_2+1}+\cdots +2^{i_k}+3^{i_k+1} \\<br>&#x3D;2^{i_1}(3^{i_1+1}+2^{i_2-i_1}+3^{i_2+1}+\cdots +2^{i_k-i_1}+3^{i_k+1}) \\<br>$$</p>
-<p>易知括号里的为奇数，则<br>$$<br>V_2(s)&#x3D;i_1<br>$$<br>同理<br>$$<br>V_3(s)&#x3D;i_1+1 \\<br>\therefore (V_2(s),V_3(s) )&#x3D;1 \Rightarrow<br>$$</p>
-<p>$$<br>v_2(s),v_2(s)<br>$$<br>不能被同一个大于1的整数n整除。</p>
-<p>$$<br>\therefore S<br>$$<br>不是任何大于1的整数n的次幂.</p>
-<p>例4：正整数<br>$$<br>a_1,a_2,\cdots a_{101}<br>$$<br>的最大公因数是1，且这些书任何51个的乘积都能被其余50个乘积所整除，求证</p>
-<p>$$<br>a_1a_2\cdots a_{101}<br>$$<br>是完全平方数.</p>
-<p>思路：显然完全平方数的充要条件为素1因数分解后的素数次幂为偶指数，即</p>
-<p>$$<br>v_p(a_1a_2\cdots a_{101})&#x3D; \sum_{i&#x3D;1}^{101}v_p(a_i)<br>$$<br>为偶数.</p>
-<p>证：<br>$$<br>v_p((a_1,a_2,\cdots,a_{101})) &#x3D; \min_{1 \leq i \leq 101}v_p(a_i)<br>$$</p>
-<p>由<br>$$<br>(a_1, \cdots a_{101})&#x3D;1 \\<br>\therefore  \min_{1 \leq i \leq101}v_p(a_i)&#x3D;0<br>$$<br>不妨设<br>$$<br>v_p(a) \geq v_p(a_2) \cdots \geq v_p(a_{101}) ,<br>$$</p>
-<p>则<br>$$<br>\therefore v_p(a_{101})&#x3D;0 \\<br>\because a_1a_2 \cdots a_{50 } \mid a_{51}a_{52} \cdots a_{101}  \\<br>\therefore v_p(a_1a_2 \cdots a_{50 })<br>\leq v_p(a_{51}a_{52} \cdots a_{101}) \\<br>\Leftrightarrow<br>v_p(a_{51})+v_p(a_{52})+\cdots +v_p(a_{100}) \geq v_p(a_{1})+v_p(a_{2})+ \cdots v_p(a_{50})<br>$$</p>
-<p>又<br>$$<br>v_p(a_{51})+v_p(a_{52})+\cdots +v_p(a_{100}) \leq v_p(a_{1})+v_p(a_{2})+ \cdots v_p(a_{50})<br>$$</p>
-<p>$$<br>\therefore v_p(a_{51})+v_p(a_{52})+\cdots +v_p(a_{100}) &#x3D; v_p(a_{1})+v_p(a_{2})+ \cdots v_p(a_{50}) \\</p>
-<p>v_p(a_{1})&#x3D;v_p(a_{2})&#x3D; \cdots &#x3D;v_p(a_{100})  \\<br>\therefore <br>\sum_{i&#x3D;1}^{101}v_p(a_i)&#x3D;\sum_{i&#x3D;1}^{100}v_p(a_i) \equiv0 (\mod 2)<br>$$</p>
-<p>$$<br>\therefore a_1a_2 \cdots a_{101}<br>$$<br>是完全平方数.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/08/%E4%BD%8D%E7%BD%AE%E5%8E%9F%E7%90%86/" class="post-title-link" itemprop="url">位置原理</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-04-08 17:02:40" itemprop="dateCreated datePublished" datetime="2022-04-08T17:02:40+08:00">2022-04-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-12 17:42:49" itemprop="dateModified" datetime="2022-04-12T17:42:49+08:00">2022-04-12</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="位置原理"><a href="#位置原理" class="headerlink" title="位置原理"></a>位置原理</h1><ol>
-<li><p>进位制，我们平时所熟悉的进制就是十进制，即逢10进1，所用数字为0，1，2，3，4，5，6，7，8，9。如果某位数字达到10，则向高位进1.计算机科学中常用二进制，也是一种很重要的进制，缝2进1的，所用数字为0和1.类似地有n进制，逢n进1.</p>
-</li>
-<li><p>位置原理，十进制的位置原理：</p>
-</li>
-</ol>
-<p>$$<br>\\<br>a_na_n-1\cdots a_1a_0&#x3D;a_n \times 10^n+a_{n-1} \times 10^{n-1}+\cdots+a_1 \times 10 +a_0,<br>\\<br>$$</p>
-<p>类似地可以得到r进制下的位置原理<br>$$<br>\\<br>(a_na_n-1\cdots a_1a_0)<em>r&#x3D;a_n \times r^n+a</em>{n-1} \times r^{n-1}+ \cdots+a_1 \times r+a_0<br>\\<br>$$<br>位置原理给出了一个将一个其他进制下的数化为十进制的方法，另外有了位置原理，就可以把一个多位数写成用它的组成数字表示的多项式的形式在结合其他数论知识解决。需要注意的是在利用位置原理把一个多位数写成多项式的形式时要根据实际需要将某些位数字作为一个整体列为多项式的一项而不是死板的一位一位展开。</p>
-<p>将一个多位数对数位进行某种操作，得到一个新数，新数和原数产生某种关系时，这样的问题都是由位置原理去解决的。</p>
-<ol start="3">
-<li>十进制转化为其他进制</li>
-</ol>
-<p>$$<br>\\<br>(1200201)_3&#x3D;1 \times 3^6+2 \times 3^5 +2 \times3^2+1&#x3D;1234<br>\\<br>$$</p>
-<p>r进制转化为十进制时用到的方法：<br>$$<br>\\<br>A_1:a_n \times r^n+a_{n-1} \times r^{n-1}+ \cdots+a_1 \times r+a_0,a_i \in{0,1, \cdots r-1}\\</p>
-<p>A_2&#x3D;:a_n \times r^{n-1}+a_{n-1}\times r^{n-2}+\cdots a_2 r+\boxed{a_1},r_2&#x3D;a_0<br>\\<br>A_3&#x3D;:a_n \times r^{n-2}+a_{n-1}\times r^{n-3}+\cdots a_3 r+\boxed{a_2},r_3&#x3D;a_1<br>\\<br>A_4&#x3D;:a_n \times r^{n-3}+a_{n-1}\times r^{n-4}+\cdots a_4 r+\boxed{a_3},r_4&#x3D;a_2<br>\\<br>\cdots\cdots\cdots<br>\\<br>$$<br>利用长除法将r进制转化为十进制.</p>
-<ol start="4">
-<li>位置原理的推广——实数的位置原理。设r时一个不小于2的正整数，则任意一个正实数a在r进制下可唯一表示为如下形式：</li>
-</ol>
-<p>$$<br>a_nr^n+a_{n-1}r^{n-1}+ \cdots+a_1r+a_0+b_{0}r^{-1}+b_1r^{-2}+\cdots \\<br>a_i,b_j  \in Z, 0 \leq a_i,b_j \leq r-1. 0 \le1 i \leq n,j&#x3D;0,1,2,\cdots<br>$$</p>
-<p>并且不存在正整数m使得任何对于 $j\geq m$,均有$b_j&#x3D;r-1.$ (3.49999999$\cdots$&#x3D;5.0).</p>
-<p>把r进制转化为十进制可以直接展开，将十进制转化为r进制的时候需要对整数部分和小数部分分别处理，采用”除以r取余”和乘以r取整的方法。</p>
-<p> 例1：设n时一位首位非零的五位数，m是由n删去它正中间的以为数码后得到的四位数，若$m \mid n\\$,这样的n有多少个？</p>
-<p>设$n&#x3D;\overline{},m&#x3D;\overline{xyuv}$ </p>
-<p>1 证 $n&gt;9m$,即<br>$$<br>\\<br>10000x+1000y+100z+10u+v&gt;9000x+900y+90u+9v \\<br>\Leftrightarrow 1000x+100y+100z&gt;80u+8v (1)\\<br>x \geq1, LHS \geq 1000, RHS \leq 88 \times 9 &#x3D;792<br>\\<br>$$</p>
-<p>(1)显然成立</p>
-<p>2 正$n&lt;11m$，即<br>$$<br>10000x+1000y+100z+10u+v&lt;11000x+1100y+110u+11v \\<br>\Leftrightarrow 100z&lt;1000x+100y+100u+10v<br>$$<br>显然成立<br>$$<br>\therefore 9m &lt;n&lt;11m \Rightarrow 9&lt;\frac{n}m&lt;11 \\<br>\because m \mid n,\therefore \frac{n}{m} \in \mathbb{Z}, \therefore \frac{n}m&#x3D;10 \\<br>\therefore 10000x+1000y+100z+10u+v&#x3D;10000x+1000y+100u+10v(3)\\<br>(3) \Leftrightarrow 90u+9v&#x3D;100z \Rightarrow v&#x3D;0, 9u&#x3D;10z \Rightarrow u&#x3D;0,z&#x3D;0\\<br>\therefore n&#x3D;\overline{xy000},xy \in {10,11,\cdots 99}\\</p>
-<p>\\<br>$$<br>$\therefore 90$个</p>
-<p>例2：有多少形如$\overline{37abc}$的五位数，满足$\overline{37abc},\overline{37bca},\overline{37cab}$都能被37整除？</p>
-<p>$$<br>\\<br>37 \mid \overline{37abc}&#x3D;37 \times 1000+ \overline{abc} \Leftrightarrow 37 \mid \overline{abc} \\<br>$$<br>设<br>$$<br>\\<br>x&#x3D;\overline{abc},y&#x3D;\overline{bca},z&#x3D;\overline{cab}\\<br>10x-y&#x3D;999a,10t-z&#x3D;999b,10z-x&#x3D;999c, 999&#x3D;37 \times 27 \\<br>37 \mid x \Rightarrow 37 \mid y \Rightarrow 37 \mid z<br>$$<br>由x,y,z地位对等性，只要有一个为37倍数，则其他都为37倍数，问题转化为<br>$$<br>0,1, \cdots, 999 \\<br>$$<br>中有多少个37倍数<br>$$<br>\Leftrightarrow[\frac{999}{37}]+1&#x3D;28 \\<br>$$<br> 例3：不存在整数，将它的首位移到末尾后为原数的两倍.</p>
-<p>设存在这样的整数$N$，设a为N的首位数字，N为n位数.则<br>$$<br>\\<br>10N-a \times 10 ^n+a&#x3D;2N  \Rightarrow 8N&#x3D; \underbrace{99\cdots9}<em>{n} a\\<br>(8,\underbrace{99\cdots9}</em>{n} )&#x3D;1 \therefore 8  \mid a<br>$$<br>因为a为首位数字，则$a&#x3D;8$,进而<br>$$<br> N&#x3D;\underbrace{99\cdots9}_{n}<br>$$<br> 矛盾.</p>
-<p>（2)，若一个正整数首位移到末尾，得到新数是原来的k倍，问k在何时能成立？</p>
-<p>$$<br>\\<br>10N-a \times 10 ^n+a&#x3D;kN  \Rightarrow (10-k)N&#x3D; \underbrace{99\cdots9}<em>{n} a\\<br>$$<br>k&#x3D;1:<br>$$<br>N&#x3D; \underbrace{aa\cdots a}</em>{n}<br>$$<br>满足.</p>
-<p>当$k&#x3D;9,8,6,5,2$时,<br>$$<br>(10-k,\underbrace{99\cdots9}<em>{n} a)&#x3D;1<br>$$<br>则 $a&#x3D;10-k,N&#x3D;\underbrace{99\cdots9}</em>{n}$,矛盾.</p>
-<p>$$<br>k&#x3D;7:N&#x3D;\underbrace{33\cdots3}<em>{n}a \\<br>$$<br>N首位$ \geq 3a$矛盾.<br>$$<br>k&#x3D;4:2N&#x3D;\underbrace{33\cdots3}</em>{n}a \cdots<br>$$<br>矛盾<br>$$<br>\\<br>k&#x3D;3: 7N&#x3D;\underbrace{99\cdots9}_{n}a<br>\\<br>$$</p>
-<ol>
-<li><p>若$(7,\underbrace{99\cdots9}_{n})&#x3D;1$显然不成立</p>
-</li>
-<li><p>若$7 \mid $设$n&#x3D;6p$<br>$$<br>N&#x3D;\underbrace{142857\cdots142857a \Rightarrow }_{p}a \leq 2 \\<br>$$</p>
-</li>
-</ol>
-<p>$$<br>a&#x3D;1，N&#x3D;\underbrace{142857\cdots142857}<em>{p} \\<br>a&#x3D;2，N&#x3D;\underbrace{285714\cdots285714}</em>{p} \\<br>$$</p>
-<p>例4 求满足所有下列条件的四位数，能被111整除，且除得的商等于该四位数的各位数码之和。</p>
-<p>设为<br>$$<br>\overline{abcd}:\frac{\overline{abcd}}{111}&#x3D;\frac{999a+111b+a-11b+10c+d}{111}\\<br>&#x3D;9a+b+\boxed{\frac{a-11b+10c+d}{111}}_{\in Z} \in \mathbb{N^*}\\<br>-98\leq a-11b+10c+d\leq 9+90+9&#x3D;108 \\<br>$$<br>由整除性质，<br>$$<br>a-11b+10c+d&#x3D;0 \Rightarrow a+10c+d (1) \\<br>9a+b &#x3D;a+b+c+d \Rightarrow 8a&#x3D;c+d(2) \\<br>(1),(2)\Rightarrow 11b&#x3D;9(a+c) \leq 99 \Rightarrow 1 \leq a+c \leq 11,11 \mid(a+c) \Rightarrow a+c&#x3D;11(3) \\<br>(2)\Rightarrow 8a \leq 18 \Rightarrow a \leq 2<br>$$<br>若a&#x3D;1:<br>$$<br>(3)\Rightarrow c&#x3D;10, \\<br>$$<br>矛盾</p>
-<p>若a&#x3D;2:<br>$$<br>(3)\Rightarrow c&#x3D;9,\Rightarrow d&#x3D;6,b&#x3D;9 \\<br>\therefore \overline{abcd}&#x3D;2997<br>$$<br>例5：求出具有如下性质的1最大正整数：末尾不是0，删除某位数（非首位）后，是原数的因数。</p>
-<p>设<br>$$<br>\overline{axc}<br>$$<br>其中x表示删去的数字，设c占n位，<br>$$<br>\\<br>\overline{axc}&#x3D;10^{n+1}a+10^nx+c,\overline{ac}&#x3D;10^na+c \\<br>\gamma&#x3D;\frac{\overline{axc}}{\overline{ac}}&#x3D;\frac{10^{n+1}a+10^nx+c}{10^na+c}<br>\in \mathbb{N*}\\<br> \gamma-10&#x3D;\frac{10^nx-9c}{10^na+c} \leq \frac{10^nx}{10^na}&#x3D;\frac{x}{a}\leq\frac{9}{1}&#x3D;9 \\<br>$$<br>令<br>$$<br>l&#x3D;r-10 \in Z<br>$$<br>则上式化为<br>$$<br>(x-la)10^n&#x3D;(l+9)c\cdots(1) \\<br>$$<br>若<br>$$<br>l&lt;0:l&gt;-9,l \neq0<br>$$</p>
-<p>$$<br>\\<br>\therefore -9&lt;l&lt;0,0&lt;l \leq 9<br>$$</p>
-<p>下证a是一位数，若l&gt;0,<br>$$<br>(1)\Rightarrow x-la&gt;0 \Rightarrow a&lt; \frac{x}l \leq \frac{9}1&#x3D;9 \\<br>$$<br>若l&lt;0:<br>$$<br>x-la&#x3D;\frac{(l+9)c}{10^n}&lt;\frac{9c}{10^n}&lt;\frac{9 \times 10^n}{10^n}&#x3D;9 \\<br>\Rightarrow -la&lt;9-x \leq 9 \Rightarrow a &lt;\frac{9}{-l} \leq \frac{9}1 &#x3D;9<br>$$<br>证毕.下求最大n。由于c末尾非0，可以知道c不同时含有素因子2和5.</p>
-<p>（1） c中不含素因子2：<br>$$<br>l+9 \leq 18 \Rightarrow l+9<br>$$<br>最多提供<br>$$<br>2^4 \Rightarrow n \leq 4<br>$$</p>
-<p>$$<br>n-4:c&#x3D;625(x-7a)\cdots (2) \\<br>$$</p>
-<p>$$<br>7a&lt;x \leq 9 \Rightarrow a&#x3D;1 \Rightarrow c&#x3D;625(x-7) \\<br>x&#x3D;9,c&#x3D;1250<br>$$</p>
-<p>矛盾。<br>$$<br>\\<br>\therefore x-8,c&#x3D;625,\overline{axc}&#x3D;180625<br>$$<br>(2)c中不含有素因子5：<br>$$<br>l+9<br>$$<br>至多提供5，<br>$$<br>\Rightarrow n \leq 1<br>$$<br>综上所求最大n为180625.</p>
-<p>例6：三进制中29位数12112211122211112222化成九进制之后左数第二位数是几？<br>$$<br>1 \times 3^{19}+2 \times 3 ^{18}+ \cdots \\<br>&#x3D;3 \times 3^{18}+2 \times 3 ^{18}+3 \times 3^{16}+1 \times 3 ^{18} \\<br>&#x3D;5 \times 3^{18}+4 \times 3^{16}+\cdots \\<br>&#x3D;5 \times 9^{9}+4 \times 9^{8}+\cdots \\<br>$$<br>例7：十进制中999其他进制中是否可以表示成一个各位数字和是27的三位数？</p>
-<p>解：设r进制<br>$$<br>\overline{xyz}<br>$$<br>满足要求<br>$$<br>\begin{cases}<br>x+y+z&#x3D;27 \cdots (1)\\<br>r^2x+ry+z&#x3D;999 \cdots(2) \\<br>\end{cases} \\<br>$$</p>
-<p>$$<br>(2)-(1):(r^2-1)x+(r-1)y&#x3D;972 \Rightarrow (r-1)((r+1)x+y)&#x3D;972&#x3D;2^2 \times 3^5<br>$$</p>
-<p>$$<br>\\<br>(r-1) \mid 2^2 \times 3^5,(2) \Rightarrow r \leq 999 \Rightarrow r \leq 31,r \geq 11 \\<br>\therefore 10 \leq r-1 \leq 30 \therefore r-1&#x3D;12,18,27 \Rightarrow 13,19,28<br>$$</p>
-<p>将十进制999化成13，19，28进制，:<br>$$<br>(5(11)(11))<em>{13},(2(14)(11))</em>{19},(17(91))<em>{28} \\<br>$$<br>例8，数列：1，3，4，9，10，12，13记为<br>$$<br>{a_n} \\<br>$$<br>从小到大排列，或为3的方幂，或是若干个不同3的方幂的和，<br>$$<br>a</em>{100}&#x3D;?<br>$$</p>
-<p>$$<br>n,\quad a_n\\<br>1,\quad 1&#x3D;3^0   \\<br>2,\quad 3&#x3D;1\times 3^1+ 0 \times 3^0  \\<br>3,\quad 4&#x3D;1\times 3^1+ 1 \times 3^0   \\<br>4,\quad 9&#x3D;1\times 3^2+ 0 \times 3^1+0 \times 3^2   \\<br>5,\quad 10&#x3D;1\times 3^2+ 0 \times 3^1+1 \times 3^2   \\<br>6,\quad  12&#x3D;1\times 3^2+ 1 \times 3^1+0 \times 3^2  \\<br>\cdots \\</p>
-<p>$$</p>
-<p>则三进制分别为$1,10,11,100,101,110 \\$,</p>
-<p>二进制<br>$$<br>1，10，11，100，101，101，110  \Rightarrow<br>$$<br>十进制<br>$$<br>1,2,3,4,5,6 \\<br>$$<br>则<br>$$<br>(100)<em>{10} \rightarrow 1100100_2 \Rightarrow 1100100 \Rightarrow 1 \times 3^6 +1 \times 3^5 + 1 \times 3^2 &#x3D;a</em>{100}&#x3D;981<br>$$<br>例9：</p>
-<p>实数$A,B$十进制表示为<br>$$<br>0.a_1a_2\cdots a_k&gt;0,B&#x3D;0.b_1b_2\cdots b_k&gt;0<br>$$<br>设S为满足<br>$$<br>0.c_1c_2 \cdots c_k &lt;A,0.c_kc_{k-1}\cdots c_1&lt;B \\<br>$$<br>的个数，同样, $c_k$ ,$c_1$可以为0，即<br>$$<br>0.c_1c_2 \cdots c_r ,(c_r \neq 0) \quad 0.c_1c_2 \cdots c_r0\cdots0<br>$$<br>视为等同。证明<br>$$<br>|S-10^kAB| \leq 9k<br>$$<br>解：</p>
-<p>$$<br>\\ 0.c_1c_2 \cdots c_k<br>$$<br>满足题设<br>$$<br>\Leftrightarrow \exist t \in{1,2, \cdots k}<br>$$<br>使,<br>$$<br>0.c_1c_2 \cdots c_{t-1}&#x3D;0.a_1a_2 \cdots a_{t-1},c_t &lt;a_t ,(1) \\<br>0.c_kc_{k-1}\cdots c_{t+1}&lt;0.b_1b_2\cdots b_{k-t},(2) \\<br>$$<br>或<br>$$<br>0.c_1c_2 \cdots c_{t-1}&#x3D;0.a_1a_2 \cdots a_{t-1},c_t &lt;a_t ,(1) \\<br>0.c_kc_{k-1}\cdots c_{t-1}&#x3D;0.b_1b_2\cdots b_{k-t},(3) \\<br>0.c_kc_{k-1}\cdots c_1&lt;0.b_1b_{2}\cdots b_k,(4) \\<br>$$<br>对后一种情况，<br>$$<br>c_t<br>$$<br>最多有$a_t$种选择。<br>$$<br>(1)\Rightarrow c_1,c_2 \cdots c_{t-1}<br>$$<br>唯一确定，由<br>$$<br>(3):c_t+1 \cdots c_{k-1}<br>$$<br>唯一确定.所以对于这种情况，对s的贡献最多是$a_tt$.</p>
-<p>对前一种情况：<br>$$<br>0.c_1c_2\cdots c_{t-1},\quad c_t,\quad c_{t+1}c_{t+2}<br>\cdots c_{k-1}c_k \\c_t<br>$$<br>最多a_t种，<br>$$<br>c_{t+1}c_{t+2}<br>\cdots c_{k-1}c_k<br>$$<br>最多有<br>$$<br>b_1b_2\cdots b_{k-t}<br>$$<br>种取值。此类情况对s的贡献最多是<br>$$<br>a_t \times \overline{b_1b_2\cdots b_{k-t}} \\<br>\therefore S \leq \sum_{t&#x3D;1}^{k}(a_t \times \overline{b_1b_2\cdots b_{k-t}}+\boxed{a_t})<br>\leq \boxed{9k}+\sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}} \\</p>
-<p>S \geq \sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}}<br>$$<br>接下来要对<br>$$<br>\boxed{\sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}} }<br>$$<br>进行估值，<br>$$<br>\\<br>B&#x3D;0.b_1b_2\cdots b_{k-t}b_{k-t+1}\cdots b_{k}&#x3D;0.b_1b_2\cdots b_{k-t}+0.\underbrace{00\cdots0}<em>{k-t}b</em>{k-t+1}\cdots b_k \\<br>\Rightarrow  &#x3D;0.b_1b_2\cdots b_{k-t}&#x3D;B-0.\underbrace{00\cdots0}<em>{k-t}b</em>{k-t+1}\cdots b_k  \\<br>\Rightarrow  \overline{b_1b_2\cdots b_{k-t}} &#x3D;10^{k-t}B-0.b_{k-t+1}\cdots b_k<br>\\<br>\therefore \sum_{t&#x3D;1}^{k}a_t \times \overline{b_1b_2\cdots b_{k-t}} &#x3D;<br>\sum_{t&#x3D;1}^{k}a_t \times\ (10^{k-t}B-0.b_{k-t+1}\cdots b_k )\\<br>&#x3D;\sum_{t&#x3D;1}^{k}(\ 10^{k-t}a_tB-a_t\times0.b_{k-t+1}\cdots b_k )\\<br>&#x3D;\sum_{t&#x3D;1}^{k}\ 10^{k}a_tB\times 10^{-t}B-\sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k \\<br>&#x3D;10^{k}B\sum_{t&#x3D;1}^{k}\ (a_t\times 10^{-t})-\sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k\\<br>&#x3D;10^k AB-\sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k<br>$$<br>其中<br>$$<br>0 \leq \sum_{t&#x3D;1}^{k}a_t\times0.b_{k-t+1}\cdots b_k&lt;9k \\<br>\therefore 10^kAB&lt;\sum_{t&#x3D;1}^{k} a_t \times \overline{b_1b_{2}\cdots b_k} \leq 10 ^kAB \\<br>\therefore<br>10^kAB-9k&lt;\sum_{t&#x3D;1}^{k} a_t \times \overline{b_1b_{2}\cdots b_k}  \leq S \leq 9k+10^kAB \Rightarrow |S-10^kAB| \leq 9k \\<br>$$</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/18/%E9%AB%98%E6%96%AF%E5%87%BD%E6%95%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/18/%E9%AB%98%E6%96%AF%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">高斯函数</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-03-18 21:18:08" itemprop="dateCreated datePublished" datetime="2022-03-18T21:18:08+08:00">2022-03-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-08 17:01:44" itemprop="dateModified" datetime="2022-04-08T17:01:44+08:00">2022-04-08</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="高斯函数"><a href="#高斯函数" class="headerlink" title="高斯函数"></a>高斯函数</h2><head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
- 定义：
-$$
-x \in \mathbb{R} , \{x\}=x-[x]
-$$
-
-<p>表示为x的非负最小数，函数$y&#x3D;[x]$成为Gauss函数，又叫取整函数，任何一个实数都能写成整数与非负小数之和.</p>
-<p>$$<br>y&#x3D;[x]\begin{cases}<br>\cdots \\<br>2,2\leq x &lt;3 \\<br>3, 3\leq x &lt;4  \\<br>4,4\leq x &lt;5 \\<br>\cdots \cdots \\<br>\end{cases}\\<br>$$</p>
-<p>定义域: $\mathbb{R}$,值域: $\mathbb{Z}$, $x$取整数的典都是跳跃间断点，</p>
-<p>非严格单调不减函数：$\forall x_1&lt;x_2 \Rightarrow [x_1]&lt;[x_2]$</p>
-<p>例:<br>$$<br>[5.6]&#x3D;5,[-5.6]&#x3D;-6,[-e]&#x3D;-3<br>$$</p>
-<p>$$<br>\\<br>y&#x3D;{x}&#x3D;x-[x]\\<br>y&#x3D;{x}\begin{cases}<br>\cdots\cdots\\<br>x, 0\leq x &lt;1\\<br>x-2,2\leq x &lt;3 \\<br>x-3, 3\leq x &lt;4  \\<br>x-4,4\leq x &lt;5 \\<br>\cdots \cdots<br>\end{cases}\\<br>$$</p>
-<p>定义域：$\mathbb{R}$.值域$[0,1)$.$x$整数时为间断点，$T&#x3D;1$</p>
-<p>3.高斯函数性质</p>
-<p>1)涉及高斯函数的不等式估值</p>
-<p>$$<br>\\0\leq{x}&lt;1,\\x-1&lt;[x] \leq x &lt;[x]+1\\<br>$$</p>
-<p>2)带余数除法</p>
-<p>$a,b \in \mathbb{N},b \neq0 ,\exist$ 唯一一组$q,r \in Z$ 使得$a&#x3D;bq+r$,</p>
-<p>$$<br>\\<br>0 \leq r &lt;b \Rightarrow\frac{a}{b}&#x3D;q+\frac{r}{b},0 \leq \frac{r}{b} &lt;1\Rightarrow[\frac{a}{b}]&#x3D;q,{\frac{a}{b}}&#x3D;\frac{r}{b}\\<br>$$</p>
-<p>3)非严格单调性<br>$$<br>\\x&lt;y \Rightarrow[x]&lt;[y]\\<br>$$</p>
-<p>4)释放整数与丢弃整数<br>$$<br>\\<br>\forall x \in \mathbb{R}. m \in Z,[x+m]&#x3D;[x]+m;{x+m}&#x3D;{x}.\\<br>$$</p>
-<p>5)加法性质<br>$$<br>\\<br>1.[x]+[y]&#x3D;[x+y]\\<br>Prof：\forall x \in \mathbb{R},x&#x3D;[x]+{x},[x+y]&#x3D;[x+{x}+[y]+{y}]\\<br>&#x3D;[x]+[y]+[{x}+{y}]\geq[x]+[y]\\<br>ps:0\leq{x}+{y}&lt;1，[{x}+{y}]&#x3D;0,[x+y]&#x3D;[x]+[y]\\<br>1\leq{x}+{y}&lt;2,[{x}+{y}]&#x3D;1, [x+y]&#x3D;[x]+[y]+1\\<br>$$</p>
-<p>法2<br>$$<br>\\<br>[x]\leq x,[y] \leq y, [x]+[y]\leq x+y \Rightarrow x+y&#x3D;[[x]+[y]] \leq [x+y]  \\<br>$$</p>
-<p>$$<br>\\<br>{x}+{y} \geq {x+y} \\<br>\Leftrightarrow x-[x]+y-[y] \geq x+y-[x+y]\Leftrightarrow [x]+[y] \leq [x+y] \\<br>$$</p>
-<p>【推广】<br>$$<br>\\<br>\sum_{i&#x3D;1}^{n}[x_i]\leq [\sum_{i&#x3D;1}^{n}x_i] \Longrightarrow n[x] \leq [nx],n \in \mathbb{N}\\<br>\sum_{i&#x3D;1}^{n}{x_i}\geq {\sum_{i&#x3D;1}^{n}x_i} \Longrightarrow n{x} \geq {nx},n \in \mathbb{N}\\<br>$$</p>
-<p>6)乘法性质<br>$$<br>\\x,y\in \mathbb{R^{*}} ,[x][y]\leq [xy]\\<br>$$</p>
-<p>法1<br>$$<br>\\<br>[xy]&#x3D;[(x+{x})(y+{y})]&#x3D;[[x][y]+[x]{y}+[y]{x}+{x}{y}]\\<br>&#x3D;[x][y]+[N^* ]\geq[x][y]\\<br>$$</p>
-<p>法2<br>$$<br>\\<br>0\leq[x] \leq x,0\leq[y] \leq y, \Rightarrow [x][y] \leq xy,\Rightarrow[x][y] \leq [xy]\\<br>$$</p>
-<p>【推广】<br>$$<br>\\<br>x_i \in \mathbb{R^*},\prod_{i&#x3D;1}^{n} [x_i] \leq [\prod_{i&#x3D;1}^{n}x_i] \\<br>$$</p>
-<p>特别地$x_i \in \mathbb{R^*}, \in \mathbb{N^*}[x]^n \leq [x^n],\ [\sqrt[n]{x}]^n \leq [x]$</p>
-<p>8)除法性质：<br>$$<br>\\<br>x,y\in \mathbb{R^*} [\frac{y}{x}]\leq \frac{[y]}{[x]}\\<br>\Leftarrow[x] [\frac{y}{x}] \leq [y] \because x,y&gt;0 [x][\frac{y}{x}] \leq [x\frac{y}{x}]&#x3D;[y];[x]&gt;0\\<br>\Longrightarrow [\frac{y}{x}]\leq \frac{[y]}{[x]}\\<br>$$</p>
-<p>9）对正整数n,<br>$$<br>\\<br>[\frac{x}{n}]&#x3D;[\frac{[x] }{n}]\\<br>$$</p>
-<p>法1：夹逼<br>$$<br>\\</p>
-<p>[x] \leq x \Rightarrow \frac{[x]}{n} \leq \frac{x}{n}<br>\Rightarrow  [\frac{[x]}{n}] \leq [\frac{x}{n}]<br>\\<br>$$</p>
-<p>另一方面,<br>$$<br>\\<br>n[\frac{x}{n}]\leq n\frac{x}{n}&#x3D;x \Rightarrow n[\frac{x}{n}]\leq [x] \Rightarrow\\ [\frac{x}{n} ] \leq \frac{[x]}{n} \Rightarrow \leq [\frac{x}{n} ]\leq  \frac{[x]}{n} \Rightarrow [\frac{x}{n} ]\leq  [\frac{[x]}{n}]<br>\\<br>$$</p>
-<p>法2：设<br>$$<br>\\<br>[\frac{x}{n}]&#x3D;m \Rightarrow m\leq \frac{x}{n}&lt;m+1 \Rightarrow mn\leq x&lt;n(m+1)&#x3D;mn+n \\<br>\because mn \in \mathbb{Z} \therefore mn \leq [x]&lt;n(m+1) \Rightarrow m \leq \frac{[x]}{n}&lt;m+1 \Rightarrow [\frac{[x]}{n}]&#x3D;m&#x3D;[\frac{x}{n}]\\<br>$$</p>
-<ol start="10">
-<li></li>
-</ol>
-<p>​      若$a，b$为两个正整数则不大于$a$的的倍数有$[\frac{a}{b}]$个</p>
-<p>证：$b&gt;a$时，显然.$b \leq a$时,<br>$$<br>\\<br>\exist n \in \mathbb{N^*},nb \leq a &lt; (n+1)b \Rightarrow n \leq \frac{a}{b} &lt; n+1 \Leftrightarrow [\frac{a}{b}]&#x3D;n)\\<br>$$<br>11）勒让德定理</p>
-<p>$V_p(a)$表示正整数$a$恰有素因子$p$的个数，则<br>$$<br>\\<br>V_P(n!)&#x3D;[\frac{n}{p}]+[\frac{n}{p^2}]+[\frac{n}{p^3}]+\cdots&#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}]\\<br>$$<br>证：</p>
-<p>$n!&#x3D;2\times3  \times \cdots \times (n-1) \times n $,</p>
-<p>设$2，3，\cdots n$中素因子分解后$p_i$的指数为$k$的有$n_k$个,则<br>$$<br>\\<br>V_p(n!)&#x3D;n_1+2n_2+3n_3+\cdots\\<br>\begin{cases}<br>n_1+n_2+n_3+ \cdots \rightarrow [\frac{n}{p}]\\<br>+n_2+n_3+ \cdots \rightarrow [\frac{n}{p^2}] \\<br>+n_3+ \cdots \rightarrow [\frac{n}{p^3}]\\<br>\cdots \cdots<br>\end{cases}\\<br>$$<br>推论: $n!&#x3D;\prod_{p\leq n}p^{\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}]}$显然.</p>
-<p>12）厄尔米特恒等式<br>$$<br>\\<br>\forall x&gt;0,[x]+[x+\frac{1}{n}]+[x+\frac{2}{n}]+\cdots+[x+\frac{n-1}{n}]&#x3D;[nx]\\<br>x+\frac{k}{n},k&#x3D;0,1,\cdots,n-1\\<br>0\leq \frac{k}{n}&lt;1， [x+\frac{k}{n}]&#x3D;[[x]+{x}+\frac{k}{n}]&#x3D;[x]+[{x}+\frac{k}{n}]&#x3D;[x] or[x]+1<br>\\<br>$$</p>
-<p>证：take</p>
-<p>$$<br>\\<br> 0 \leq i_0 \leq n-1, [{x}+\frac{i_0}{n}]&#x3D;1; [{x}+\frac{i_0-1}{n}]&#x3D;0\\<br>0 \leq i \leq i_0-1, [x+\frac{i}{n}]&#x3D;[x], \\<br>i_0 \leq i \leq n-1, [x+\frac{i}{n}]&#x3D;[x]+1\\<br>\therefore \mathbb{LHS}&#x3D; \sum_{i&#x3D;0}^{n+1}[x+\frac{i}{n}]&#x3D;i_0[x]+(n-i_0)([x]+1)&#x3D;n[x]+n-i_0\\<br>\because {x}+\frac{i_0}{n} \geq1 \Rightarrow {x}\geq 1- \frac{i_0}{n};\\<br>{x}+\frac{i_0-1}{n}&lt;1 \Rightarrow {x}&lt;1-\frac{i_0-1}{n}\\<br>\therefore<br>1-\frac{i_0}{n} \leq {x}&lt;1-\frac{i_0-1}{n} \Rightarrow n-i_0 \leq n{x}&lt;n-i_0+1<br>\Longleftrightarrow [n{x}]     &#x3D;n-i_0 \\<br>\mathbb{RHS}&#x3D;[nx]&#x3D;[n([x]+{x})]&#x3D;[(n[x]+n{x})]&#x3D;[n[x]+n{x}]&#x3D;n[x]+n{x}\\<br>$$</p>
-<p>高斯函数中最重要的一点便是</p>
-<p>$$<br>\boxed{0 \leq {x} &lt;1 \Longleftrightarrow_{x&#x3D;[x]+{x}} x-1 &lt; [x] \leq x &lt; [x]+1}\\<br>$$</p>
-<p>这样得以确定思路。</p>
-<p>例1：<br>$$<br>\\<br>\begin{cases}<br>x+{y}&#x3D;2011 (1\\<br>[y]+{z}&#x3D;18.8 (2\\<br>z+{x}&#x3D;6     (3\\<br>\end{cases}<br>\\<br>$$<br>find$x+y+z$</p>
-<p>证:(2)<br>$$<br>\\<br> \Rightarrow [y]&#x3D;18,{z}&#x3D;0.8 \\<br>(3)  \Rightarrow [z]+{z}+{x}&#x3D;6 \Rightarrow [z]+{x}&#x3D;5.2 \Rightarrow {x}&#x3D;0.2\\<br>(1)   \Rightarrow [x]+{y}+{x}&#x3D;2011 \Rightarrow [x]+{y}&#x3D;2010.8 \Rightarrow [x]&#x3D;<br>2010, {y}&#x3D;0.8\\<br>\therefore x&#x3D;2010.2,y&#x3D;10.8,z&#x3D;5.8 \\<br>\therefore x+y+z&#x3D;2034.8</p>
-<p>\\<br>$$</p>
-<p>例2<br>$$<br>\\<br>a,b,c \in \mathbb{N^*},find \quad \min{[\frac{a+b}{c}]+[\frac{c+b}{a}]+[\frac{a+c}{b}]}\\<br>$$</p>
-<p>证:<br>$$<br>\\<br>u &gt; \frac{a+b}{c}+\frac{c+b}{a}+\frac{a+c}{b}-3&#x3D;(\frac{a}{c}+\frac{c}{a})+(\frac{b}{a}+\frac{a}{b})+(\frac{b}{c}+\frac{c}{b})-3 \\<br>\geq2+2+2-3&#x3D;3\\ \therefore u \geq 4<br>\\<br>$$<br>构造 $a&#x3D;6,b&#x3D;8,c&#x3D;9, u&#x3D;4$.</p>
-<p>综上，最小值为4。</p>
-<p>通过$f$得到的$0 \leq {x}&#x3D;f([x])&lt;1 \Rightarrow [x]$范围.例</p>
-<p>$$<br>\\<br> 4x+5[x]&#x3D;100 \\</p>
-<p> 9[x]+4{x}&#x3D;100 \Rightarrow 0 \leq {x}&#x3D;\frac{100-9[x]}{4}&lt;1 \Rightarrow 96 &lt; 9[x]&lt;100 \\<br>[x]&#x3D;11 \Rightarrow {x}&#x3D;\frac{1}{4}<br>\therefore x&#x3D;11\frac{1}{4}</p>
-<p>\\<br>$$</p>
-<p>例3<br>$$<br>\\<br>[x]{x}+x&#x3D;2{x}+10<br>\\<br>$$</p>
-<p>解<br>$$<br>\\<br>[x]{x}+[x]+{x}&#x3D;2{x}+10 \\<br>[x]{x}+[x]+-{x}-1&#x3D;9 \\<br>([x]-1)({x}+1)&#x3D;9\\<br>\mathrm{Obviously,}[x]-1 \neq 0<br>\therefore  {x}+1&#x3D;\frac{9}{[x]-1} \\<br>\therefore 1 \leq \frac{9}{[x]-1} &lt; 2 \Rightarrow \frac{11}{2} &lt;[x]&lt;10 \therefore [x]&#x3D;6,7,8,9&#x3D;,10\\<br>[x]&#x3D;6: {x}&#x3D;\frac{4}{5}\Rightarrow x&#x3D;6\frac{4}{5}\\<br>[x]&#x3D;7: {x}&#x3D;\frac{1}{2}\Rightarrow x&#x3D;7\frac{1}{2}\\<br>[x]&#x3D;8: {x}&#x3D;\frac{2}{7}\Rightarrow x&#x3D;8\frac{2}{7}\\<br>[x]&#x3D;9: {x}&#x3D;\frac{1}{8}\Rightarrow x&#x3D;9\frac{1}{8}\\<br>[x]&#x3D;10:{x}&#x3D;0 \Rightarrow x&#x3D; 10<br>\\<br>$$</p>
-<p>例4<br>$$<br>\\find \quad all \quad solutions \quad x+[\frac{x}{3}]&#x3D;[\frac{2x}{3}]+[\frac{3x}{5}] \\ which \quad x\in \mathbb{R^+}\\<br>$$</p>
-<p>证: 容易知道x为正整数，利用高斯函数提出整数的性质。对x做带余数除法</p>
-<p>$$<br>x&#x3D;15m+r,\leq0 r &lt;14,m \in N\\<br>$$</p>
-<p>即</p>
-<p>$$<br>\\<br>15m+r+5m+[\frac{r}{3}]&#x3D;10m+[\frac{2r}{3}]+9m+[\frac{3r}{5}]\\<br>m+r+\frac{r}{3}-1&lt;m+r+[\frac{r}{3}]&#x3D;[\frac{2r}{3}]+[\frac{3r}{5}] \leq \frac{2r}{3}+\frac{3r}{5} \\<br>0 \leq m &lt;1-\frac{r}{15} \leq 1 \Rightarrow m&#x3D;0 \\<br>\therefore r+[\frac{r}{3}]&#x3D;[\frac{2r}{3}]+[\frac{3r}{5}] \Rightarrow r&#x3D;2,5 \Rightarrow x&#x3D;2,5\\<br>$$</p>
-<p>例5</p>
-<p>铺垫题<br>$$<br>\\0&lt;a&lt;1，\and [a+\frac{1}{30}]+[a+\frac{2}{30}]+[a+\frac{3}{30}]+ \cdots _[a+\frac{28}{30}]+[a+\frac{29}{30}]&#x3D;18\\<br>find \quad[10a]\\<br>$$</p>
-<p>解</p>
-<p>$$<br>\\<br>[a+\frac{1}{30}]\leq[a+\frac{2}{30}]\leq[a+\frac{3}{30}]\leq \cdots _[a+\frac{28}{30}]\leq[a+\frac{29}{30}]&#x3D;18\ \and [a+\frac{k}{30}]&#x3D;0,1\\<br>\begin{cases}<br>0&lt;a+\frac{11}{30}&lt;1 \\<br>1 \leq a+\frac{12}{30}&lt;2 \\<br>\end{cases} \Rightarrow18 \leq 30a&lt;19  \Rightarrow 6 \leq 10a &lt;6\frac{1}{3} \\<br>\therefore[10a]&#x3D;6\\<br>$$</p>
-<p>$$<br>\\<br>r \in \mathbb{R} \and [r+\frac{19}{100}]+[r+\frac{20}{100}]+[r+\frac{21}{100}]+\cdots +[r+\frac{91}{100}]&#x3D;546， [100r]&#x3D;?\\<br>\mathrm{suppose} [r]&#x3D;n,r&#x3D;n+{r},[n+{r}+\frac{k}{100}]&#x3D;n+[{r}+\frac{k}{100}]\\<br>0&lt; {r}+\frac{k}{100}&lt;2 \therefore[{r}+\frac{k}{100}]&#x3D;0 \quad \mathrm{or} \quad 1<br>\\<br>$$</p>
-<p>假设$\mathrm{ LHS} \quad $有 $k$个$(n+1)$，$ (73-k)$个$n$,</p>
-<p>$$<br>\\<br>k(n+1)+(73-k)n&#x3D;546 \Rightarrow n&#x3D;7+\frac{35-k}{7} \\<br>n \in \mathbb{Z} \Rightarrow k&#x3D;35,n&#x3D;7 \\<br>$$<br>$LHS$前$39$项是$7$，后$35$项是$8$<br>$$<br>\\<br>\begin{cases}<br>7 \leq r+\frac{56}{100}&lt;8 \<br>8 \leq r+\frac{57}{100}&lt;9 \<br>\end{cases} \Rightarrow 743 \leq 100r &lt; 744 \Rightarrow [100r]&#x3D;743<br>\<br>$$</p>
-<p>例6</p>
-<ol>
-<li><p>$[\frac{1^2}{2018}],[\frac{2^2}{2018}],[\frac{3^2}{2018}],\cdots,\\[\frac{2018^2}{2018}]$,有多少不同取值？ </p>
-</li>
-<li><p>$[\frac{2018+1}{1}],[\frac{2018+2}{2}],[\frac{2018+3}{3}],\cdots,\\[\frac{2018+m}{m}]$,一共$70$个不同取值，求$m$取值范围.</p>
-</li>
-</ol>
-<p>根据高斯函数的单调性，通过寻找转折点来确定.</p>
-<p>$$<br>\\&lt;1&gt;.     \frac{(n+1)^2}{2018}-\frac{(n)^2}{2018} \geq 1 \Rightarrow n \geq 1009 \\<br>$$<br> $\therefore$由于高斯函数单调性，$ n$ 从 $1009$ 到 $2018$共$1010$个不同取值</p>
-<p>$$<br>\\<br>[\frac{1009^2}{2018}]&#x3D;504, [\frac{1008^2}{2018}]&#x3D;503, \cdots  [\frac{1^2}{2018}]&#x3D;0\<br> \therefore 504+1010&#x3D;1514\\<br>$$</p>
-<p> &lt;2&gt;.<br>$$<br>\\<br>\frac{2018}{k}-\frac{2018}{k-1} \geq 1 \Rightarrow k \leq 44 \<br>$$<br>$ k$从$1$到$44$都是不同取值。还剩$70-44&#x3D;26$</p>
-<p>$$<br>\\<br>[\frac{2018}{45}]~[\frac{2018}{26}]&#x3D;44-26+1&#x3D;19 \Leftrightarrow \19 \leq \frac{2018}{m}&lt;20  \Rightarrow 101 \leq m \leq 106 \\<br> \therefore m \in {101,102,103,104,105,106}\\<br>$$</p>
-<p>例7</p>
-<p>$$<br>\\<br>[\frac{8}{9}]+[\frac{8^2}{9}]+[\frac{8^3}{9}]+\cdots +[\frac{8^{2018}}{9}] \mod 63\\<br>$$</p>
-<p>$$<br>\\<br>8^k \equiv (-1)^k \equiv<br>\begin{cases}<br>-1(\mod9),k \quad odd\\<br>1 (\mod 9), k \quad even<br>\end{cases} \\<br>\therefore k \equiv1(mod 2): [\frac{8^k}{9}]&#x3D;\frac{8^k+1}{9}-1, 2\mid k: [\frac{8^k}{9}]&#x3D;\frac{8^k-1}{9} \\<br>\forall m \in \mathbb{N*}, [\frac{8^{2m-1}}{9}]+[\frac{8^{2m}}{9}]&#x3D;<br>\frac{8^{2m-1}+1}{9}-1+\frac{8^{2m}-1}{9}&#x3D;8^{2m-1}-1&#x3D;8\cdot 8^{2m-2}-1 \\<br>\equiv  8 \cdot 64^{m-1}-1 \equiv8-1 \equiv7(\mod 63) \\<br>\therefore  \equiv1009 \cdot7 \equiv7063 \equiv 7 (\mod 63)</p>
-<p>\\<br>$$</p>
-<p>例8</p>
-<p>$$<br>\\<br>a,b \in \mathbb{N^*},(a,b)&#x3D;1,a+b&#x3D;2004,A&#x3D;[\frac{2005}{a}]+[\frac{2005 \times2}{a}]+\cdots+[\frac{2005\times a}{a}],\\<br>B&#x3D;[\frac{2005}{b}]+[\frac{2005 \times2}{b}]+\cdots+[\frac{2005\times b}{b}]<br>\\<br>$$</p>
-<p>求$A+B$.  </p>
-<p>法1：配对</p>
-<p>引理：<br>$$<br>\\<br>x+y\in \mathbb{Z},x  \notin \mathbb{Z},[x+y]&#x3D;[x]+[y]+1\\<br> (a,2005)&#x3D;(a,a+b)&#x3D;(a,b)&#x3D;1\\<br>\therefore \frac{2005k}{a} \notin \mathbb{Z},k&#x3D;1,2, \cdots ,a-1, \\<br>$$</p>
-<p>倒叙相加</p>
-<p>$$<br>\\<br>2A&#x3D; \sum_{i&#x3D;1}^{a-1}([\frac{2005i}{a}+\frac{2005(a-i)}{a}])+4010\\<br>&#x3D; \sum_{i&#x3D;1}^{a-1}(\frac{2005i}{a}+\frac{2005(a-i)}{a})+4010\\<br>&#x3D;2004(a-1)+4010\\</p>
-<p>\<br>$$</p>
-<p>同理<br>$$<br>\\<br>2B&#x3D;2004(b-1)+4010\\<br>\therefore 2A+2B-2004(a+b-2)+8020&#x3D;2004 \times 2003 +8020 \\<br>\therefore A+B&#x3D;2011016\\<br>$$</p>
-<p>法2: 完系</p>
-<p>$$<br>\\(a,2005)&#x3D;1 \Rightarrow 2005,2005 \times 2,  \cdots 2005 \times a<br>$$</p>
-<p>构成$mod a$的完全剩余系,所以得到<br>$$<br>\\<br>\therefore {\frac{2005}a}+{\frac{2005 \times 2}a} + \cdots + {\frac{2005 \times a}a}&#x3D;\boxed{\frac{1+2+ \cdots+(a-1)}a}&#x3D;\frac{a-1}2\\<br>\boxed{}:a&#x3D;bq+r \Rightarrow \frac{a}{b}&#x3D;q+\frac{r}{b}, \frac{r}{b}&#x3D;{\frac{a}{b}}\\<br>\therefore A&#x3D;\frac{2005(1+2+\cdots+a)}{a}-\frac{a-1}{2}&#x3D;1002a+1003\\<br>$$<br>同理，</p>
-<p>$$<br>\\<br>B&#x3D;1002b+1003 \\<br>\therefore A+B&#x3D;1002(a+b)+2006\\<br>$$<br>例9：</p>
-<p>$$<br>f(x)&#x3D;[\frac{x}1]+[\frac{x}{2}]+[\frac{x}{2}]+\cdots++[\frac{x}{x}]<br>\\<br>$$<br>求满足最小的x使得$f(x)-f(x-1)&#x3D;12$</p>
-<p>$$<br>\\<br>\forall k \in {1,2,\cdots x},x&#x3D;kq+r, 0 \leq r &lt;k.  \\<br>\frac{x}k&#x3D;q+\frac{r}k , q&#x3D; [\frac{x}k]\\<br>\frac{x-1}k&#x3D;q+\frac{r-1}k, [\frac{x-1}k]&#x3D;[q+\frac{r-1}{k}]&#x3D;q+[\frac{r-1}k]&#x3D;\\<br>\begin{cases}<br>q, r&gt;0 \\<br>q-1, r&#x3D;0<br>\end{cases}\\<br>\therefore [\frac{x}k]&#x3D; \begin{cases}<br>[\frac{x-1}k], k \nmid x\\<br>[\frac{x-1}k]+1,k \mid x<br>\end{cases}<br>\\<br>$$</p>
-<p>$\therefore d(x)&#x3D;f(x)-f(x-1)$为$x$正因数的个数</p>
-<p>$$<br>\\<br>\therefore 12&#x3D;1\times 12&#x3D; 2 \times 6 &#x3D; 3 \times 4 &#x3D;\boxed{2 \times 2 \times 3}\\ \therefore 2^2 \times 3 \times 5&#x3D;60\\<br>$$</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/03/18/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%20%E5%BC%BA%E4%B8%89%E8%A7%92%E4%B8%8D%E7%AD%89%E5%BC%8F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/03/18/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%20%E5%BC%BA%E4%B8%89%E8%A7%92%E4%B8%8D%E7%AD%89%E5%BC%8F/" class="post-title-link" itemprop="url">高斯函数</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-03-18 21:18:08" itemprop="dateCreated datePublished" datetime="2022-03-18T21:18:08+08:00">2022-03-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-20 06:25:40" itemprop="dateModified" datetime="2022-04-20T06:25:40+08:00">2022-04-20</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="素因数分析-强三角不等式"><a href="#素因数分析-强三角不等式" class="headerlink" title="素因数分析 强三角不等式"></a>素因数分析 强三角不等式</h2><head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
- 
-
-<p>定理：若p为素数,<br>$$<br>a,b \in Z ,v_p(a) \neq v_p(a),v_p(a+b)&#x3D;\min {v_p(a),v_p(b)}<br>$$</p>
-<p>证：<br>$$<br>a&#x3D;p^{v_p(a)}m,b&#x3D;p^{v_p(b)}n,(m,p)&#x3D;(n,p)&#x3D;1<br>$$<br>不妨设<br>$$<br>v_p(a)&gt;v_p(b),<br>$$<br>则<br>$$<br>a+ b&#x3D;p^{v_p(a)}m+p^{v_p(b)}n&#x3D;p^{v_p(b)}(p^{v_p(a)-v_p(b)}m+n) \\<br>\because p \nmid n, p \mid p^{v_p(a)-v_p(b)}, \therefore  p\nmid p^{v_p(a)-v_p(b)}m+n \\<br>\therefore  v_p(a+b)&#x3D;v_p(b)&#x3D;\min {v_p(a),v_p(b)}<br>$$</p>
-<p>例1：设m&gt;1是整数，则m是完全平方数的充要条件是对所有正整数n,<br>$$<br>(m+1)^2-m,(m+2)^2-m,\cdots,(m+n)^2-m,<br>$$<br>中至少有一个是n的倍数。</p>
-<p>证：必要性： 若<br>$$<br>m&#x3D;d^2,d \in Z<br>$$<br>则连续整数<br>$$<br>m+1-d,m+2-d, \cdots,m+n-d<br>$$<br>中必有一个n的倍数，设<br>$$<br>n \mid m+i-d,i&#x3D;1,2,\cdots,n<br>$$<br>而</p>
-<p>$$<br>m+i-d \mid (m+i)^2-d^2&#x3D;(m+i)^2-m,i&#x3D;1,2, \cdots n \\<br>\therefore n \mid (m+i)^2-m,i&#x3D;1,2,\cdots,n<br>$$<br>充分性：任取m素因子p,设<br>$$<br>v_p(m)&#x3D;k<br>$$<br>取<br>$$<br>n&#x3D;p^{k+1}<br>$$<br>，则<br>$$<br>p^{k+1} \mid (m+i)^2-m<br>$$<br>若<br>$$<br>v_p(m) \neq v_p((m+i)^2),<br>$$</p>
-<p>则根据刚才的定理</p>
-<p>$$<br>k+1\leq v_p((m+i)^2-m)&#x3D; \min { v_p(m), v_p((m+i)^2)} \leq  v_p(m)&#x3D;k \\<br>$$<br>矛盾,则<br>$$<br>v_p((m+i)^2)&#x3D; v_p(m)&#x3D; 2v_p(m+i)<br>$$<br>为偶，则m的每一个素因子指数都为偶数，得证。此题中条件为所有的整数n，则在必要性分析时可以按需要对n进行赋值.</p>
-<p>舒尔定理：设f为整系数非常数多项式，则存在无穷多素数，整除序列<br>$$<br>f(1),f(2), \cdots<br>$$<br>中至少一个非零项.</p>
-<p>证： 设<br>$$<br>\\<br>f(x)&#x3D;a_0+a_1x+ \cdots +a_nx^n, a_n \neq 0, a_i \in \mathbb{Z},i&#x3D;0,1,\cdots n<br>\\<br>$$<br>若<br>$$<br>a_0&#x3D;0,<br>$$<br>则对任意的素数<br>$$<br>p \mid f(p)<br>$$<br>而p足够大时，<br>$$<br>f(p) \neq 0<br>$$<br>此种情况下成立.</p>
-<p>若<br>$$<br>a_0 \neq n<br>$$<br>则<br>$$<br>f(a_0x)&#x3D;a_0+a_1 a_0 x+ \cdots +a_na_0^n x^n&#x3D;a_0(1+a_1x+ \cdots +a_n a_{0}^{n-1}x^n) \\<br>$$<br>令<br>$$<br>g(x)&#x3D;1+a_1x+ \cdots +a_na_0^{n-1}x^n<br>$$<br>非常数. 且存在整数k0使得所有的<br>$$<br>x\geq k_0<br>$$<br>都有<br>$$<br>|g(x)| \geq 2<br>$$<br>取<br>$$<br>g(k!), k \geq k_0<br>$$<br>的任意素因子<br>$$<br>p_k,p_k \mid g(k!), k! \mid g(k!)-1, \because (g(k!)-1,g(k!))&#x3D;1, \therefore (p_k, k!)&#x3D;1 \\<br>\Rightarrow p_k&gt;k,p_k \mid f(a_0k!)<br>$$<br>这样就得到能够整除序列<br>$$<br>f(1),f(2) ,\cdots<br>$$<br>中非零项无界的素数序列<br>$$<br>p_k, k \geq k_0<br>$$</p>
-<p>例2：求所有的整系数多项式f,使得只要<br>$$<br>(m,n)&#x3D;1,(f(m),f(n))&#x3D;1<br>$$<br>显然<br>$$<br>f(x)&#x3D; \pm x^k,k \in N<br>$$<br>符合要求，下证不存在其他的解.</p>
-<p>设<br>$$<br>f<br>$$<br>为一个解，记<br>$$<br>f(x)&#x3D;x^kg(x), k \in N, g(0) \neq 0<br>$$<br>若<br>$$<br>g(x)<br>$$<br>为常数，显然<br>$$<br>g&#x3D; \pm 1<br>$$<br>若<br>$$<br>g<br>$$<br>不是常函数，则由舒尔定理，存在无穷多素数p使得<br>$$<br>g(n) \equiv 0 (\mod p)<br>$$<br>有解，取这样一个素数p和n，满足p与<br>$$<br>g(0)<br>$$<br>互素,<br>$$<br>\because p \nmid g(0),p \mid g(n)\Rightarrow p \nmid g(n)-g(0) \\<br>n \mid g(n)-g(0) \therefore (p,n)&#x3D;1, \Rightarrow (n,n+p)&#x3D;1 \\<br>\Rightarrow (f(n),f(n+p))&#x3D;1<br>$$<br>但</p>
-<p>$$<br>p \mid g(n), p \mid g(n+p) \Rightarrow  p \mid f(n), p \mid f(n+p),<br>p \mid (f( n),f(n+p)) \\<br>$$<br>矛盾.综上，这个问题所有解只能是<br>$$<br>f(x)&#x3D; \pm x^k<br>$$</p>
-<p>例3：设<br>$$<br>f:N \rightarrow N<br>$$<br>是非常数函数，满足<br>$$<br>a-b \mid f(a)- f(b)<br>$$</p>
-<p>对所有的<br>$$<br>a,b \in N<br>$$<br>成立。证明，存在无穷多素数p使得<br>$$<br>p \mid f(c)<br>$$<br>对某个c成立。</p>
-<p>证：假设只有有限个素数<br>$$<br>p_1,p_2, \cdots, p_k<br>$$<br>能整除序列<br>$$<br>f(1),f(2)\cdots<br>$$<br>中至少一项，任取<br>$$<br>x \in N^*,f(x)&#x3D;p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_k^{\alpha_k},\alpha_i \in N<br>$$</p>
-<p>设<br>$$<br>a_s&#x3D;sp_1^{\alpha_1+1}p_2^{\alpha_2+1}\cdots p_k^{\alpha_k+1}(s \in N^*)<br>$$<br>由已知：<br>$$<br>a_S \mid f(x+a_s)-f(x) \Rightarrow v_{p_i}(f(x+a_s)-f(x))\geq v_{p_i}(a_s)&#x3D;\alpha_i+1<br>$$<br>又<br>$$<br>f(x) \mid a_s \mid f(x+a_s)-f(x) \Rightarrow f(x) \mid f(x+a_s) \\<br>\Rightarrow v_{p_i}(f(x)) \leq v_{p_i}(f(x+a_s))<br>$$<br>则由三角不等式<br>$$<br>v_{p_i}(f(x+a_s)-f(x))&#x3D;v_{p_i}(f(x))&#x3D; \alpha_i \\<br>\therefore v_{p_i}(f(x))&#x3D;v_{p_i}(f(x+a_s)) \Rightarrow f(x+a_s)<br>$$<br>对所有<br>$$<br>s \in N^*<br>$$<br>成立</p>
-<p>$$<br>x+a_s-1 \mid f(x+a_s)-f(1)&#x3D;f(x)-f(1),\forall s \geq 1,s \in  Z<br>$$<br>成立.<br>$$<br>\\<br>\Rightarrow f(x)&#x3D;f(1)<br>$$<br>由x的任意性，f是常数，矛盾.所以存在无穷多素数p，使得p可以整除f(c)对某个c成立</p>
-<p>例4：证明：可以将N分割成100个集合，使得若<br>$$<br>a,b,c \in N<br>$$<br>满足<br>$$<br>a+99b&#x3D;c<br>$$<br>则a,b,c中至少有两个数属于同一个集合.</p>
-<p>解：令第i个集合包含i满足<br>$$<br>v_2(n) \equiv 1 (\mod 100),1 \leq i \leq 100<br>$$</p>
-<p>只需证<br>$$<br>v_2(a),v_2(b),v_2(c)<br>$$<br>至少有两个相同即可.现在进行分类讨论</p>
-<p>(1)若<br>$$<br>v_2(a)&#x3D;v_2(b)<br>$$<br>,则a,b在同一集合.</p>
-<p>(2)若<br>$$<br>v_2(a) \neq v_2(b): v_2(b)&#x3D;v_2(99b)\Rightarrow v_2(a) \neq v_2(99b)<br>$$</p>
-<p>由强三角不等式<br>$$<br>v_2(c)&#x3D;v_2(a+99b)&#x3D; \min {v_2(a),v_2(99b)}&#x3D;v_2(a) \or v_2(b)<br>$$<br>则c,a或c,b在同一集合.</p>
-<p>例5：若n<br>$$<br>n,k \in N^*<br>$$<br>则无论如何选择符号<br>$$<br>\pm \frac{1}{k}\pm \frac{1}{k+1}\pm \cdots \pm\frac{1}{k+n}<br>$$<br>都不是整数.</p>
-<p>分析：该式不是整数意味着通分完成后<br>$$<br>\frac{n}{m}<br>$$<br>做到<br>$$<br>m \nmid n<br>$$</p>
-<p>$$<br>m \mid n<br>$$</p>
-<p>的充要条件便是对每一个素因子<br>$$<br>p_i<br>$$<br>都做到<br>$$<br>v_{p_i}(m) \leq v_{p_i}(n)<br>$$<br>则根据题设不是整数的条件，m中自然可以找到一个素因子的指数大于n.</p>
-<p>设<br>$$<br>r&#x3D; \max_{k \leq j \leq k+n}v_{2}(j) ,k \in {k,k+1, \cdots  ,k+n}<br>$$<br>使得<br>$$<br>v_2(j)&#x3D;r<br>$$<br>下证不存在其他<br>$$<br>j’ \in {k,k+1,\cdots,k+n},v_{2}(j’)&#x3D;r<br>$$<br>不妨设<br>$$<br>j’&gt;j,j&#x3D;2^ra,j’&#x3D;2^rb,<br>$$<br>a,b都为奇数</p>
-<p>且<br>$$<br>b \geq a+2<br>$$<br>则<br>$$<br>j&lt;2^r(a+1)&lt;j’<br>$$</p>
-<p>$$<br>\therefore 2^r(a+1) \in {k,k+1, \cdots ,k+n}<br>$$<br>而<br>$$<br>v_2(2^r(a+1) ) \geq r+1<br>$$<br>这和<br>$$<br>{k,k+1,\cdots,k+n}<br>$$<br>中2进赋值最大者矛盾.所以存在唯一j在集合中使得<br>$$<br>v_{2}(j)&#x3D;r<br>$$<br>取最大值，则原式<br>$$<br>&#x3D;\frac{x}{y}\pm\frac{1}{j}&#x3D;\frac{xj+\pm y}{yj}, x,y \in Z<br>$$</p>
-<p>$$<br>\because v_2(y)&lt;r,v_2(xj) \geq r \\<br>\therefore v_2(xj \pm y )&#x3D;\min {v_2(xj),v_2(y)}&#x3D;v_2(y)&lt;r<br>$$</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
 
 
 
@@ -1461,7 +1332,7 @@ $$
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>

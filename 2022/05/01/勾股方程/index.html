@@ -22,17 +22,17 @@
 
   <meta name="description" content="MathJax.Hub.Config({             tex2jax: {             skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],             inlineMath: [[&#39;$&#39;,&#39;$&#39;]]             }         });">
 <meta property="og:type" content="article">
-<meta property="og:title" content="勒让德公式">
-<meta property="og:url" content="http://example.com/2022/04/25/%E5%8B%92%E8%AE%A9%E5%BE%B7%E5%85%AC%E5%BC%8F/index.html">
+<meta property="og:title" content="勾股方程">
+<meta property="og:url" content="http://example.com/2022/05/01/%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="MathJax.Hub.Config({             tex2jax: {             skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],             inlineMath: [[&#39;$&#39;,&#39;$&#39;]]             }         });">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-04-24T19:52:11.000Z">
-<meta property="article:modified_time" content="2022-04-25T18:02:19.011Z">
+<meta property="article:published_time" content="2022-05-01T01:27:51.000Z">
+<meta property="article:modified_time" content="2022-05-04T07:41:23.578Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2022/04/25/%E5%8B%92%E8%AE%A9%E5%BE%B7%E5%85%AC%E5%BC%8F/">
+<link rel="canonical" href="http://example.com/2022/05/01/%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>勒让德公式 | Hexo</title>
+  <title>勾股方程 | Hexo</title>
   
 
 
@@ -150,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/25/%E5%8B%92%E8%AE%A9%E5%BE%B7%E5%85%AC%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/01/%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          勒让德公式
+          勾股方程
         </h1>
 
         <div class="post-meta">
@@ -173,14 +173,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-04-25 03:52:11" itemprop="dateCreated datePublished" datetime="2022-04-25T03:52:11+08:00">2022-04-25</time>
+              <time title="Created: 2022-05-01 09:27:51" itemprop="dateCreated datePublished" datetime="2022-05-01T09:27:51+08:00">2022-05-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-26 02:02:19" itemprop="dateModified" datetime="2022-04-26T02:02:19+08:00">2022-04-26</time>
+                <time title="Modified: 2022-05-04 15:41:23" itemprop="dateModified" datetime="2022-05-04T15:41:23+08:00">2022-05-04</time>
               </span>
 
           
@@ -206,60 +206,48 @@
     </script>
 </head>
 
-
-
-<h1 id="勒让德公式"><a href="#勒让德公式" class="headerlink" title="勒让德公式"></a>勒让德公式</h1><p>勒让德公式<br>$$<br>v_p(n!)&#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}]<br>$$<br>证：</p>
-<p>$$<br>v_p(n!)&#x3D;v_p(1)+v_p(2)+v_p(3)+\cdots+v_p(n) \cdots*\\<br>$$</p>
-<p>在$1，2，\cdots ,n$中，有 $[\frac{n}{p}]$个p的倍数， $[\frac{n}{p^2}]$个$p^2$的倍数，以此类推.其中，是p的倍数</p>
-<p>不是$p^2$倍数在 $(*)$中贡献为1， 是$p^2$倍数不是 $p^3$ 倍数在</p>
-<p>$$<br>(*)<br>$$</p>
-<p>中贡献为2，以此类推</p>
-<p>$$<br>\therefore v_p(n!)&#x3D;1\cdot([\frac{n}{p}]-[\frac{n}{p^2}])+2\cdot([\frac{n}{p^2}]-[\frac{n}{p^3}])+3\cdot([\frac{n}{p^3}]-[\frac{n}{p^4}])+\cdots \\<br>&#x3D; [\frac{n}{p}]+[\frac{n}{p^2}]+[\frac{n}{p^3}]+\cdots<br>$$</p>
-<p>例1：（1）2012!的值的尾部连续的0的个数.</p>
-<p>解：显然求<br>$$<br>\min(v_5(2012!),v_2(2012!))&#x3D;v_5(2012!)&#x3D;[\frac{2012}{5}]+[\frac{2012}{5^2}]+[\frac{3012}{5^3}]+[\frac{3012}{5^4}]&#x3D;402+80+16+3&#x3D;501<br>$$</p>
-<p>(2)<br>$$<br>100!&#x3D;12^nM(n,m \in N^*)<br>$$<br>n取最大值时，M能否被2整除？能否被3整除？<br>$$<br>12&#x3D;2^2\times 3 \\<br>v_2(100!)&#x3D;[\frac{100}{2}]+[\frac{100}{2^2}]+[\frac{100}{2^3}]+[\frac{100}{2^4}]+[\frac{100}{2^5}]+[\frac{100}{2^6}]&#x3D;97 \\<br>v_3(100!)&#x3D;[\frac{100}{3}]+[\frac{100}{3^2}]+[\frac{100}{3^3}]+[\frac{100}{3^4}]&#x3D;48 \\<br>\therefore 100!&#x3D;2^{97}3^{48} \times k &#x3D;(2^2)^{48} \times 3^{48} \times 2k,(2,k)&#x3D;(3,k)&#x3D;1 \\<br>$$</p>
-<p>例2：<br>$$<br>a_n&#x3D;C_{200}^{n}(\sqrt[3]{6})^{200-n}(\frac{1}{\sqrt2})^n \cdots(n&#x3D;1,2,\cdots,95),{a_n}<br>$$</p>
-<p>$$</p>
-<p>$$</p>
-<p>中整数项的个数是多少？</p>
-<p>$$<br>a_n&#x3D;C_{200}^{n}2^{\frac{400-5n}{6}}3^{\frac{200-n}{3}} \in \mathbb{Z} \Rightarrow<br>\begin{cases}<br>3 \mid 200-n \cdots (1) \\<br>6 \mid 400-5n \cdots (2)<br>\end{cases}<br>$$<br>由（2），设<br>$$<br>400-5n&#x3D;6k (k \in \mathbb{Z}) \Rightarrow 5 \mid k,k&#x3D;5m(m \in \mathbb{Z})\\<br>\Rightarrow n+6m&#x3D;80 \Rightarrow n \equiv2(\mod 6),n&#x3D;6p+2(p \in N)<br>$$</p>
-<p>带入（1）<br>$$<br>200-n&#x3D;198-6p<br>$$<br>为3的倍数，即<br>$$<br>n&#x3D;6p+2<br>$$<br>同时满足（1），（2）.<br>$$<br>n \leq 80, 2^{\frac{400-5n}{6}}3^{\frac{200-n}{3}} &gt;0 \in Z<br>$$</p>
-<p>这样的n：<br>$$<br>2，8，14，20，26，32，38，44，50，56，62，68，74，80<br>$$<br>一共14个</p>
-<p>$$<br>n&gt;80<br>$$<br>时</p>
-<p>$$<br>n&#x3D;86 \Rightarrow a_{86}&#x3D;C_{200}^{86}2^{-5}3^{38}<br>$$<br>只需求<br>$$<br>v_2(C_{200}^{86})&#x3D;v_2(\frac{200!}{86!\cdot(114)!})<br>$$<br>由勒让德公式，<br>$$<br>v_2(200!)&#x3D;197,v_2(86!)&#x3D;82,v_2(114!)&#x3D;110 \\<br>\therefore v_2(C_{200}^{86})&#x3D;v_2(200!)-v_2(86!)-v_2(114!)&#x3D;5  \\<br>\therefore a_{86} \in \mathbb{Z}<br>$$</p>
-<p>n&#x3D;92时<br>$$<br>n&#x3D;92 \Rightarrow a_{92}&#x3D;C_{200}^{92}2^{-10}3^{36}\\<br>v_2(C_{200}^{92})&#x3D;v_2(\frac{200!}{92!\cdot(108)!}),v_2(92!)&#x3D;88,v_2(108!)&#x3D;105 \\<br>\therefore v_2(C_{200}^{92}) &#x3D;4&lt;10 \\<br>\therefore a_{92} \notin \mathbb{Z}<br>$$</p>
-<p>例3<br>$$<br>\sum_{i&#x3D;1}^{2009}\frac{(2i-1)!!}{(2i)!!}<br>$$<br>表示成最简分数时，它的分母是<br>$$<br>2^ab<br>$$<br>,b为奇数，求<br>$$<br>\frac{ab}{10}<br>$$</p>
-<p>$$<br>C_{2m}^{m}&#x3D;\frac{(2m)!}{m!m!}&#x3D;\frac{2^m(2m-1)!!m!}{m!m!}&#x3D;\frac{2^{2m}(2m-1)!!}{m!2^m}&#x3D;\frac{2^{2m}(2m-1)!!}{(2m)!!} \\<br>\Rightarrow \frac{(2m-1)!!}{(2m)!!} &#x3D;\frac{C_{2m}^{m}}{2^{2m}}<br>$$</p>
-<p>$$<br>\therefore 2^a \cdot b<br>$$<br>中<br>$$<br>a&#x3D;v_2((2\cdot2009)!!)&#x3D;v_2(4018!!)&#x3D;v_2(2^{2009})+v_2(2009!)&#x3D;2009+2001&#x3D;4010<br>$$<br>显然b&#x3D;1，则<br>$$<br>\frac{ab}{10}&#x3D;401<br>$$</p>
-<p>例4：证明连续n个正整数的乘积是n!的倍数</p>
-<p>分析<br>$$<br>n! \mid (x+1)(x_2)\cdots(x+n),\forall x \in N \Leftrightarrow v_p((x+1)(x+2)\cdots (x+n)) \geq v_p(n!)<br>$$<br>对给定素数p,<br>$$<br>n_k<br>$$<br>是<br>$$<br>x+1,x+2 \cdots x+n<br>$$<br>中<br>$$<br>p^k<br>$$<br>的倍数的个数，<br>$$<br>n_k&#x3D;[\frac{x+n}{p^k}]-[\frac{x}{p^k}] \geq [\frac{n}{p^k}] \\<br>v_p((x+1)(x+2)\cdots (x+n)) &#x3D;n_1-n_2+2(n_2-n_3)+3(n-3-n_4)+\cdots \\<br>&#x3D;n_1+n_2+\cdots \geq [\frac{p}{n}]+[\frac{p}{n^2}]+[\frac{p}{n^3}]+\cdots &#x3D;v_p(n!)<br>$$</p>
-<p>关于 $n!$的p进赋值的界限估计:</p>
-<p>$$<br>n&gt;1,n  \in Z, p \in P:\quad \boxed{\frac{n}{p}-1&lt;v_p(n!)&lt;\frac{n}{p-1}}<br>$$</p>
-<p>设<br>$$<br>p^K \le n,\quad p^{K+1}&gt;n<br>$$</p>
-<p>$$<br>v_p(n!) &#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}] \leq \sum_{k&#x3D;1}^{K}\frac{n}{p^k} &lt;\sum_{k&#x3D;1}^{\infty}\frac{n}{p^k}&#x3D;\frac{\frac{n}{p}}{1-\frac{1}{p}}&#x3D;\frac{n}{p-1}<br>$$</p>
-<p>下界：</p>
-<p>$$<br>v_p(n!)&#x3D;\sum_{k&#x3D;1}^{\infty}[\frac{n}{p^k}] \geq [\frac{n}{p}]&gt;\frac{n}{p}-1<br>$$</p>
-<p>1 求所有的正整数$n,k$ 满足<br>$$<br>1^n+2^n+\cdots n^n&#x3D;k!<br>$$</p>
-<p>显然 $n&#x3D;k&#x3D;1$ 是一组解，下证不存在其他的解.</p>
-<p>假设<br>$$<br>n&gt;1,k^k&gt;k!&gt;n^n \Rightarrow k&gt;n \cdots(1<br>)<br>$$<br>若n为奇， $(n+2) \mid 2^n+3^n+\cdots +n^n$</p>
-<p>注：<br>$$<br>(n+2) \mid i^n+(n+2-i)^n<br>$$<br>将n+2-i，i首位配对，每一对的和都是(n+2)的倍数.</p>
-<p>$$<br>\Rightarrow (n+2) \mid k!-1 \Rightarrow k&lt; n+2<br>$$<br>由（1), $k&#x3D;n+1$,则 $(n+1)!&gt; n^n \Rightarrow n&lt;3 \\$</p>
-<p>与n大于1且为奇数矛盾.则n为偶数，<br>$$<br>n&#x3D;2m.n \geq4 \Rightarrow k&gt;4 \Rightarrow4 \mid k \\<br>\because (2k+1)^{2m} \equiv1,(2k)^{2m} \equiv 0(\mod 4) \\<br>\therefore 1^n+2^n+\cdots+n^n \equiv m(\mod 4) \\<br>\therefore 4 \mid m \Rightarrow 8 \mid n \Rightarrow n&#x3D;2^st.s \geq 3,t \equiv1(\mod 2)<br>$$</p>
-<p>对每个奇数i大于等于1小于n成立，由欧拉定理<br>$$<br>i^n&#x3D; (i^{2^s})^t &#x3D;(i^{\phi(2^{s+1})} )^t \equiv1(\mod 2^{s+1})<br>$$</p>
-<p>对偶数i,<br>$$<br>i^{n} \equiv 0(\mod 2^{s+1})<br>$$</p>
-<p>$$ {t}<br>\therefore 1^n+2^n+\cdots +n^n \equiv\frac{n}{2 } \equiv 2^{s-1}t(\mod 2^{s-1})<br>\\ \therefore v_2(1^n+2^n+\cdots +n^n)&#x3D;s-1<br>$$</p>
-<p>另一方面由前述定理<br>$$<br>v_2(k!)&gt;\frac{k}{2}-1&gt;\frac{n}{2}-1&#x3D;2^{s-1}t-1 \geq 2^{s-1}-1 \\<br>v_2(1^n+2^n+\cdots +n^n)&#x3D;s-1&#x3D;v_2(k!) &gt; 2^{s-1}-1 \Rightarrow s&gt;2^{s-1}<br>$$</p>
-<p>和 $s \geq 3$ 矛盾.</p>
-<p>2 证明：对每个n&gt;1,方程<br>$$<br>\frac{x^n}{n!}+\frac{x^{n-1}}{(n-1)!}+\cdots+\frac{x^2}{2!}+\frac{x}{1}&#x3D;0<br>$$<br>没有有理根.</p>
-<p>证：设方程存在有理根a,<br>$$<br>\frac{a^n}{n!}+\frac{a^{n-1}}{(n-1)!}+\cdots+\frac{a^2}{2!}+\frac{a}{1}&#x3D;0<br>$$</p>
-<p>“首1多项式”:<br>$$<br>a^n+\boxed{ \frac{n!}{(n-1)!}a^{n-1}+\cdots+\frac{n!}{k!}a^k+\cdots+\frac{n!}{2!}a^2+n!a+n!}&#x3D;0<br>$$</p>
-<p>根据有理根定理, $a \in \mathbb{Z} $ </p>
-<p>由 $n&gt;1$, 取n的任意素因数p,显然框起来的部分是n的倍数即 </p>
-<p>$$<br>n \mid \frac{n!}{k!}(k&#x3D;0,1,\cdots n-1), \quad \therefore n \mid a^n \Rightarrow p \mid a^n \Rightarrow p \mid a \\</p>
-<p>v_p(k!)&lt;\frac{k}{p-1}&lt;k (k \geq 1) \Rightarrow p^k \nmid k! \\<br>$$</p>
-<p>设</p>
-<p>$$<br>v_p(n!)&#x3D;r, p^k \mid a^k , p^k \nmid k! \Rightarrow p^{r+1} \mid \frac{n!}{k!}a^k (k&#x3D;1,2,\cdots n) \\<br>\Rightarrow p^{r+1} \mid n! \Rightarrow v_p(n!) \geq r+1 \\<br>$$</p>
-<p>和<br>$$<br>v_p(n!)&#x3D;r<br>$$<br>矛盾.</p>
+<h1 id="勾股方程"><a href="#勾股方程" class="headerlink" title="勾股方程"></a>勾股方程</h1><p>定义：</p>
+<p>由勾股定理引出的一个方程$x^2+y^2&#x3D;z^2\cdots (1)$，则根据勾股定理，满足方程(1)的|x|,|y|,|z|是可以作为直角三角形三边长度的.</p>
+<h3 id="勾股方程整数解要满足的必要条件"><a href="#勾股方程整数解要满足的必要条件" class="headerlink" title="勾股方程整数解要满足的必要条件"></a>勾股方程整数解要满足的必要条件</h3><p>定理1：</p>
+<p>设$(x,y,z)$为方程$x^2+y^2&#x3D;z^2 \cdots (1)$的解，则$60 \mid xyz$</p>
+<p>证：$60&#x3D;3 \times 4 \times 5$只需证明<br>$$<br>3 \mid xyz,4 \mid xyz ,5 \mid xyz<br>$$</p>
+<ol>
+<li><p>$\mod 3$:</p>
+<p>若$x,y$都不是$3$的倍数,则$z^2&#x3D;x^2+y^2 \equiv 2 (\mod 3)$,则和$z^2$为完全平方数矛盾.\</p>
+</li>
+<li><p>$\mod 5$  (1)$x,y$中有5的倍数，则$5 \mid xyz (2)$ 若没有，则$z^2 \equiv 0, \pm 2(\mod 5) $由于$z^2$是平方数，<br>$$<br>\Rightarrow z^2 \equiv 0 (\mod 5) \Rightarrow 5 \mid z \\<br>\therefore 5 \mid xyz<br>$$</p>
+</li>
+<li><p>$\mod 4,8$若x,y为奇，则$z^2 \equiv 2(\mod 4)$矛盾.则x,y中必有偶数，则设2\mid x<br>$$<br>&lt;1&gt; 2\mid y \Rightarrow 4 \mid xyz \\<br>&lt;2&gt; 2\nmid y : z \equiv 1 (\mod 2) \Rightarrow x^2&#x3D;z^2-y^2 \equiv 0(\mod 8)\\<br>\Rightarrow 4 \mid x \Rightarrow 4 \mid xyz<br>$$</p>
+</li>
+</ol>
+<p>即证.</p>
+<p>模分析是一种必要性分析，这种分析手段一般通过枚举否定缩小包围圈来减少工作量.</p>
+<p>​                </p>
+<p>例1：a,b,c是不同正整数，$a^2+b^2&#x3D;c^2$,则乘积$abc$最接近$2018$的值是多少?</p>
+<p>显然 $60 \mid abc$ 设$abc&#x3D;60m,m \in N^*$<br>$$<br>60m \leq 2018 \Rightarrow m \leq 33 \\<br>60 \times 33&#x3D;1980, 2018-1980&#x3D;38, \\<br>60 \times 34&#x3D;2040,2040-2018&#x3D;22<br>$$<br>构造：当$a15,b&#x3D;8,c&#x3D;17$时$ 15^2+8^2&#x3D;17^2$且$15 \times 8 \times 17&#x3D;2040$</p>
+<p>$\therefore abc$最接近$2018$的是$2040$.</p>
+<h3 id="勾股方程的通解"><a href="#勾股方程的通解" class="headerlink" title="勾股方程的通解"></a>勾股方程的通解</h3><p>方程$x^2+y^2+z^2$满足$x,z,&gt;0,(x,y)&#x3D;d$的全部整数解<br>$$<br>\begin{cases}<br>x&#x3D;2uvd\\<br>y&#x3D;(u^2-v^2)d\\<br>z&#x3D;(u^2+v^2)d<br>\end{cases},u,v \in N^*,(u,v)&#x3D;1,u&gt;v<br>$$<br>证：1. x,y中至少有一个偶数，否则x,y都是奇数，则$z^2\equiv 2(\mod 4)$,矛盾,不妨设$2 \mid x$</p>
+<ol start="2">
+<li><p>总科假定$(x,y)&#x3D;1$,否则$(x,y)&#x3D;d&gt;1,d^2 \mid x^2+y^2 \Rightarrow d^2 \mid z^2 \Rightarrow d \mid z$</p>
+<p>设<br>$$<br>x&#x3D;dx_1,y&#x3D;d_1,z&#x3D;dz_1 \Rightarrow x_1^2+y_1^2&#x3D;z_1^2<br>$$<br>其中(x_1,y_1)&#x3D;1,故总可假定(x,y)&#x3D;1.同理，在x,y互素的条件下，易知(x,z)&#x3D;1,(y,z)&#x3D;1</p>
+</li>
+<li><p>$$<br>x^2&#x3D;z^2-y^2&#x3D;(z+y)(z-y) \cdots (1)\\<br>\because (z,x)&#x3D;(y,x)&#x3D;1,2\mid x\\<br>\therefore y,z \equiv1 (\mod 2 )\Rightarrow 2\mid z+y,z-y<br>$$</p>
+<p>对（1）两边同时除以4，得到<br>$$<br>(\frac{x}{2})^2&#x3D;\frac{z+y}{2}\cdot\frac{z-y}{2}<br>$$</p>
+</li>
+</ol>
+<p>其中<br>$$<br>(\frac{z+y}{2},\frac{z-y}{2})&#x3D;(z,\frac{z+y}{2})&#x3D;(z,z+y)&#x3D;(z,y)&#x3D;1 \\<br>$$<br>$\therefore \frac{z+y}{2},\frac{z-y}{2}$都是完全平方数<br>$$<br>\therefore \frac{z+y}{2}&#x3D;u^2,\frac{z-y}{2}&#x3D;v^2,u,v \in N^*,(u,v)&#x3D;1<br>$$<br>则<br>$$<br>\begin{cases}<br>x&#x3D;2uv \\<br>y&#x3D;(u^2-v^2)\\<br>z&#x3D;u^2+v^2<br>\end{cases}, u,v \in N^*.(u,v)&#x3D;1<br>$$<br>考虑$(x,y)&#x3D;d$,则原方程通解<br>$$<br>\begin{cases}<br>x&#x3D;2uvd \\<br>y&#x3D;(u^2-v^2)d\\<br>z&#x3D;(u^2+v^2)d<br>\end{cases}, u,v \in N^*.(u,v)&#x3D;1<br>$$<br>注：&lt;1&gt; u,v一奇一偶</p>
+<p>&lt;2&gt; 若$a,b \in Z ,a+bi$为复整数（高斯整数）<br>$$<br>\forall u+vi(u,v \in Z) \Rightarrow (u+vi)^2&#x3D;u^2-v^2+2uvi \\<br>(u^2-v^2)^2+(2uv)^2&#x3D;(u^2+v^2)^2<br>$$</p>
+<p>例2：求方程<br>$$<br>\frac{1}{x^2}+\frac{1}{y^2}&#x3D;\frac{1}{z^2}<br>$$<br>的整数解<br>$$<br>\frac{x^2+y^2}{x^2y^2}&#x3D;\frac{1}{z^2} \Rightarrow x^2+y^2&#x3D;(\frac{xy}{z})^2 \cdots(1)<br>$$</p>
+<p>$$<br>x^2,y^2 \in Z \Rightarrow z\mid xy<br>$$</p>
+<p>令xy&#x3D;tz,t \in N^*<br>$$<br>(1) \Rightarrow x^2+y^2&#x3D;t^2 \cdots (2)<br>$$<br>由定理2，方程（2）的通解为<br>$$<br>\begin{cases}<br>x&#x3D;2uvd \\<br>y&#x3D;(u^2-v^2)d\\<br>t&#x3D;(u^2+v^2)d<br>\end{cases}, u,v \in N^*.(u,v)&#x3D;1<br>$$<br>由<br>$$<br>xy&#x3D;tx \Rightarrow 2uvd \cdot(u^2-v^2)d&#x3D;(u^2+v^2)d \cdot z \Rightarrow z(u^2+v^2)&#x3D;2uv(u^2-v^2)d \cdots(3)<br>$$<br>显然<br>$$<br>u^2+v^2<br>$$<br>与<br>$$<br>2,u,v,u^2-v^2<br>$$<br>均互素，<br>$$<br>\Rightarrow (u^2+v^2)\mid d<br>$$<br>设$d&#x3D;(u^2+v^2)k, k \in N^*$</p>
+<p>所以原方程解为<br>$$<br>\begin{cases}<br>x&#x3D;2uv(u^2+v^2)k\\<br>y&#x3D;(u^4-v^4)k \\<br>z&#x3D;2uv(u^2-v^2)k<br>\end{cases}<br>$$<br>或<br>$$<br>\begin{cases}<br>y&#x3D;2uv(u^2+v^2)k\\<br>x&#x3D;(u^4-v^4)k \\<br>z&#x3D;2uv(u^2-v^2)k<br>\end{cases}<br>$$</p>
+<p>现在考虑能出现在本元勾股数中的数的特点.</p>
+<p>例：设$n&gt;2$,则$n$出现在一组本原勾股数中的充分必要条件是<br>$$<br>n \not\equiv 2(\mod 4)<br>$$<br>将n分为奇数偶数来分开讨论.<br>$$<br>&lt;1&gt; n^2+(\frac{n^2-1}{2})^2&#x3D;(\frac{n^2+1}{2})^2<br>$$<br>这表明(n^2,(\frac{n^2-1}{2})^2,(\frac{n^2+1}{2})^2)是一组勾股数，且显然是一组本元勾股数：<br>$$<br>(\frac{n^2-1}{2},\frac{n^2+1}{2})&#x3D;1<br>$$<br>n为偶数时：<br>$$<br>n \not\equiv 2(\mod 4) \Rightarrow4 \mid n. n^2+(\frac{n^2}{4}-1)^2&#x3D;(\frac{n^2}{4}+1)^2<br>$$<br>这表示$(n^2,(\frac{n^2}{4}-1)^2,(\frac{n^2}{4}+1)^2)$为一组勾股数<br>$$<br>((\frac{n^2}{4}-1)^2,(\frac{n^2}{4}+1)^2)&#x3D;1<br>$$<br>必要性：设x,y,z是一组本元勾股数，由定理1，<br>$$<br>4 \mid xyz<br>$$<br>本元勾股数中x,y,z必然有一个偶数,则x,y,z中必有一个4的倍数，另外两个为奇数，则<br>$$<br>x,y,z \equiv0,1,3(\mod 4)\Rightarrow x,y,z \not\equiv 2(\mod 4)<br>$$</p>
+<p>例：对给定非负整数k，都存在正整数n,恰好在k组勾股数中出现</p>
+<p>证：对$k \geq 0,n&#x3D;2^{n+1}$恰有k组勾股数中出现</p>
+<p>$k&#x3D;0:2^1&#x3D;2$显然不在任一组中出现，结论成立。</p>
+<p>假设对非负整数$k-1$成立，即2^k恰好出现在$k-1$组勾股数中</p>
+<p>由此，将没组中的三个勾股数都变成原来的两倍，则有$k-1$组非本元勾股数，每一组都有$2^{k+1}$若$2^{k+1}$出现在一组非本元勾股数中，约去2以后也可以得到一组勾股数。由归纳假设，$2^{k+1}$恰好在k-1组非本元勾股数中出现。下证$2^{k+1}$恰好在一组本元勾股数中出现。<br>$$<br>k \geq 1:4 \mid 2^{k+1}<br>$$<br>所以$2^{k+1}$一定出现在一组本元勾股数中，由定理2，对出现$2^{k+1}$的本元勾股数(x,y,z)<br>$$<br>\exist u &gt;v&gt;0,(u,v)&#x3D;1,x&#x3D;2uv,y&#x3D;u^2-v^2,z&#x3D;u^2+v^2<br>$$<br>只可能是<br>$$<br>x&#x3D;2uv&#x3D;2^{k+1} \Rightarrow uv&#x3D;2^k \Rightarrow u&#x3D;2^k,v&#x3D;1<br>$$<br>从而仅可能在一组本元勾股数中出现。即证。</p>
 
     </div>
 
@@ -275,12 +263,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/04/20/%E7%B4%A0%E5%9B%A0%E6%95%B0%E5%88%86%E6%9E%90%20LTE%E5%BC%95%E7%90%86/" rel="prev" title="“素因数分析 LTE引理”">
-      <i class="fa fa-chevron-left"></i> “素因数分析 LTE引理”
+    <a href="/2022/05/01/%E5%80%92%E6%95%B0%E5%BD%A2%E4%B8%8D%E5%AE%9A%E6%96%B9%E7%A8%8B/" rel="prev" title="倒数形不定方程">
+      <i class="fa fa-chevron-left"></i> 倒数形不定方程
     </a></div>
       <div class="post-nav-item">
-    <a href="/2022/04/28/Krummer/" rel="next" title="Krummer">
-      Krummer <i class="fa fa-chevron-right"></i>
+    <a href="/2022/05/01/ComplexAnalysis1/" rel="next" title="Complex Analysis 1">
+      Complex Analysis 1 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -340,7 +328,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8B%92%E8%AE%A9%E5%BE%B7%E5%85%AC%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">勒让德公式</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">勾股方程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B%E6%95%B4%E6%95%B0%E8%A7%A3%E8%A6%81%E6%BB%A1%E8%B6%B3%E7%9A%84%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.0.1.</span> <span class="nav-text">勾股方程整数解要满足的必要条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8B%BE%E8%82%A1%E6%96%B9%E7%A8%8B%E7%9A%84%E9%80%9A%E8%A7%A3"><span class="nav-number">1.0.2.</span> <span class="nav-text">勾股方程的通解</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
